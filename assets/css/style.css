@@ -2039,6 +2039,18 @@ html.lenis {
   color: #050505;
   font-weight: 600;
 }
+.rv-snd-msg-btn {
+  background-color: rgba(5, 5, 5, 0.06) !important;
+  color:  #050505 !important;
+  border-color:rgba(5, 5, 5, 0.06) !important ;
+  border-radius: 6px;
+  
+}
+.rv-snd-msg-btn:hover {
+  background-color: #f2584c !important;
+  color: var(--white-f) !important;
+  
+}
 .rv-6-def-btn:hover {
   background-color: #f2584c;
   color: var(--white-f);
@@ -19371,9 +19383,14 @@ html.lenis {
   }
 }
 .rv-404__btn {
-  background-color: #794aff;
+  background-color:  rgba(5, 5, 5, 0.06);
   border-radius: 30px;
-  border-color: #794aff;
+  border-color: rgba(5, 5, 5, 0.06);
+  color: #050505;
+}
+.rv-404__btn:hover{
+  background-color: #f2584c !important;
+  color : var(--white-f) !important;
 }
 @media screen and (max-width: 991px) {
   .rv-service-details__row {
