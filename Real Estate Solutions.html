@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,15 +18,27 @@
     <link rel="stylesheet" href="assets\css\style.css">
 </head>
 
-<body class="rv-14-body">
+<body class="rv-6-body">
     <!-- ANIMATED CURSOR START -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
     <!-- ANIMATED CURSOR END -->
 
 
-     <!-- HEADER SECTION START -->
-     <header class="rv-6-header rv-1-header to-be-fixed">
+    <!-- SEARCH FORM -->
+    <div class="rv-search-modal">
+        <form action="#">
+            <input type="search" name="search" id="rv-search-modal-input" placeholder="Search Here">
+            <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+        </form>
+
+        <button class="rv-search-modal-close-btn"><i class="fa-regular fa-xmark"></i></button>
+    </div>
+    <!-- SEARCH FORM -->
+
+
+    <!-- HEADER SECTION START -->
+    <header class="rv-6-header rv-1-header to-be-fixed">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-2 col-lg-3 col-6">
@@ -62,7 +74,6 @@
                                 <li>
                                     <a href="about.html">About Us</a>
                                 </li>
-
                                 <li>
                                     <a href="contact.html">Contact Us</a>
                                 </li>
@@ -84,125 +95,11 @@
     <!-- HEADER SECTION END -->
 
 
-    <!-- BREADCRUMB STARTS HERE -->
-    <div class="rv-breadcrumb pt-120 pb-120">
-        <div class="container">
-            <h1 class="rv-breadcrumb__title">Contact</h1>
-
-            <ul class="rv-breadcrumb__nav d-flex justify-content-center">
-                <li><a href="index.html"><i class="fa-solid fa-sharp fa-home"></i> Home</a></li>
-                <li class="current-page"><span class="dvdr"> &#47;</span><span>Contact</span></li>
-            </ul>
-        </div>
-    </div>
-    <!-- BREADCRUMB ENDS HERE -->
 
 
-    <!-- CONTACT SECTION START -->
-    <section class="rv-2-contact rv-inner-contact rv-section-spacing" data-aos="fade-up">
-        <div class="container">
-            <div class="rv-inner-contact-info-cards">
-                <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-phone"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Phone</h5>
-                    </div>
 
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li><a href="tel:0123456789">0123 456 789</a></li>
-                            <li><a href="tel:9876543210">9876 543 210</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Email</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li><a href="mailto:info@revel.com">info@revel.com</a></li>
-                            <li><a href="mailto:test@revel.com">test@revel.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-clock"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Hours of Operation</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li>
-                                <span class="key">Monday - Friday : </span>
-                                <span class="value">08:30 am - 10:00 pm</span>
-                            </li>
-                            <li>
-                                <span class="key">Saturday - Sunday : </span>
-                                <span class="value">10:30 am - 08:00 pm</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row gy-3 gy-sm-4">
-                <!-- contact form -->
-                <div class="col-xxl-8 col-lg-7">
-                    <div class="rv-2-contact__txt rv-inner-contact__txt">
-                        <h3 class="rv-2-contact-form-title">Get in Touch</h3>
-                        <form action="#" class="rv-2-contact__form rv-inner-contact__form">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" name="name" id="rv-2-contact-name" placeholder="Your Name">
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <input type="email" name="email" id="rv-2-contact-email" placeholder="Email">
-                                </div>
-                                <div class="col-12">
-                                    <select name="subjects" id="rv-2-contact-subject">
-                                        <option value="Selects Subject" hidden="">Select Subject</option>
-                                        <option value="Project Buy">Project Buy</option>
-                                        <option value="Custom Project">Custom Project</option>
-                                        <option value="Partnership Offer">Partnership Offer</option>
-                                        <option value="others">Others</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="message" id="rv-2-contact-message" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="rv-snd-msg-btn">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- map -->
-                <div class="col-xxl-4 col-lg-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.83187902115!2d90.33728818728464!3d23.780975728108746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1697280378529!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CONTACT SECTION END -->
-
-
-     <!-- FOOTER SECTION START -->
-     <footer class="rv-1-footer rv-6-footer">
+    <!-- FOOTER SECTION START -->
+    <footer class="rv-1-footer rv-6-footer">
         <div class="container">
             <div class="rv-1-footer-top rv-6-footer-top">
                 <div class="row gy-4 gy-sm-5 rv-6-footer-top__row">
@@ -233,7 +130,6 @@
                                         <li><a href="Personalized Finance Advisory.html">Personalized Finance Advisory</a></li>
                                         <li><a href="Business Loan Preparation and Mentoring.html">Business Loan Preparation and Mentoring</a></li>
                                         <li><a href="Accounting and Legal Services.html">Accounting and Legal&nbsp;&nbsp;Services </a></li>
-                                    </ul>
                                 </div>
                             </div>
 
@@ -288,7 +184,6 @@
     </footer>
     <!-- FOOTER SECTION END -->
 
-
     <!-- JS FILES -->
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
@@ -302,6 +197,7 @@
     <script src="assets\vendor\split-type\split-type-0.3.3.min.js"></script>
     <script src="assets\vendor\lenis\lenis.js"></script>
     <script src="assets\vendor\anime\anime.min.js"></script>
+    <script src="assets\js\search-modal.js"></script>
     <script src="assets\js\main.js"></script>
 </body>
 
