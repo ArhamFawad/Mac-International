@@ -13445,18 +13445,18 @@ html.lenis {
 .rv-8-service {
   display: flex;
   border: 1px solid rgba(5, 5, 5, 0.08);
-  padding: 60px 70px;
+  padding: 30px 50px;
   gap: 25px;
   transition: 0.4s ease;
 }
 @media screen and (max-width: 1399px) {
   .rv-8-service {
-    padding: 40px 50px;
+    padding: 30px 40px;
   }
 }
 @media screen and (max-width: 1199px) {
   .rv-8-service {
-    padding: 30px;
+    padding: 20px;
     gap: 20px;
   }
 }
@@ -13478,11 +13478,11 @@ html.lenis {
   }
 }
 .rv-8-service:hover {
-  border-color: #1c74e9;
+  border-color: #f2584c;
 }
 .rv-8-service:hover .rv-8-service__btn i {
-  background-color: #1c74e9;
-  border-color: #1c74e9;
+  background-color: #f2584c;
+  border-color: #f2584c;
   color: var(--white-f);
 }
 .rv-8-service__icon {
@@ -13519,7 +13519,7 @@ html.lenis {
   }
 }
 .rv-8-service__title a:hover {
-  color: #1c74e9;
+  color: #f2584c;
 }
 .rv-8-service .rv-3-service__descr {
   margin-bottom: 24px;
