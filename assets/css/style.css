@@ -1318,22 +1318,28 @@ html.lenis {
   font-family: var(--mulish);
   transition: none;
 }
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 990px) {
   .rv-1-def-btn {
-    height: 50px;
-    line-height: 48px;
+   display: none;
   }
 }
 @media screen and (max-width: 991px) {
   .rv-1-def-btn {
     height: 45px;
     line-height: 43px;
+    
   }
 }
+@media screen and (max-width: 1200px){
+  .rv-1-def-btn {
+    font-size: 12px; 
+  }
+}
+
 .rv-1-def-btn .txt {
   background-color: var(--orange);
   border-radius: 14px;
-  padding: 0 35px;
+  padding: 5px;
   transition: 0.4s ease;
   border: 1px solid var(--orange);
 }
@@ -1344,7 +1350,7 @@ html.lenis {
 }
 @media screen and (max-width: 991px) {
   .rv-1-def-btn .txt {
-    padding: 0 20px;
+    padding:  20px;
   }
 }
 .rv-1-def-btn .icon {
@@ -2056,8 +2062,25 @@ html.lenis {
   color: var(--white-f);
 }
 .rv-6-def-btn:hover i {
-  color: var(--white-f);
+  color: black;
 }
+.rv-6-boknow-btn {
+  height: 52px;
+  line-height: 52px;
+  border-radius: 10px;
+  background-color: #f2584c ;
+  padding: 0 42px;
+  color: var(--white-f) !important;
+  font-weight: 600;
+
+}
+.rv-6-boknow-btn:hover {
+  color:black !important;
+  background-color: var(--white-f);
+  border: 1px solid var(--orange) !important;
+  
+}
+
 @media screen and (max-width: 1199px) {
   .rv-6-def-btn {
     padding: 0 32px;

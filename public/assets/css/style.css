@@ -2053,7 +2053,7 @@ html.lenis {
 }
 .rv-6-def-btn:hover {
   background-color: #f2584c;
-  color: var(--white-f);
+  color: black;
 }
 .rv-6-def-btn:hover i {
   color: var(--white-f);
