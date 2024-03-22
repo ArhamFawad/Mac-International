@@ -1654,8 +1654,8 @@ html.lenis {
   }
 }
 .rv-2-slider-nav button:hover {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-2-section-heading {
@@ -1723,8 +1723,8 @@ html.lenis {
   color: var(--black);
 }
 .rv-1-socials.rv-2-socials a:hover {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-3-sub-title {
@@ -3046,10 +3046,10 @@ html.lenis {
   width: 100%;
 }
 .rv-2-sidebar__nav > ul a::before {
-  background-color: #daed1a;
+  background-color: #F2584C;
 }
 .rv-2-sidebar__nav > ul a:hover {
-  color: #daed1a;
+  color: #F2584C;
 }
 .rv-2-sidebar__nav > ul > li {
   line-height: normal;
@@ -3094,7 +3094,7 @@ html.lenis {
   color: var(--white-f);
 }
 .rv-2-sidebar__nav > ul > li .sub-menu a:hover {
-  color: #daed1a;
+  color: #F2584C;
 }
 .rv-2-sidebar__nav > ul > li .sub-menu.rv-mega-menu {
   row-gap: 0;
@@ -3115,7 +3115,7 @@ html.lenis {
   right: 0;
   background: linear-gradient(
     270deg,
-    #daed1a -0.71%,
+    #F2584C -0.71%,
     rgba(218, 237, 26, 0) 100%
   );
   width: 0;
@@ -4503,7 +4503,7 @@ html.lenis {
   left: 0;
   background: linear-gradient(
     270deg,
-    #daed1a -0.71%,
+    #F2584C -0.71%,
     rgba(218, 237, 26, 0) 100%
   );
   width: 140px;
@@ -9442,8 +9442,8 @@ html.lenis {
   box-shadow: 0px 10px 100px rgba(5, 5, 5, 0.2);
 }
 .rv-2-blog:hover .rv-2-honor__btn i {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-2-blog__infos {
@@ -9466,7 +9466,7 @@ html.lenis {
 .rv-2-blog__cat {
   font-weight: 700;
   color: #0f0f0f;
-  background-color: #daed1a;
+  background-color: #F2584C;
   padding: 2px 15px 1px;
 }
 .rv-2-blog__title {
@@ -9485,7 +9485,7 @@ html.lenis {
   }
 }
 .rv-2-blog__title a:hover {
-  color: #daed1a;
+  color: #F2584C;
 }
 .rv-2-blog__descr {
   color: rgba(255, 255, 255, 0.6);
@@ -11699,7 +11699,7 @@ html.lenis {
 .rv-2-timeline-details__title {
   font-size: 20px;
   font-weight: 600;
-  border-bottom: 2px solid #daed1a;
+  border-bottom: 2px solid #F2584C;
   display: inline-block;
   padding-bottom: 10px;
   margin-bottom: 14px;
@@ -11710,8 +11710,8 @@ html.lenis {
   }
 }
 .rv-2-timeline-details__descr {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 15px;
+  color: #040e1f;
+  font-size: 16px;
   font-weight: 300;
   line-height: 160%;
   margin-bottom: 0;
@@ -11803,7 +11803,7 @@ html.lenis {
 }
 .rv-2-skill-bars .progressbar {
   width: 0;
-  background-color: #daed1a;
+  background-color: #F2584C;
   height: 6px;
   position: relative;
 }
@@ -11874,8 +11874,8 @@ html.lenis {
   border-bottom-color: rgba(0, 0, 0, 0);
 }
 .rv-2-honor:hover .rv-2-honor__btn i {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-2-honor:last-child {
@@ -12038,8 +12038,8 @@ html.lenis {
 }
 .rv-2-contact__form button {
   height: 55px;
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: #0f0f0f;
   font-family: var(--mulish);
   font-weight: 700;
@@ -12308,10 +12308,10 @@ html.lenis {
   transition: 0.4s ease;
 }
 .rv-2-swiper-dots .swiper-pagination-bullet-active {
-  border-color: #daed1a;
+  border-color: #F2584C;
 }
 .rv-2-swiper-dots .swiper-pagination-bullet-active::before {
-  background-color: #daed1a;
+  background-color: #F2584C;
 }
 .rv-3-projects {
   background-color: #f4f4f4;
