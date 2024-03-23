@@ -1308,7 +1308,7 @@ html.lenis {
   padding-bottom: 190px;
 }
 .rv-1-def-btn {
-  height: 55px;
+  height: 60px;
   line-height: 53px;
   text-transform: capitalize;
   color: var(--white-f);
@@ -1332,25 +1332,25 @@ html.lenis {
 }
 @media screen and (max-width: 1200px){
   .rv-1-def-btn {
-    font-size: 12px; 
+    font-size: 16px; 
   }
 }
+
+
 
 .rv-1-def-btn .txt {
   background-color: var(--orange);
   border-radius: 14px;
   padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   transition: 0.4s ease;
   border: 1px solid var(--orange);
 }
-@media screen and (max-width: 1399px) {
-  .rv-1-def-btn .txt {
-    padding: 0 30px;
-  }
-}
+
 @media screen and (max-width: 991px) {
   .rv-1-def-btn .txt {
-    padding:  20px;
+    padding: 0px;
   }
 }
 .rv-1-def-btn .icon {
