@@ -1308,7 +1308,7 @@ html.lenis {
   padding-bottom: 190px;
 }
 .rv-1-def-btn {
-  height: 55px;
+  height: 60px;
   line-height: 53px;
   text-transform: capitalize;
   color: var(--white-f);
@@ -1318,33 +1318,39 @@ html.lenis {
   font-family: var(--mulish);
   transition: none;
 }
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 990px) {
   .rv-1-def-btn {
-    height: 50px;
-    line-height: 48px;
+   display: none;
   }
 }
 @media screen and (max-width: 991px) {
   .rv-1-def-btn {
     height: 45px;
     line-height: 43px;
+    
   }
 }
+@media screen and (max-width: 1200px){
+  .rv-1-def-btn {
+    font-size: 16px; 
+  }
+}
+
+
+
 .rv-1-def-btn .txt {
   background-color: var(--orange);
   border-radius: 14px;
-  padding: 0 35px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   transition: 0.4s ease;
   border: 1px solid var(--orange);
 }
-@media screen and (max-width: 1399px) {
-  .rv-1-def-btn .txt {
-    padding: 0 30px;
-  }
-}
+
 @media screen and (max-width: 991px) {
   .rv-1-def-btn .txt {
-    padding: 0 20px;
+    padding: 0px;
   }
 }
 .rv-1-def-btn .icon {
@@ -1393,7 +1399,7 @@ html.lenis {
 }
 @media screen and (max-width: 1399px) {
   .rv-section-spacing {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1648,8 +1654,8 @@ html.lenis {
   }
 }
 .rv-2-slider-nav button:hover {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-2-section-heading {
@@ -1717,8 +1723,8 @@ html.lenis {
   color: var(--black);
 }
 .rv-1-socials.rv-2-socials a:hover {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-3-sub-title {
@@ -2056,8 +2062,25 @@ html.lenis {
   color: var(--white-f);
 }
 .rv-6-def-btn:hover i {
-  color: var(--white-f);
+  color: black;
 }
+.rv-6-boknow-btn {
+  height: 52px;
+  line-height: 52px;
+  border-radius: 10px;
+  background-color: #f2584c ;
+  padding: 0 42px;
+  color: var(--white-f) !important;
+  font-weight: 600;
+
+}
+.rv-6-boknow-btn:hover {
+  color:black !important;
+  background-color: var(--white-f);
+  border: 1px solid var(--orange) !important;
+  
+}
+
 @media screen and (max-width: 1199px) {
   .rv-6-def-btn {
     padding: 0 32px;
@@ -2705,25 +2728,25 @@ html.lenis {
   color: #5d626c;
 }
 .rv-breadcrumb__nav a:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-breadcrumb__nav a i {
   vertical-align: text-top;
   padding-left: 5px;
 }
 .rv-breadcrumb__nav .current-page {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-breadcrumb__nav .current-page .dvdr {
   padding: 0 10px;
   color: #5d626c;
 }
 .rv-inner-btn {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: #F2584C;
+  border-color: #F2584C;
 }
 .rv-inner-btn:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-inner-footer {
   background-color: #021f2f;
@@ -2738,7 +2761,7 @@ html.lenis {
 }
 .rv-inner-footer-nwsltr__form .nwsltr-top button {
   border-radius: 0 6px 6px 0;
-  background-color: #794aff;
+  background-color: ##F2584C;
 }
 @media screen and (max-width: 1199px) {
   .rv-inner-footer-widget .rv-1-footer-widget__title {
@@ -2749,12 +2772,12 @@ html.lenis {
   border-radius: 6px;
 }
 .rv-1-socials.rv-inner-socials a:hover {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: ##F2584C;
+  border-color: ##F2584C;
 }
 .rv-1-footer-widget.rv-inner-footer-widget li:hover,
 .rv-1-footer-widget.rv-inner-footer-widget li a:hover {
-  color: #794aff;
+  color: ##F2584C;
 }
 .sub-menu.rv-mega-menu {
   display: grid;
@@ -3023,10 +3046,10 @@ html.lenis {
   width: 100%;
 }
 .rv-2-sidebar__nav > ul a::before {
-  background-color: #daed1a;
+  background-color: #F2584C;
 }
 .rv-2-sidebar__nav > ul a:hover {
-  color: #daed1a;
+  color: #F2584C;
 }
 .rv-2-sidebar__nav > ul > li {
   line-height: normal;
@@ -3071,7 +3094,7 @@ html.lenis {
   color: var(--white-f);
 }
 .rv-2-sidebar__nav > ul > li .sub-menu a:hover {
-  color: #daed1a;
+  color: #F2584C;
 }
 .rv-2-sidebar__nav > ul > li .sub-menu.rv-mega-menu {
   row-gap: 0;
@@ -3092,7 +3115,7 @@ html.lenis {
   right: 0;
   background: linear-gradient(
     270deg,
-    #daed1a -0.71%,
+    #F2584C -0.71%,
     rgba(218, 237, 26, 0) 100%
   );
   width: 0;
@@ -3413,6 +3436,7 @@ html.lenis {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 8px;
 }
 .rv-6-header__right button {
   height: 100%;
@@ -3999,10 +4023,10 @@ html.lenis {
   position: relative;
 }
 .rv-inner-header__nav > ul a:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-inner-header__nav > ul a:hover::before {
-  background-color: #794aff;
+  background-color: ##F2584C;
 }
 @media screen and (max-width: 991px) {
   .rv-inner-header-right-btns {
@@ -4030,7 +4054,7 @@ html.lenis {
   }
 }
 .rv-inner-header-right-btns a:hover {
-  color: #794aff;
+  color: ##F2584C;
 }
 .rv-inner-header-right-btns a i {
   padding-right: 5px;
@@ -4056,11 +4080,11 @@ html.lenis {
 .rv-inner-header-right-btns a:last-child:hover {
   background-color: rgba(0, 0, 0, 0);
   color: var(--black);
-  border-color: #794aff;
+  border-color: ##F2584C;
 }
 .rv-inner-mobile-menu-btn {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: ##F2584C;
+  border-color: ##F2584C;
 }
 .rv-1-banner {
   background-color: var(--green);
@@ -4479,7 +4503,7 @@ html.lenis {
   left: 0;
   background: linear-gradient(
     270deg,
-    #daed1a -0.71%,
+    #F2584C -0.71%,
     rgba(218, 237, 26, 0) 100%
   );
   width: 140px;
@@ -9418,8 +9442,8 @@ html.lenis {
   box-shadow: 0px 10px 100px rgba(5, 5, 5, 0.2);
 }
 .rv-2-blog:hover .rv-2-honor__btn i {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-2-blog__infos {
@@ -9442,7 +9466,7 @@ html.lenis {
 .rv-2-blog__cat {
   font-weight: 700;
   color: #0f0f0f;
-  background-color: #daed1a;
+  background-color: #F2584C;
   padding: 2px 15px 1px;
 }
 .rv-2-blog__title {
@@ -9461,7 +9485,7 @@ html.lenis {
   }
 }
 .rv-2-blog__title a:hover {
-  color: #daed1a;
+  color: #F2584C;
 }
 .rv-2-blog__descr {
   color: rgba(255, 255, 255, 0.6);
@@ -11675,7 +11699,7 @@ html.lenis {
 .rv-2-timeline-details__title {
   font-size: 20px;
   font-weight: 600;
-  border-bottom: 2px solid #daed1a;
+  border-bottom: 2px solid #F2584C;
   display: inline-block;
   padding-bottom: 10px;
   margin-bottom: 14px;
@@ -11686,8 +11710,8 @@ html.lenis {
   }
 }
 .rv-2-timeline-details__descr {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 15px;
+  color: #040e1f;
+  font-size: 16px;
   font-weight: 300;
   line-height: 160%;
   margin-bottom: 0;
@@ -11779,7 +11803,7 @@ html.lenis {
 }
 .rv-2-skill-bars .progressbar {
   width: 0;
-  background-color: #daed1a;
+  background-color: #F2584C;
   height: 6px;
   position: relative;
 }
@@ -11850,8 +11874,8 @@ html.lenis {
   border-bottom-color: rgba(0, 0, 0, 0);
 }
 .rv-2-honor:hover .rv-2-honor__btn i {
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--black);
 }
 .rv-2-honor:last-child {
@@ -12014,8 +12038,8 @@ html.lenis {
 }
 .rv-2-contact__form button {
   height: 55px;
-  background-color: #daed1a;
-  border-color: #daed1a;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: #0f0f0f;
   font-family: var(--mulish);
   font-weight: 700;
@@ -12284,10 +12308,10 @@ html.lenis {
   transition: 0.4s ease;
 }
 .rv-2-swiper-dots .swiper-pagination-bullet-active {
-  border-color: #daed1a;
+  border-color: #F2584C;
 }
 .rv-2-swiper-dots .swiper-pagination-bullet-active::before {
-  background-color: #daed1a;
+  background-color: #F2584C;
 }
 .rv-3-projects {
   background-color: #f4f4f4;
@@ -13444,18 +13468,18 @@ html.lenis {
 .rv-8-service {
   display: flex;
   border: 1px solid rgba(5, 5, 5, 0.08);
-  padding: 60px 70px;
+  padding: 30px 50px;
   gap: 25px;
   transition: 0.4s ease;
 }
 @media screen and (max-width: 1399px) {
   .rv-8-service {
-    padding: 40px 50px;
+    padding: 30px 40px;
   }
 }
 @media screen and (max-width: 1199px) {
   .rv-8-service {
-    padding: 30px;
+    padding: 20px;
     gap: 20px;
   }
 }
@@ -13477,11 +13501,11 @@ html.lenis {
   }
 }
 .rv-8-service:hover {
-  border-color: #1c74e9;
+  border-color: #f2584c;
 }
 .rv-8-service:hover .rv-8-service__btn i {
-  background-color: #1c74e9;
-  border-color: #1c74e9;
+  background-color: #f2584c;
+  border-color: #f2584c;
   color: var(--white-f);
 }
 .rv-8-service__icon {
@@ -13518,7 +13542,7 @@ html.lenis {
   }
 }
 .rv-8-service__title a:hover {
-  color: #1c74e9;
+  color: #f2584c;
 }
 .rv-8-service .rv-3-service__descr {
   margin-bottom: 24px;
@@ -17279,7 +17303,7 @@ html.lenis {
   font-family: var(--mulish);
 }
 .rv-14-nwsltr__form button:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-14-nwsltr__form button i {
   font-size: 22px;
@@ -17405,11 +17429,11 @@ html.lenis {
   }
 }
 .rv-inner-blogs .rv-1-blog__title a:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-inner-blogs .rv-1-blog__btn:hover i {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: #F2584C;
+  border-color: #F2584C;
 }
 .rv-inner-blog .rv-1-blog__img img {
   height: auto;
@@ -17650,7 +17674,7 @@ html.lenis {
   }
 }
 .rv-blog-details-tag:hover {
-  background-color: #794aff;
+  background-color: #F2584C;
   color: var(--white-f);
 }
 .rv-blog-details-shares {
@@ -17735,7 +17759,7 @@ html.lenis {
   }
 }
 .rv-blog-details-bottom-nav:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-blog-details-bottom-nav i {
   vertical-align: top;
@@ -17822,7 +17846,7 @@ html.lenis {
   }
 }
 .rv-blog-details-category:hover {
-  background-color: #794aff;
+  background-color: #F2584C;
   color: var(--white-f);
 }
 .rv-comments-area {
@@ -17935,8 +17959,8 @@ html.lenis {
   font-weight: 600;
 }
 .rv-comment-bottom-actions > button:hover {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--white-f);
 }
 .rv-comment-reply {
@@ -18088,7 +18112,7 @@ html.lenis {
   }
 }
 .rv-recent-blog__title a:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-shop-area__top-actions {
   margin-bottom: 60px;
@@ -18235,7 +18259,7 @@ html.lenis {
   box-shadow: none;
 }
 .rv-price-filter .noUi-connect {
-  background-color: #794aff;
+  background-color: #F2584C;
 }
 .rv-price-filter .noUi-handle::after,
 .rv-price-filter .noUi-handle::before {
@@ -18344,7 +18368,7 @@ html.lenis {
   padding: 14px 32px 13px;
 }
 .rv-inner-product .rv-3-product__cart-btn:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-inner-product .rv-3-product__cart-btn i {
   margin-right: 2px;
@@ -18404,8 +18428,8 @@ html.lenis {
 }
 .rv-shop-pagination .page-number-btn:hover,
 .rv-shop-pagination .page-number-btn.current {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--white-f);
 }
 .rv-inner-gallery-row {
@@ -18443,7 +18467,7 @@ html.lenis {
 .rv-product-details-img-slider-1
   .swiper-slide-thumb-active
   .rv-product-details__thumb {
-  border-color: #794aff;
+  border-color: #F2584C;
 }
 @media screen and (max-width: 575px) {
   .rv-product-details-img-slider-1 .swiper-slide {
@@ -18740,10 +18764,10 @@ html.lenis {
   padding-bottom: 8px;
 }
 .rv-product-details__bottom-txt .nav-link:hover {
-  border-color: #794aff;
+  border-color: #F2584C;
 }
 .rv-product-details__bottom-txt .nav-link.active {
-  border-color: #794aff;
+  border-color: #F2584C;
 }
 .rv-product-details__bottom-txt p {
   font-family: var(--mulish);
@@ -18838,7 +18862,7 @@ html.lenis {
 .review-breakdown .individual-star-breakdown .filled {
   border-radius: 5px;
   height: 100%;
-  background-color: #794aff;
+  background-color: #F2584C;
   width: 45%;
 }
 .review-breakdown .individual-star-breakdown-2 .filled {
@@ -19054,8 +19078,8 @@ html.lenis {
   }
 }
 .rv-related-prod-heading .rv-12-banner__btn:hover {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--white-f);
 }
 .rv-related-prod__title {
@@ -19172,7 +19196,7 @@ html.lenis {
   border-width: 0 1px 1px 0;
 }
 .rv-inner-service:hover .svg-elem-1 {
-  stroke: #794aff;
+  stroke: #F2584C;
 }
 @media screen and (max-width: 1199px) {
   .rv-inner-service .rv-14-service__icon {
@@ -19207,7 +19231,7 @@ html.lenis {
   }
 }
 .rv-inner-service .rv-14-service__title a:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 @media screen and (max-width: 1199px) {
   .rv-inner-service .rv-3-service__descr {
@@ -19220,7 +19244,7 @@ html.lenis {
   }
 }
 .rv-inner-service .rv-14-service__btn:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-inner-contact-info-cards {
   margin-bottom: 24px;
@@ -19319,7 +19343,7 @@ html.lenis {
   color: var(--black);
 }
 .rv-inner-contact-info .rv-5-footer-timings li a:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-inner-contact__txt {
   border-color: #f9f9f9;
@@ -19333,8 +19357,8 @@ html.lenis {
   color: var(--black);
 }
 .rv-inner-contact__form button {
-  border-color: #794aff;
-  background-color: #794aff;
+  border-color: #F2584C;
+  background-color: #F2584C;
   color: var(--white-f);
 }
 .rv-inner-contact__form button:hover {
@@ -19449,7 +19473,7 @@ html.lenis {
 }
 .rv-service-details__descr {
   color: rgba(8, 8, 33, 0.6);
-  font-family: Roboto;
+  font-family: var(--mulish);
   margin-bottom: 26px;
 }
 @media screen and (max-width: 575px) {
@@ -19596,8 +19620,8 @@ html.lenis {
   color: var(--black);
 }
 .rv-service-details-card__btn {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: #F2584C;
+  border-color: #F2584C;
   border-radius: 10px;
   padding: 0 42px;
   font-family: var(--inter);
@@ -19664,13 +19688,13 @@ html.lenis {
   }
 }
 .rv-service-details-sidebar__search-form button {
-  background-color: #794aff;
+  background-color: #F2584C;
   width: 47px;
   height: 47px;
   border-radius: 6px;
   flex-shrink: 0;
   color: var(--white-f);
-  border: 1px solid #794aff;
+  border: 1px solid #F2584C;
 }
 @media screen and (max-width: 1199px) {
   .rv-service-details-sidebar__search-form button {
@@ -19680,7 +19704,7 @@ html.lenis {
 }
 .rv-service-details-sidebar__search-form button:hover {
   background-color: rgba(0, 0, 0, 0);
-  color: #794aff;
+  color: #F2584C;
 }
 .rv-service-details-sidebar-categories li:not(:last-child) {
   margin-bottom: 6px;
@@ -20032,8 +20056,8 @@ html.lenis {
   color: var(--tl-btn-bg);
 }
 .rv-project-details-bottom-nav:hover .rv-project-details-bottom-nav-arrow {
-  border-color: #794aff;
-  background-color: #794aff;
+  border-color: #F2584C;
+  background-color: #F2584C;
   color: var(--white-f);
 }
 .rv-project-details-bottom-nav-arrow {
@@ -20112,7 +20136,7 @@ html.lenis {
   }
 }
 .rv-project-details-bottom-nav-title:hover {
-  color: #794aff;
+  color: #F2584C;
 }
 #rv-project-details__cover-slider-nav {
   z-index: 1;
@@ -20128,26 +20152,26 @@ html.lenis {
   }
 }
 #rv-project-details__cover-slider-nav button:hover {
-  background-color: #794aff;
-  border-color: #794aff;
+  background-color: #F2584C;
+  border-color: #F2584C;
   color: var(--white-f);
 }
 .rv-inner-about-btn .txt,
 .rv-inner-about-btn .icon {
-  border-color: #794aff;
-  background-color: #794aff;
+  border-color: #F2584C;
+  background-color: #F2584C;
 }
 .rv-1-section-heading-2 .rv-1-section-heading__right .rv-inner-about-btn:hover {
-  border-color: #794aff;
-  background-color: #794aff;
+  border-color: #F2584C;
+  background-color: #F2584C;
 }
 .rv-inner-slider-nav button:hover {
-  border-color: #794aff;
-  background-color: #794aff;
+  border-color: #F2584C;
+  background-color: #F2584C;
 }
 .rv-inner-member-socials .rv-9-member-socials__icon {
-  background-color: #794aff;
+  background-color: #F2584C;
 }
 .rv-inner-member-socials .rv-1-speaker__socials a:hover {
-  background-color: #794aff;
+  background-color: #F2584C;
 } /*# sourceMappingURL=style.css.map */
