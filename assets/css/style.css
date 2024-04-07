@@ -13724,7 +13724,7 @@ html.lenis {
   padding: 35px 50px 35px 0;
 }
 .rv-14-service:hover .svg-elem-1 {
-  animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+  animation: animate-svg-stroke-1 01s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
   stroke: #e64209;
 }
 .rv-14-service__icon {
