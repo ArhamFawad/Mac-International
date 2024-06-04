@@ -13323,7 +13323,7 @@ html.lenis {
 .rv-6-services__img img {
   width: 650px;
   max-width: 650px;
-  max-height: 780px;
+  /* max-height: 780px; */
   height: inherit;
 }
 @media screen and (max-width: 1199px) {
