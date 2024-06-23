@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mack Capital-Your Gateway to Financial Success </title>
     <link rel="shortcut icon" href="assets\img\favicon1.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="assets\vendor\bootstrap\bootstrap.min.css">
     <link rel="stylesheet" href="assets\vendor\font-awesome\all.min.css">
     <link rel="stylesheet" href="assets\vendor\font-awesome\sharp-regular.min.css">
@@ -17,6 +15,15 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets\css\style.css">
 </head>
+<body>
+    <div id="loader" class="loader"></div>
+    <div id="password-protect" style="display:none;">
+        <h2>Password Protected Website</h2>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="error-message"></p>
+    </div>
+    <div id="protected-content" style="display:none;">
 
 <body class="rv-6-body">
     <!-- ANIMATED CURSOR START -->
@@ -270,6 +277,63 @@
         </div>
     </footer>
     <!-- FOOTER SECTION END -->
+    </div>
+    <script src="script.js"></script>
+    
+    <style>
+        .pt {
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #f0f0f0;
+          margin: 0;
+        } 
+  
+        #password-protect {
+          background: white;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+  
+        #protected-content {
+          text-align: center;
+        }
+      </style>
+
+<script>
+    const correctPassword = "yourPassword"; // Set your password here
+
+function checkPassword() {
+  const enteredPassword = document.getElementById("password").value;
+  const errorMessage = document.getElementById("error-message");
+
+  if (enteredPassword === correctPassword) {
+      localStorage.setItem("authenticated", "true");
+      showProtectedContent();
+  } else {
+      errorMessage.textContent = "Incorrect password. Please try again.";
+      errorMessage.style.color = "red";
+  }
+}
+
+function showProtectedContent() {
+  document.getElementById("password-protect").style.display = "none";
+  document.getElementById("protected-content").style.display = "block";
+}
+
+function checkAuthentication() {
+  if (localStorage.getItem("authenticated") === "true") {
+      showProtectedContent();
+  }
+}
+ //Check authentication on page load
+document.addEventListener("DOMContentLoaded", checkAuthentication);
+
+</script>
 
     <!-- JS FILES -->
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
