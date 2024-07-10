@@ -260,6 +260,38 @@
               </form>
             </div>
           </div>
+          <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const name = document.getElementById('rv-2-contact-name').value;
+        const email = document.getElementById('rv-2-contact-email').value;
+        const subject = document.getElementById('rv-2-contact-subject').value;
+        const message = document.getElementById('rv-2-contact-message').value;
+    
+        fetch('https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            subjects: subject,
+            message: message
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+          alert('Message sent successfully!');
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('Error sending message.');
+        });
+      });
+    </script>
 
           <!-- map -->
           <div class="col-xxl-4 col-lg-5">
@@ -396,6 +428,7 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
