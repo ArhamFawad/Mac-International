@@ -192,105 +192,46 @@
           <h6 class="rv-2-contact-form-title">
             Add a Quote
           </h6>
-          <form
-            action="#"
-            class="rv-2-contact__form rv-inner-contact__form"
-          >
+          <form id="personalDetailsForm" class="rv-2-contact__form rv-inner-contact__form">
             <div class="row">
-              <div class="col-sm-6">
-                <input
-                  type="text"
-                  name="name"
-                  id="rv-2-contact-name"
-                  placeholder="Your Name"
-                />
-              </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Date of Birth:"
-                  />
+                    <input type="text" name="name" id="name" placeholder="Your Name" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Smoker status:"
-                  />
+                    <input type="text" name="dob" id="dob" placeholder="Date of Birth:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Occupation:"
-                  />
+                    <input type="text" name="smokerStatus" id="smokerStatus" placeholder="Smoker status:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Annual Income:"
-                  />
+                    <input type="text" name="occupation" id="occupation" placeholder="Occupation:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Do you have any pre-existing medical conditions or injuries?:"
-                  />
+                    <input type="text" name="annualIncome" id="annualIncome" placeholder="Annual Income:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Life insurance amount:"
-                  />
+                    <input type="text" name="medicalConditions" id="medicalConditions" placeholder="Do you have any pre-existing medical conditions or injuries?:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Total Permanent Disability amount:"
-                  />
+                    <input type="text" name="lifeInsuranceAmount" id="lifeInsuranceAmount" placeholder="Life insurance amount:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Monthly Income Protection amount:"
-                  />
+                    <input type="text" name="tpdAmount" id="tpdAmount" placeholder="Total Permanent Disability amount:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="text"
-                    name="name"
-                    id="rv-2-contact-name"
-                    placeholder="Phone number"
-                  />
+                    <input type="text" name="monthlyIncomeProtection" id="monthlyIncomeProtection" placeholder="Monthly Income Protection amount:" />
                 </div>
                 <div class="col-sm-6">
-                  <input
-                    type="email"
-                    name="email"
-                    id="rv-2-contact-email"
-                    placeholder="Email"
-                  />
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone number" />
                 </div>
-
-              <div class="col-12">
-                <button type="submit" class="rv-snd-msg-btn">Submit</button>
-              </div>
+                <div class="col-sm-6">
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="rv-snd-msg-btn">Submit</button>
+                </div>
             </div>
-          </form>
+        </form>
         </div>
       </div>
 
@@ -425,6 +366,43 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document.getElementById('personalDetailsForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          const formData = {
+              name: document.getElementById('name').value,
+              dob: document.getElementById('dob').value,
+              smokerStatus: document.getElementById('smokerStatus').value,
+              occupation: document.getElementById('occupation').value,
+              annualIncome: document.getElementById('annualIncome').value,
+              medicalConditions: document.getElementById('medicalConditions').value,
+              lifeInsuranceAmount: document.getElementById('lifeInsuranceAmount').value,
+              tpdAmount: document.getElementById('tpdAmount').value,
+              monthlyIncomeProtection: document.getElementById('monthlyIncomeProtection').value,
+              phoneNumber: document.getElementById('phoneNumber').value,
+              email: document.getElementById('email').value,
+              type:'comprehensive-insurance-services-for-financial-security'
+          };
+
+          fetch('https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(formData)
+          })
+          .then(response => response.text())
+          .then(data => {
+              console.log('Success the data sent successfully:', data);
+              // handle success response
+          })
+          .catch((error) => {
+              console.error('Error:', error);
+              // handle error response
+          });
+      });
+  </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>

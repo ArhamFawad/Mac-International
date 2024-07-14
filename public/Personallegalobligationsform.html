@@ -117,7 +117,8 @@
             ><span>Accounting and Legal Services</span>
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Personal Legal Obligations</span>
+            <span class="dvdr"> &#47;</span
+            ><span>Personal Legal Obligations</span>
           </li>
         </ul>
       </div>
@@ -209,89 +210,97 @@
                 Personal Legal Obligations Inquiry
               </h6>
               <form
-                action="#"
+                id="legalForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
                   <div class="col-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >What are your primary areas of personal legal concern?</label
+                    <label
+                      style="margin-bottom: 10px"
+                      for="personal-legal-concern"
+                      >What are your primary areas of personal legal
+                      concern?</label
                     >
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
+                    <select
+                      name="personalLegalConcern"
+                      id="personal-legal-concern"
+                    >
+                      <option value="" hidden="">Select</option>
                       <option value="Estate planning">Estate planning</option>
                       <option value="Family law">Family law</option>
                       <option value="Property matters">Property matters</option>
-                     
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you facing any specific legal issues currently?</label
+                    <label style="margin-bottom: 10px" for="legal-issues"
+                      >Are you facing any specific legal issues
+                      currently?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="legalIssues"
+                      id="legal-issues"
                       placeholder="If yes, please describe."
-                     
                     />
-                  </div>    
+                  </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="abn"
                       >ABN (Australian Business Number)</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="abn"
+                      id="abn"
                       placeholder="If yes, please provide it."
                     />
                   </div>
-                
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you seeking one-time advisory services or ongoing legal support?</label
+                    <label style="margin-bottom: 10px" for="service-type"
+                      >Are you seeking one-time advisory services or ongoing
+                      legal support?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="serviceType"
+                      id="service-type"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >How urgently do you require assistance with your personal legal obligations?</label
+                    <label style="margin-bottom: 10px" for="urgency"
+                      >How urgently do you require assistance with your personal
+                      legal obligations?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="urgency"
+                      id="urgency"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you interested in services such as will drafting, power of attorney, or trust
-                      establishment?</label
+                    <label style="margin-bottom: 10px" for="services-interest"
+                      >Are you interested in services such as will drafting,
+                      power of attorney, or trust establishment?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="servicesInterest"
+                      id="services-interest"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Have you consulted with a legal professional regarding your personal legal
-                      matters before?</label
+                    <label
+                      style="margin-bottom: 10px"
+                      for="previous-consultation"
+                      >Have you consulted with a legal professional regarding
+                      your personal legal matters before?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="previousConsultation"
+                      id="previous-consultation"
                       placeholder="if any?"
                     />
                   </div>
@@ -326,8 +335,7 @@
                     class="logo"
                 /></a>
                 <p class="rv-1-footer__about-txt">
-                  Your trusted gateway to the world of finance and real
-                  estate
+                  Your trusted gateway to the world of finance and real estate
                 </p>
                 <div class="rv-1-socials">
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -433,6 +441,46 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("legalForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            personalLegalConcern: document.getElementById(
+              "personal-legal-concern"
+            ).value,
+            legalIssues: document.getElementById("legal-issues").value,
+            abn: document.getElementById("abn").value,
+            serviceType: document.getElementById("service-type").value,
+            urgency: document.getElementById("urgency").value,
+            servicesInterest:
+              document.getElementById("services-interest").value,
+            previousConsultation: document.getElementById(
+              "previous-consultation"
+            ).value,
+            type: "personal-legal-obligations",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>

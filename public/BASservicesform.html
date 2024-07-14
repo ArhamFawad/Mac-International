@@ -205,114 +205,116 @@
           <!-- contact form -->
           <div class="col-xxl-12 col-lg-9">
             <div class="rv-2-contact__txt rv-inner-contact__txt">
-              <h6 class="rv-2-contact-form-title">
-                BAS Services Inquiry
-              </h6>
+              <h6 class="rv-2-contact-form-title">BAS Services Inquiry</h6>
               <form
-                action="#"
+                id="contactForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
                   <div class="col-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="business-structure"
                       >What type of business structure do you have?</label
                     >
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
-                      <option value="Project Buy">Sole Trader</option>
-                      <option value="Custom Project">Partnership</option>
-                      <option value="Partnership Offer">Trust</option>
-                      <option value="others">Company</option>
+                    <select name="businessStructure" id="business-structure">
+                      <option value="" hidden="">Select</option>
+                      <option value="Sole Trader">Sole Trader</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Trust">Trust</option>
+                      <option value="Company">Company</option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="abn"
                       >ABN (Australian Business Number)</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="abn"
+                      id="abn"
                       placeholder="If yes, please provide it."
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >How often do you require assistance with Business Activity Statements
-                      (BAS)?</label
+                    <label style="margin-bottom: 10px" for="bas-frequency"
+                      >How often do you require assistance with Business
+                      Activity Statements (BAS)?</label
                     >
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
+                    <select name="basFrequency" id="bas-frequency">
+                      <option value="" hidden="">Select</option>
                       <option value="Monthly">Monthly</option>
                       <option value="Quarterly">Quarterly</option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Have you faced any challenges or issues with BAS lodgment before?</label
+                    <label style="margin-bottom: 10px" for="bas-issues"
+                      >Have you faced any challenges or issues with BAS lodgment
+                      before?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="basIssues"
+                      id="bas-issues"
                       placeholder="If yes, please describe."
                     />
-                  </div>    
+                  </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you familiar with the regulatory requirements for BAS lodgment in your
-                      industry?</label
+                    <label
+                      style="margin-bottom: 10px"
+                      for="regulatory-requirements"
+                      >Are you familiar with the regulatory requirements for BAS
+                      lodgment in your industry?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="regulatoryRequirements"
+                      id="regulatory-requirements"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Do you need assistance with BAS preparation only, lodgment only, or both?</label
+                    <label style="margin-bottom: 10px" for="bas-assistance"
+                      >Do you need assistance with BAS preparation only,
+                      lodgment only, or both?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="basAssistance"
+                      id="bas-assistance"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you registered for GST? If yes, do you require assistance with GST
-                      reporting as well?</label
+                    <label style="margin-bottom: 10px" for="gst-registration"
+                      >Are you registered for GST? If yes, do you require
+                      assistance with GST reporting as well?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="gstRegistration"
+                      id="gst-registration"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >What accounting software do you currently use.</label
+                    <label style="margin-bottom: 10px" for="accounting-software"
+                      >What accounting software do you currently use?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="accountingSoftware"
+                      id="accounting-software"
                       placeholder="if any?"
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you interested in additional financial reporting services besides BAS
-                      lodgment?</label
+                    <label style="margin-bottom: 10px" for="financial-reporting"
+                      >Are you interested in additional financial reporting
+                      services besides BAS lodgment?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="financialReporting"
+                      id="financial-reporting"
                       placeholder=""
                     />
                   </div>
@@ -347,10 +349,9 @@
                     class="logo"
                 /></a>
                 <p class="rv-1-footer__about-txt">
-                  Your trusted gateway to the world of finance and real
-                  estate
+                  Your trusted gateway to the world of finance and real estate
                 </p>
-                <div  class="rv-1-socials">
+                <div class="rv-1-socials">
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -454,6 +455,48 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            businessStructure:
+              document.getElementById("business-structure").value,
+            abn: document.getElementById("abn").value,
+            basFrequency: document.getElementById("bas-frequency").value,
+            basIssues: document.getElementById("bas-issues").value,
+            regulatoryRequirements: document.getElementById(
+              "regulatory-requirements"
+            ).value,
+            basAssistance: document.getElementById("bas-assistance").value,
+            gstRegistration: document.getElementById("gst-registration").value,
+            accountingSoftware: document.getElementById("accounting-software")
+              .value,
+            financialReporting: document.getElementById("financial-reporting")
+              .value,
+            type: "bas-services",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>

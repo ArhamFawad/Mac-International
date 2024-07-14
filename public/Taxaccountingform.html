@@ -209,132 +209,124 @@
                 Tax Accounting Services Inquiry
               </h6>
               <form
-                action="#"
+                id="contactForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
                   <div class="col-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="business-structure"
                       >What type of business structure do you have?</label
                     >
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
-                      <option value="Project Buy">Sole Trader</option>
-                      <option value="Custom Project">Partnership</option>
-                      <option value="Partnership Offer">Trust</option>
-                      <option value="others">Company</option>
+                    <select name="businessStructure" id="business-structure">
+                      <option value="" hidden="">Select</option>
+                      <option value="Sole Trader">Sole Trader</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Trust">Trust</option>
+                      <option value="Company">Company</option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="abn"
                       >ABN (Australian Business Number)</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="abn"
+                      id="abn"
                       placeholder="If yes, please provide it."
                     />
                   </div>
-                  
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >What type of taxes do you require guidance on?
-                    </label>
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
+                    <label style="margin-bottom: 10px" for="tax-guidance"
+                      >What type of taxes do you require guidance on?</label
+                    >
+                    <select name="taxGuidance" id="tax-guidance">
+                      <option value="" hidden="">Select</option>
                       <option value="Income tax">Income tax</option>
                       <option value="GST">GST</option>
                       <option value="Payroll tax">Payroll tax</option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Have you encountered any tax-related issues in the past?</label
+                    <label style="margin-bottom: 10px" for="tax-issues"
+                      >Have you encountered any tax-related issues in the
+                      past?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
-                      placeholder="If yes, please specify. "
-                    />
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Have you encountered any tax-related issues in the past?</label
-                    >
-                    <input
-                      type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="taxIssues"
+                      id="tax-issues"
                       placeholder="If yes, please specify."
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you registered for GST? If yes, do you require assistance with GST
-                      reporting as well?</label
+                    <label style="margin-bottom: 10px" for="gst-registration"
+                      >Are you registered for GST? If yes, do you require
+                      assistance with GST reporting as well?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="gstRegistration"
+                      id="gst-registration"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Do you need ongoing tax support or assistance for specific periods</label
+                    <label style="margin-bottom: 10px" for="tax-support"
+                      >Do you need ongoing tax support or assistance for
+                      specific periods?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="taxSupport"
+                      id="tax-support"
                       placeholder="(e.g., tax season)"
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Do you file taxes in multiple states or territories?</label
+                    <label style="margin-bottom: 10px" for="multi-state"
+                      >Do you file taxes in multiple states or
+                      territories?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="multiState"
+                      id="multi-state"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are there any specific concerns or questions you have regarding tax
-                      accounting?</label
+                    <label style="margin-bottom: 10px" for="tax-concerns"
+                      >Are there any specific concerns or questions you have
+                      regarding tax accounting?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="taxConcerns"
+                      id="tax-concerns"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="annual-revenue"
                       >What is your approximate annual revenue or income?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="annualRevenue"
+                      id="annual-revenue"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Have you engaged in tax planning services previously?</label
+                    <label style="margin-bottom: 10px" for="tax-planning"
+                      >Have you engaged in tax planning services
+                      previously?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="taxPlanning"
+                      id="tax-planning"
                       placeholder=""
                     />
                   </div>
@@ -369,8 +361,7 @@
                     class="logo"
                 /></a>
                 <p class="rv-1-footer__about-txt">
-                  Your trusted gateway to the world of finance and real
-                  estate
+                  Your trusted gateway to the world of finance and real estate
                 </p>
                 <div class="rv-1-socials">
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -476,6 +467,45 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            businessStructure:
+              document.getElementById("business-structure").value,
+            abn: document.getElementById("abn").value,
+            taxGuidance: document.getElementById("tax-guidance").value,
+            taxIssues: document.getElementById("tax-issues").value,
+            gstRegistration: document.getElementById("gst-registration").value,
+            taxSupport: document.getElementById("tax-support").value,
+            multiState: document.getElementById("multi-state").value,
+            taxConcerns: document.getElementById("tax-concerns").value,
+            annualRevenue: document.getElementById("annual-revenue").value,
+            taxPlanning: document.getElementById("tax-planning").value,
+            type: "tax-accounting",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>

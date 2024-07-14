@@ -117,7 +117,8 @@
             ><span>Accounting and Legal Services</span>
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Business Legal Obligations</span>
+            <span class="dvdr"> &#47;</span
+            ><span>Business Legal Obligations</span>
           </li>
         </ul>
       </div>
@@ -209,114 +210,114 @@
                 Business Legal Obligations Inquiry
               </h6>
               <form
-                action="#"
+                id="businessForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
-                    <div class="col-sm-12">
-                        <label style="margin-bottom: 10px" for="software-methods"
-                          >What industry does your business operate in?</label
-                        >
-                        <input
-                          type="text"
-                          name="name"
-                          id="rv-2-contact-name"
-                          placeholder="Please describe."
-                         
-                        />
-                      </div>    
-                      <div class="col-sm-12">
-                        <label style="margin-bottom: 10px" for="software-methods"
-                          >ABN (Australian Business Number)</label
-                        >
-                        <input
-                          type="text"
-                          name="name"
-                          id="rv-2-contact-name"
-                          placeholder="If yes, please provide it."
-                        />
-                      </div>
-                  <div class="col-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are there any specific legal aspects of your business that you're particularly
-                      concerned about?</label
-                    >
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
-                      <option value="Contracts">Contracts</option>
-                      <option value="Intellectual property">Intellectual property</option>
-                      <option value="Employment law">Employment law</option>
-                     
-                    </select>
-                  </div>
-                
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Have you encountered any legal challenges in your business operations
-                      before?</label
+                    <label style="margin-bottom: 10px" for="industry"
+                      >What industry does your business operate in?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="industry"
+                      id="industry"
+                      placeholder="Please describe."
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="abn"
+                      >ABN (Australian Business Number)</label
+                    >
+                    <input
+                      type="text"
+                      name="abn"
+                      id="abn"
+                      placeholder="If yes, please provide it."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="legal-aspects"
+                      >Are there any specific legal aspects of your business
+                      that you're particularly concerned about?</label
+                    >
+                    <select name="legalAspects" id="legal-aspects">
+                      <option value="" hidden="">Select</option>
+                      <option value="Contracts">Contracts</option>
+                      <option value="Intellectual property">
+                        Intellectual property
+                      </option>
+                      <option value="Employment law">Employment law</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="legal-challenges"
+                      >Have you encountered any legal challenges in your
+                      business operations before?</label
+                    >
+                    <input
+                      type="text"
+                      name="legalChallenges"
+                      id="legal-challenges"
                       placeholder="If yes, please describe."
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you registered for GST? If yes, do you require assistance with GST-
-                      related legal matters?</label
+                    <label style="margin-bottom: 10px" for="gst-assistance"
+                      >Are you registered for GST? If yes, do you require
+                      assistance with GST-related legal matters?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="gstAssistance"
+                      id="gst-assistance"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Do you have legal documentation in place for your business (e.g., contracts,
-                      agreements)?</label
+                    <label style="margin-bottom: 10px" for="legal-docs"
+                      >Do you have legal documentation in place for your
+                      business (e.g., contracts, agreements)?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="legalDocs"
+                      id="legal-docs"
                       placeholder="If yes, are they regularly reviewed and updated?"
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Are you seeking general legal guidance or assistance with a specific legal
-                      matter?</label
+                    <label style="margin-bottom: 10px" for="legal-guidance"
+                      >Are you seeking general legal guidance or assistance with
+                      a specific legal matter?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="legalGuidance"
+                      id="legal-guidance"
                       placeholder="If specific, please specify."
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="revenue"
                       >What is your approximate annual revenue or income?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="revenue"
+                      id="revenue"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >Have you engaged with legal services for your business before?</label
+                    <label style="margin-bottom: 10px" for="previous-engagement"
+                      >Have you engaged with legal services for your business
+                      before?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="previousEngagement"
+                      id="previous-engagement"
                       placeholder=""
                     />
                   </div>
@@ -351,8 +352,7 @@
                     class="logo"
                 /></a>
                 <p class="rv-1-footer__about-txt">
-                  Your trusted gateway to the world of finance and real
-                  estate
+                  Your trusted gateway to the world of finance and real estate
                 </p>
                 <div class="rv-1-socials">
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -458,6 +458,44 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("businessForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            industry: document.getElementById("industry").value,
+            abn: document.getElementById("abn").value,
+            legalAspects: document.getElementById("legal-aspects").value,
+            legalChallenges: document.getElementById("legal-challenges").value,
+            gstAssistance: document.getElementById("gst-assistance").value,
+            legalDocs: document.getElementById("legal-docs").value,
+            legalGuidance: document.getElementById("legal-guidance").value,
+            revenue: document.getElementById("revenue").value,
+            previousEngagement: document.getElementById("previous-engagement")
+              .value,
+            type: "business-legal-obligations",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
