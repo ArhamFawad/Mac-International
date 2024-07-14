@@ -130,76 +130,7 @@
       data-aos="fade-up"
     >
       <div class="container">
-        <div class="rv-inner-contact-info-cards">
-          <!-- <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-calendar"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Book an Appointment</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            
-                            <li><a href="https://calendly.com/" class="rv-6-boknow-btn">Book Now <i class="fa-regular fa-arrow-up-right"></i></a></li>
-                        </ul>
-                    </div>
-                </div> -->
-
-          <!-- <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Email</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li><a href="mailto:info@revel.com">info@mackcapital.com</a></li>
-                            <li><a href="mailto:test@revel.com">support@mackcapital.com</a></li>
-                        </ul>
-                    </div>
-                </div> -->
-          <!-- <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-location"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Location</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li><a href="mailto:info@revel.com">Perth, WA</a></li>
-                            <li><a href="mailto:test@revel.com">Australia</a></li>
-                        </ul>
-                    </div>
-                </div> -->
-
-          <!-- <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-clock"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Hours of Operation</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li>
-                                <span class="key">Monday - Friday : </span>
-                                <span class="value">08:30 am - 10:00 pm</span>
-                            </li>
-                            <li>
-                                <span class="key">Saturday - Sunday : </span>
-                                <span class="value">10:30 am - 08:00 pm</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
-        </div>
+        <div class="rv-inner-contact-info-cards"></div>
 
         <div class="row gy-3 gy-sm-4">
           <!-- contact form -->
@@ -209,110 +140,115 @@
                 Bookkeeping Services Inquiry
               </h6>
               <form
-                action="#"
+                id="contactForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
                   <div class="col-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="business-structure"
                       >What type of business structure do you have?</label
                     >
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
-                      <option value="Project Buy">Sole Trader</option>
-                      <option value="Custom Project">Partnership</option>
-                      <option value="Partnership Offer">Trust</option>
-                      <option value="others">Company</option>
+                    <select name="businessStructure" id="business-structure">
+                      <option value="" hidden="">Select</option>
+                      <option value="Sole Trader">Sole Trader</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Trust">Trust</option>
+                      <option value="Company">Company</option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="abn"
                       >ABN (Australian Business Number)</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="abn"
+                      id="abn"
                       placeholder="If yes, please provide it."
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="employees"
                       >Number of Employees</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="employees"
+                      id="employees"
                       placeholder="e.g 10, 50, 100 "
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >ABN (Australian Business Number)</label
+                    <label
+                      style="margin-bottom: 10px"
+                      for="bookkeeping-services"
+                      >What specific bookkeeping services do you require?</label
                     >
-                    <input
-                      type="text"
-                      name="name"
-                      id="rv-2-contact-name"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
-                      >What specific bookkeeping services do you require?
-                    </label>
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
-                      <option value="Accounts payable/receivable">Accounts payable/receivable</option>
-                      <option value="Bank Reconciliation">Bank Reconciliation</option>
-                      <option value="Financial Statement Preparation">Financial Statement Preparation</option>
+                    <select
+                      name="bookkeepingServices"
+                      id="bookkeeping-services"
+                    >
+                      <option value="" hidden="">Select</option>
+                      <option value="Accounts payable/receivable">
+                        Accounts payable/receivable
+                      </option>
+                      <option value="Bank Reconciliation">
+                        Bank Reconciliation
+                      </option>
+                      <option value="Financial Statement Preparation">
+                        Financial Statement Preparation
+                      </option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label
+                      style="margin-bottom: 10px"
+                      for="bookkeeping-frequency"
                       >How frequently do you need bookkeeping services?</label
                     >
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">Select</option>
+                    <select
+                      name="bookkeepingFrequency"
+                      id="bookkeeping-frequency"
+                    >
+                      <option value="" hidden="">Select</option>
                       <option value="weekly">weekly</option>
                       <option value="Monthly">Monthly</option>
                       <option value="Quarterly">Quarterly</option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="challenges"
                       >Are there any particular challenges or issues you face
                       with your current bookkeeping process?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="challenges"
+                      id="challenges"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="service-preference"
                       >Do you prefer virtual bookkeeping services or on-site
                       support?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="servicePreference"
+                      id="service-preference"
                       placeholder=""
                     />
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="software-methods"
+                    <label style="margin-bottom: 10px" for="budget"
                       >What is your approximate monthly budget for bookkeeping
                       services?</label
                     >
                     <input
                       type="text"
-                      name="name"
-                      id="rv-2-contact-name"
+                      name="budget"
+                      id="budget"
                       placeholder=""
                     />
                   </div>
@@ -323,11 +259,6 @@
               </form>
             </div>
           </div>
-
-          <!-- map -->
-          <!-- <div class="col-xxl-4 col-lg-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865828.261474472!2d115.30206491641833!3d-32.038357208997795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2s!4v1710948059129!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> -->
         </div>
       </div>
     </section>
@@ -347,8 +278,7 @@
                     class="logo"
                 /></a>
                 <p class="rv-1-footer__about-txt">
-                  Your trusted gateway to the world of finance and real
-                  estate
+                  Your trusted gateway to the world of finance and real estate
                 </p>
                 <div class="rv-1-socials">
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -454,6 +384,47 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            businessStructure:
+              document.getElementById("business-structure").value,
+            abn: document.getElementById("abn").value,
+            employees: document.getElementById("employees").value,
+            bookkeepingServices: document.getElementById("bookkeeping-services")
+              .value,
+            bookkeepingFrequency: document.getElementById(
+              "bookkeeping-frequency"
+            ).value,
+            challenges: document.getElementById("challenges").value,
+            servicePreference:
+              document.getElementById("service-preference").value,
+            budget: document.getElementById("budget").value,
+            type: "book-keeping",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
