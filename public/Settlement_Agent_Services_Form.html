@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets\css\style.css" />
   </head>
 
-  <body class="rv-6-body">
+  <body class="rv-14-body">
     <!-- ANIMATED CURSOR START -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -104,145 +104,162 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">Real Estate Solutions</h1>
+        <h1 class="rv-breadcrumb__title">Settlement Agent Services</h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
-            <a href="index.html" class="mr-10"
-              ><i class="fa-solid fa-sharp fa-home"></i> Home
-            </a>
-          </li>
-          <li>
-            <span class="dvdr"> &#47;</span>
-            <a href="Services.html">Services</a>
+            <a href="index.html"
+              ><i class="fa-solid fa-sharp fa-home"></i> Home</a
+            >
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Real Estate Solutions</span>
+            <span class="dvdr"> &#47;</span
+            ><span>Accounting and Legal Services</span>
+          </li>
+          <li class="current-page">
+            <span class="dvdr"> &#47;</span
+            ><span>Settlement Agent Services</span>
           </li>
         </ul>
       </div>
     </div>
     <!-- BREADCRUMB ENDS HERE -->
 
-    <!-- SERVICE DETAILS SECTION START -->
-    <section class="rv-service-details rv-section-spacing">
+    <!-- CONTACT SECTION START -->
+    <section
+      class="rv-2-contact rv-inner-contact rv-section-spacing"
+      data-aos="fade-up"
+    >
       <div class="container">
-        <div class="row rv-service-details__row g-30 justify-content-center">
-          <div class="col-lg-8">
-            <div class="rv-service-details__left">
-              <div class="rv-service-details__img">
-                <img
-                  src="assets/img/realstate-solutions.jpg"
-                  alt="Real Estate Solutions"
-                />
-              </div>
-              <!-- <h3 class="rv-service-details__title">Branding Design</h3> -->
-              <p class="rv-service-details__descr">
-                Leveraging our specialized property network, we excel in
-                providing expert guidance to navigate the complexities of the
-                real estate market. Partnering with trusted developers and
-                builders as property suppliers, we ensure comprehensive
-                end-to-end solutions.
-              </p>
+        <div class="rv-inner-contact-info-cards"></div>
 
-              <div class="row rv-8-services__row g-30">
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Streamlined_Property_Aquisition.html"
-                          >Streamlined Property Acquisition</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        As an authorized property supplier, we offer established
-                        or new property options directly from nationwide
-                        builders/developers. Whether you're a first-time buyer
-                        or a seasoned investor, we guide you through the
-                        intricate process of purchasing your property
-                        effortlessly.
-                      </p>
-                    </div>
+        <div class="row gy-3 gy-sm-4">
+          <!-- contact form -->
+          <div class="col-xxl-12 col-lg-9">
+            <div class="rv-2-contact__txt rv-inner-contact__txt">
+              <h6 class="rv-2-contact-form-title">Settlement Agent Services</h6>
+              <form
+                id="businessForm"
+                class="rv-2-contact__form rv-inner-contact__form"
+              >
+                <div class="row">
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="transactionType">
+                      What type of property transaction are you involved in
+                      (e.g., purchase, sale, refinance)?
+                    </label>
+                    <input
+                      type="text"
+                      name="transactionType"
+                      id="transactionType"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="propertyChoice">
+                      Have you already chosen a property or are you in the
+                      process of doing so?
+                    </label>
+                    <input
+                      type="text"
+                      name="propertyChoice"
+                      id="propertyChoice"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="settlementTimeline">
+                      Do you have a preferred timeline for completing the
+                      settlement process?
+                    </label>
+                    <input
+                      type="text"
+                      name="settlementTimeline"
+                      id="settlementTimeline"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label
+                      style="margin-bottom: 10px"
+                      for="professionalEngagement"
+                    >
+                      Have you engaged with any other professionals, such as
+                      real estate agents or lenders, regarding your property
+                      transaction?
+                    </label>
+                    <input
+                      type="text"
+                      name="professionalEngagement"
+                      id="professionalEngagement"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="specificConcerns">
+                      Are there any specific concerns or requirements you have
+                      regarding the settlement process?
+                    </label>
+                    <input
+                      type="text"
+                      name="specificConcerns"
+                      id="specificConcerns"
+                      placeholder="Mention your concerns here"
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="legalAssistance">
+                      Do you require assistance with understanding legal
+                      documents or contracts related to the transaction?
+                    </label>
+                    <input
+                      type="text"
+                      name="legalAssistance"
+                      id="legalAssistance"
+                      placeholder="Please specify."
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="financingStatus">
+                      Have you arranged for financing or obtained a mortgage
+                      approval for your property transaction?
+                    </label>
+                    <input
+                      type="text"
+                      name="financingStatus"
+                      id="financingStatus"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="specialRequests">
+                      Are there any special accommodations or requests you have
+                      for the settlement process (e.g., remote settlement, power
+                      of attorney)?
+                    </label>
+                    <input
+                      type="text"
+                      name="specialRequests"
+                      id="specialRequests"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="rv-snd-msg-btn">Submit</button>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a
-                          href="Property_Sales_And_Investment_Property_Leasing.html"
-                          >Property Sales and Investment Property Leasing</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Minimize stress and maximize returns with our expert
-                        advice on selling your property. Utilize our extensive
-                        network to find reliable tenants for your investment
-                        properties, ensuring consistent returns.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Buyers_Agent_Services_Form.html"
-                          >Buyers Agent Services</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Enjoy a seamless property purchase with our specialized
-                        buyer&#39;s agent service. We represent your interests
-                        from property search to deal closure. Our professional
-                        partnerships ensures a hassle-free process, giving you
-                        peace of mind and confidence in your investment.
-                        &quot;Your trusted partner in securing your dream
-                        property.&quot;
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Settlement_Agent_Services_Form.html"
-                          >Settlement Agent Services</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Explore our comprehensive settlement solutions, designed
-                        to streamline property transactions and ensure a smooth
-                        transfer process.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Free Property Report</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Unlock valuable insights into your property's potential
-                        with our free property report. Gain a comprehensive
-                        understanding of market trends, property value
-                        estimates, and investment opportunities tailored to your
-                        specific needs. Take the first step towards maximizing
-                        your property's value—request your free report today.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
+
+          <!-- map -->
+          <!-- <div class="col-xxl-4 col-lg-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865828.261474472!2d115.30206491641833!3d-32.038357208997795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2s!4v1710948059129!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
         </div>
       </div>
     </section>
-    <!-- SERVICE DETAILS SECTION END -->
+    <!-- CONTACT SECTION END -->
 
     <!-- FOOTER SECTION START -->
     <footer class="rv-1-footer rv-6-footer">
@@ -364,6 +381,45 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("businessForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            transactionType: document.getElementById("transactionType").value,
+            propertyChoice: document.getElementById("propertyChoice").value,
+            settlementTimeline:
+              document.getElementById("settlementTimeline").value,
+            professionalEngagement: document.getElementById(
+              "professionalEngagement"
+            ).value,
+            specificConcerns: document.getElementById("specificConcerns").value,
+            legalAssistance: document.getElementById("legalAssistance").value,
+            financingStatus: document.getElementById("financingStatus").value,
+            specialRequests: document.getElementById("specialRequests").value,
+            type: "settlement-agent-services",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
@@ -376,7 +432,6 @@
     <script src="assets\vendor\split-type\split-type-0.3.3.min.js"></script>
     <script src="assets\vendor\lenis\lenis.js"></script>
     <script src="assets\vendor\anime\anime.min.js"></script>
-    <script src="assets\js\search-modal.js"></script>
     <script src="assets\js\main.js"></script>
   </body>
 </html>

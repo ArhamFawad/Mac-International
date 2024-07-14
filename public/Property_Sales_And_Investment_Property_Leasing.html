@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets\css\style.css" />
   </head>
 
-  <body class="rv-6-body">
+  <body class="rv-14-body">
     <!-- ANIMATED CURSOR START -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -104,145 +104,186 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">Real Estate Solutions</h1>
+        <h1 class="rv-breadcrumb__title">
+          Property Sales And Investment Property Leasing
+        </h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
-            <a href="index.html" class="mr-10"
-              ><i class="fa-solid fa-sharp fa-home"></i> Home
-            </a>
-          </li>
-          <li>
-            <span class="dvdr"> &#47;</span>
-            <a href="Services.html">Services</a>
+            <a href="index.html"
+              ><i class="fa-solid fa-sharp fa-home"></i> Home</a
+            >
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Real Estate Solutions</span>
+            <span class="dvdr"> &#47;</span
+            ><span>Accounting and Legal Services</span>
+          </li>
+          <li class="current-page">
+            <span class="dvdr"> &#47;</span
+            ><span>Property Sales And Investment Property Leasing</span>
           </li>
         </ul>
       </div>
     </div>
     <!-- BREADCRUMB ENDS HERE -->
 
-    <!-- SERVICE DETAILS SECTION START -->
-    <section class="rv-service-details rv-section-spacing">
+    <!-- CONTACT SECTION START -->
+    <section
+      class="rv-2-contact rv-inner-contact rv-section-spacing"
+      data-aos="fade-up"
+    >
       <div class="container">
-        <div class="row rv-service-details__row g-30 justify-content-center">
-          <div class="col-lg-8">
-            <div class="rv-service-details__left">
-              <div class="rv-service-details__img">
-                <img
-                  src="assets/img/realstate-solutions.jpg"
-                  alt="Real Estate Solutions"
-                />
-              </div>
-              <!-- <h3 class="rv-service-details__title">Branding Design</h3> -->
-              <p class="rv-service-details__descr">
-                Leveraging our specialized property network, we excel in
-                providing expert guidance to navigate the complexities of the
-                real estate market. Partnering with trusted developers and
-                builders as property suppliers, we ensure comprehensive
-                end-to-end solutions.
-              </p>
+        <div class="rv-inner-contact-info-cards"></div>
 
-              <div class="row rv-8-services__row g-30">
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Streamlined_Property_Aquisition.html"
-                          >Streamlined Property Acquisition</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        As an authorized property supplier, we offer established
-                        or new property options directly from nationwide
-                        builders/developers. Whether you're a first-time buyer
-                        or a seasoned investor, we guide you through the
-                        intricate process of purchasing your property
-                        effortlessly.
-                      </p>
-                    </div>
+        <div class="row gy-3 gy-sm-4">
+          <!-- contact form -->
+          <div class="col-xxl-12 col-lg-9">
+            <div class="rv-2-contact__txt rv-inner-contact__txt">
+              <h6 class="rv-2-contact-form-title">
+                Property Sales And Investment Property Leasing
+              </h6>
+              <form
+                id="businessForm"
+                class="rv-2-contact__form rv-inner-contact__form"
+              >
+                <div class="row">
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="propertyType"
+                      >What type of property do you own or plan to
+                      acquire?</label
+                    >
+                    <select name="propertyType" id="propertyType">
+                      <option value="" hidden="">Select</option>
+                      <option value="residential">Residential</option>
+                      <option value="commercial">Commercial</option>
+                      <option value="multi_family">Multi Family</option>
+                      <option value="etc">Etc</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="marketValue"
+                      >Do you know the estimated market value of your property,
+                      or would you like assistance in determining it?</label
+                    >
+                    <input
+                      type="text"
+                      name="marketValue"
+                      id="marketValue"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="leaseOutDate"
+                      >When are you looking to lease out your property?</label
+                    >
+                    <input
+                      type="text"
+                      name="leaseOutDate"
+                      id="leaseOutDate"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="rentalPrice"
+                      >What is your desired rental price for the
+                      property?</label
+                    >
+                    <input
+                      type="text"
+                      name="rentalPrice"
+                      id="rentalPrice"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="leasingAgents"
+                      >Are you currently working with any other leasing agents
+                      or property management companies?</label
+                    >
+                    <input
+                      type="text"
+                      name="leasingAgents"
+                      id="leasingAgents"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="appraisalInspection"
+                      >Have you recently conducted an appraisal or inspection of
+                      the property?</label
+                    >
+                    <input
+                      type="text"
+                      name="appraisalInspection"
+                      id="appraisalInspection"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="occupancyStatus"
+                      >Is the property currently occupied by tenants, and if so,
+                      what are the lease terms and occupancy status?</label
+                    >
+                    <input
+                      type="text"
+                      name="occupancyStatus"
+                      id="occupancyStatus"
+                      placeholder="Please provide it."
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="leaseTerms"
+                      >What lease terms are you offering (e.g., duration, rental
+                      rate), and are you open to negotiation on these
+                      terms?</label
+                    >
+                    <input
+                      type="text"
+                      name="leaseTerms"
+                      id="leaseTerms"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="upgradesRenovations"
+                      >Have there been any recent upgrades or renovations to the
+                      property that could affect its rental value?</label
+                    >
+                    <input
+                      type="text"
+                      name="upgradesRenovations"
+                      id="upgradesRenovations"
+                      placeholder="Mention your timeline here"
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="negotiation"
+                      >Are you open to discussing and negotiating the leasing
+                      terms and conditions with potential tenants?</label
+                    >
+                    <input
+                      type="text"
+                      name="negotiation"
+                      id="negotiation"
+                      placeholder="Please specify."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="rv-snd-msg-btn">Submit</button>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a
-                          href="Property_Sales_And_Investment_Property_Leasing.html"
-                          >Property Sales and Investment Property Leasing</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Minimize stress and maximize returns with our expert
-                        advice on selling your property. Utilize our extensive
-                        network to find reliable tenants for your investment
-                        properties, ensuring consistent returns.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Buyers_Agent_Services_Form.html"
-                          >Buyers Agent Services</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Enjoy a seamless property purchase with our specialized
-                        buyer&#39;s agent service. We represent your interests
-                        from property search to deal closure. Our professional
-                        partnerships ensures a hassle-free process, giving you
-                        peace of mind and confidence in your investment.
-                        &quot;Your trusted partner in securing your dream
-                        property.&quot;
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Settlement_Agent_Services_Form.html"
-                          >Settlement Agent Services</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Explore our comprehensive settlement solutions, designed
-                        to streamline property transactions and ensure a smooth
-                        transfer process.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Free Property Report</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Unlock valuable insights into your property's potential
-                        with our free property report. Gain a comprehensive
-                        understanding of market trends, property value
-                        estimates, and investment opportunities tailored to your
-                        specific needs. Take the first step towards maximizing
-                        your property's value—request your free report today.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
+
+          <!-- map -->
+          <!-- <div class="col-xxl-4 col-lg-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865828.261474472!2d115.30206491641833!3d-32.038357208997795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2s!4v1710948059129!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
         </div>
       </div>
     </section>
-    <!-- SERVICE DETAILS SECTION END -->
+    <!-- CONTACT SECTION END -->
 
     <!-- FOOTER SECTION START -->
     <footer class="rv-1-footer rv-6-footer">
@@ -364,6 +405,46 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("businessForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            propertyType: document.getElementById("propertyType").value,
+            marketValue: document.getElementById("marketValue").value,
+            leaseOutDate: document.getElementById("leaseOutDate").value,
+            rentalPrice: document.getElementById("rentalPrice").value,
+            leasingAgents: document.getElementById("leasingAgents").value,
+            appraisalInspection: document.getElementById("appraisalInspection")
+              .value,
+            occupancyStatus: document.getElementById("occupancyStatus").value,
+            leaseTerms: document.getElementById("leaseTerms").value,
+            upgradesRenovations: document.getElementById("upgradesRenovations")
+              .value,
+            negotiation: document.getElementById("negotiation").value,
+            type: "Property-Sales-And-Investment-Property-Leasing",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
@@ -376,7 +457,6 @@
     <script src="assets\vendor\split-type\split-type-0.3.3.min.js"></script>
     <script src="assets\vendor\lenis\lenis.js"></script>
     <script src="assets\vendor\anime\anime.min.js"></script>
-    <script src="assets\js\search-modal.js"></script>
     <script src="assets\js\main.js"></script>
   </body>
 </html>
