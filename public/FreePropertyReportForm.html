@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets\css\style.css" />
   </head>
 
-  <body class="rv-6-body">
+  <body class="rv-14-body">
     <!-- ANIMATED CURSOR START -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -104,145 +104,211 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">Real Estate Solutions</h1>
+        <h1 class="rv-breadcrumb__title">Free Property Report</h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
-            <a href="index.html" class="mr-10"
-              ><i class="fa-solid fa-sharp fa-home"></i> Home
-            </a>
-          </li>
-          <li>
-            <span class="dvdr"> &#47;</span>
-            <a href="Services.html">Services</a>
+            <a href="index.html"
+              ><i class="fa-solid fa-sharp fa-home"></i> Home</a
+            >
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Real Estate Solutions</span>
+            <span class="dvdr"> &#47;</span
+            ><span>Real Estate Solutions</span>
+          </li>
+          <li class="current-page">
+            <span class="dvdr"> &#47;</span><span>Free Property Report</span>
           </li>
         </ul>
       </div>
     </div>
     <!-- BREADCRUMB ENDS HERE -->
 
-    <!-- SERVICE DETAILS SECTION START -->
-    <section class="rv-service-details rv-section-spacing">
+    <!-- CONTACT SECTION START -->
+    <section
+      class="rv-2-contact rv-inner-contact rv-section-spacing"
+      data-aos="fade-up"
+    >
       <div class="container">
-        <div class="row rv-service-details__row g-30 justify-content-center">
-          <div class="col-lg-8">
-            <div class="rv-service-details__left">
-              <div class="rv-service-details__img">
-                <img
-                  src="assets/img/realstate-solutions.jpg"
-                  alt="Real Estate Solutions"
-                />
-              </div>
-              <!-- <h3 class="rv-service-details__title">Branding Design</h3> -->
-              <p class="rv-service-details__descr">
-                Leveraging our specialized property network, we excel in
-                providing expert guidance to navigate the complexities of the
-                real estate market. Partnering with trusted developers and
-                builders as property suppliers, we ensure comprehensive
-                end-to-end solutions.
-              </p>
+        <div class="rv-inner-contact-info-cards"></div>
 
-              <div class="row rv-8-services__row g-30">
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Streamlined_Property_Aquisition.html"
-                          >Streamlined Property Acquisition</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        As an authorized property supplier, we offer established
-                        or new property options directly from nationwide
-                        builders/developers. Whether you're a first-time buyer
-                        or a seasoned investor, we guide you through the
-                        intricate process of purchasing your property
-                        effortlessly.
-                      </p>
-                    </div>
+        <div class="row gy-3 gy-sm-4">
+          <!-- contact form -->
+          <div class="col-xxl-12 col-lg-9">
+            <div class="rv-2-contact__txt rv-inner-contact__txt">
+              <h6 class="rv-2-contact-form-title">
+                Free Property Report
+              </h6>
+              <form
+                id="contactForm"
+                class="rv-2-contact__form rv-inner-contact__form"
+              >
+                <div class="row">
+                  <div class="col-12">
+                    <h5 style="font-weight: 600; text-decoration: underline;" >Property Details</h5>
+                    <label style="margin-bottom: 10px" for="property-address"
+                      >What is the address of the property you want the report for?</label
+                    >
+                    <input
+                    type="text"
+                    name="abn"
+                    id="abn"
+                    placeholder=""
+                  />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="property-status"
+                      >Is this property residential or commercial?</label
+                    >
+                    <input
+                      type="text"
+                      name="abn"
+                      id="abn"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <h5 style="font-weight: 600; text-decoration: underline;" >Current Status</h5>
+                    <label style="margin-bottom: 10px" for="building-status"
+                      >Are you currently living in the property, renting it out, or is it vacant?</label
+                    >
+                    <input
+                      type="text"
+                      name="employees"
+                      id="employees"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label
+                      style="margin-bottom: 10px"
+                      for="owned-period"
+                      >How long have you owned the property?</label
+                    >
+                    <input
+                    type="text"
+                    name="employees"
+                    id="employees"
+                    placeholder=""
+                  />
+                  </div>
+                  <div class="col-sm-12">
+                    <h5 style="font-weight: 600; text-decoration: underline;" >Purpose of the Report</h5>
+                    <label
+                      style="margin-bottom: 10px"
+                      for="property-report-reason"
+                      >What is your primary reason for requesting this property report? (e.g., considering
+                      selling, refinancing, investment analysis, market trends, etc.)</label
+                    >
+                    <input
+                    type="text"
+                    name="employees"
+                    id="employees"
+                    placeholder=""
+                  />
+                   
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="sell-property"
+                      >Are you planning to sell the property in the near future?</label
+                    >
+                    <input
+                      type="text"
+                      name="challenges"
+                      id="challenges"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <h5 style="font-weight: 600; text-decoration: underline;" >Property Condition</h5>
+                    <label style="margin-bottom: 10px" for="upgrades-renovations"
+                      >Have there been any recent upgrades or renovations to the property? If so, please
+                      describe.</label
+                    >
+                    <input
+                      type="text"
+                      name="servicePreference"
+                      id="service-preference"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px;" for="issues-repairs"
+                      >Are there any known issues or needed repairs?</label
+                    >
+                    <input
+                      type="text"
+                      name="budget"
+                      id="budget"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <h5 style="font-weight: 600; text-decoration: underline;" >Contact Information</h5>
+                    <label style="margin-bottom: 10px" for="user-name"
+                      >What is your name?</label
+                    >
+                    <input
+                      type="text"
+                      name="servicePreference"
+                      id="service-preference"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px;" for="phone-number"
+                      >What is the best phone number to reach you at?</label
+                    >
+                    <input
+                      type="text"
+                      name="budget"
+                      id="budget"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px;" for="email-address"
+                      >What is your email address?</label
+                    >
+                    <input
+                      type="text"
+                      name="budget"
+                      id="budget"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <h5 style="font-weight: 600; text-decoration: underline;" >Additional Information</h5>
+                    <label style="margin-bottom: 10px" for="questions-concerns"
+                      >Do you have any specific questions or concerns about the property or market trends?</label
+                    >
+                    <input
+                      type="text"
+                      name="servicePreference"
+                      id="service-preference"
+                      placeholder=""
+                    />
+                    <label style="margin-bottom: 10px" for="unique-features"
+                      >Are there any unique features of the property that should be noted?</label
+                    >
+                    <input
+                      type="text"
+                      name="servicePreference"
+                      id="service-preference"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="rv-snd-msg-btn">Submit</button>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a
-                          href="Property_Sales_And_Investment_Property_Leasing.html"
-                          >Property Sales and Investment Property Leasing</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Minimize stress and maximize returns with our expert
-                        advice on selling your property. Utilize our extensive
-                        network to find reliable tenants for your investment
-                        properties, ensuring consistent returns.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Buyers_Agent_Services_Form.html"
-                          >Buyers Agent Services</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Enjoy a seamless property purchase with our specialized
-                        buyer&#39;s agent service. We represent your interests
-                        from property search to deal closure. Our professional
-                        partnerships ensures a hassle-free process, giving you
-                        peace of mind and confidence in your investment.
-                        &quot;Your trusted partner in securing your dream
-                        property.&quot;
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="Settlement_Agent_Services_Form.html"
-                          >Settlement Agent Services</a
-                        >
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Explore our comprehensive settlement solutions, designed
-                        to streamline property transactions and ensure a smooth
-                        transfer process.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="FreePropertyReportForm.html">Free Property Report</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Unlock valuable insights into your property's potential
-                        with our free property report. Gain a comprehensive
-                        understanding of market trends, property value
-                        estimates, and investment opportunities tailored to your
-                        specific needs. Take the first step towards maximizing
-                        your property's value—request your free report today.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- SERVICE DETAILS SECTION END -->
+    <!-- CONTACT SECTION END -->
 
     <!-- FOOTER SECTION START -->
     <footer class="rv-1-footer rv-6-footer">
@@ -333,7 +399,7 @@
                     </li>
                     <li>
                       <img src="assets\img\rv-1-icon-8.png" alt="icon" />
-                      <a href="mailto:info@gmail.com">info@mackcapital.com</a>
+                      <a href="mailto:info@mackcapital.com">info@mackcapital.com</a>
                     </li>
                   </ul>
                 </div>
@@ -364,6 +430,47 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            businessStructure:
+              document.getElementById("business-structure").value,
+            abn: document.getElementById("abn").value,
+            employees: document.getElementById("employees").value,
+            bookkeepingServices: document.getElementById("bookkeeping-services")
+              .value,
+            bookkeepingFrequency: document.getElementById(
+              "bookkeeping-frequency"
+            ).value,
+            challenges: document.getElementById("challenges").value,
+            servicePreference:
+              document.getElementById("service-preference").value,
+            budget: document.getElementById("budget").value,
+            type: "book-keeping",
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              // handle success response
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              // handle error response
+            });
+        });
+    </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
@@ -376,7 +483,6 @@
     <script src="assets\vendor\split-type\split-type-0.3.3.min.js"></script>
     <script src="assets\vendor\lenis\lenis.js"></script>
     <script src="assets\vendor\anime\anime.min.js"></script>
-    <script src="assets\js\search-modal.js"></script>
     <script src="assets\js\main.js"></script>
   </body>
 </html>
