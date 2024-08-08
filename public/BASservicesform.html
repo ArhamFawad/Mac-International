@@ -523,14 +523,25 @@
             .then((response) => response.text())
             .then((data) => {
               console.log("Success the data sent successfully:", data);
+              Swal.fire({
+                icon: "success",
+                title: "Form Submitted Successfully",
+                text: "Thank you! We have received your information.",
+              });
               // handle success response
             })
             .catch((error) => {
               console.error("Error:", error);
+              Swal.fire({
+                icon: "error",
+                title: "Submission Failed",
+                text: "There was an error sending your information. Please try again.",
+              });
               // handle error response
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
