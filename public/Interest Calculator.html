@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,12 +25,13 @@
     <link rel="stylesheet" href="assets\vendor\aos\aos.css" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets\css\style.css" />
+    <link rel="stylesheet" href="assets/css/Calculator.css" />
   </head>
 
-  <body class="rv-14-body">
+  <body class="rv-6-body">
     <!-- ANIMATED CURSOR START -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <!-- <div class="cursor"></div>
+    <div class="cursor-follower"></div> -->
     <!-- ANIMATED CURSOR END -->
 
     <!-- HEADER SECTION START -->
@@ -107,7 +108,7 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">Contact</h1>
+        <h1 class="rv-breadcrumb__title">Interest Calculator</h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
@@ -116,199 +117,25 @@
             >
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Contact</span>
+            <span class="dvdr"> &#47;</span><span>Interest Calculator</span>
           </li>
         </ul>
       </div>
     </div>
     <!-- BREADCRUMB ENDS HERE -->
-
-    <!-- CONTACT SECTION START -->
-    <section
-      class="rv-2-contact rv-inner-contact rv-section-spacing"
-      data-aos="fade-up"
-    >
-      <div class="container">
-        <div class="rv-inner-contact-info-cards">
-          <div class="rv-inner-contact-info">
-            <div class="rv-inner-contact-info__heading">
-              <div class="rv-inner-contact-info__icon">
-                <i class="fa-regular fa-calendar"></i>
-              </div>
-              <h5 class="rv-inner-contact-info__title">Book an Appointment</h5>
-            </div>
-
-            <div class="rv-inner-contact-info__bottom">
-              <ul class="rv-5-footer-timings">
-                <li>
-                  <a href="https://calendly.com/" class="rv-6-boknow-btn"
-                    >Book Now <i class="fa-regular fa-arrow-up-right"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="rv-inner-contact-info">
-            <div class="rv-inner-contact-info__heading">
-              <div class="rv-inner-contact-info__icon">
-                <i class="fa-regular fa-envelope"></i>
-              </div>
-              <h5 class="rv-inner-contact-info__title">Email</h5>
-            </div>
-
-            <div class="rv-inner-contact-info__bottom">
-              <ul class="rv-5-footer-timings">
-                <li>
-                  <a href="mailto:info@revel.com">info@mackcapital.com</a>
-                </li>
-                <li>
-                  <a href="mailto:test@revel.com">support@mackcapital.com</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="rv-inner-contact-info">
-            <div class="rv-inner-contact-info__heading">
-              <div class="rv-inner-contact-info__icon">
-                <i class="fa-regular fa-location"></i>
-              </div>
-              <h5 class="rv-inner-contact-info__title">Location</h5>
-            </div>
-
-            <div class="rv-inner-contact-info__bottom">
-              <ul class="rv-5-footer-timings">
-                <li><a href="mailto:info@revel.com">Perth, WA</a></li>
-                <li><a href="mailto:test@revel.com">Australia</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-clock"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Hours of Operation</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li>
-                                <span class="key">Monday - Friday : </span>
-                                <span class="value">08:30 am - 10:00 pm</span>
-                            </li>
-                            <li>
-                                <span class="key">Saturday - Sunday : </span>
-                                <span class="value">10:30 am - 08:00 pm</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
-        </div>
-
-        <div class="row gy-3 gy-sm-4">
-          <!-- contact form -->
-          <div class="col-xxl-8 col-lg-7">
-            <div class="rv-2-contact__txt rv-inner-contact__txt">
-              <h3 class="rv-2-contact-form-title">Get in Touch</h3>
-              <form
-                action="#"
-                class="rv-2-contact__form rv-inner-contact__form"
-              >
-                <div class="row">
-                  <div class="col-sm-6">
-                    <input
-                      type="text"
-                      name="name"
-                      id="rv-2-contact-name"
-                      placeholder="Your Name"
-                    />
-                  </div>
-
-                  <div class="col-sm-6">
-                    <input
-                      type="email"
-                      name="email"
-                      id="rv-2-contact-email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <select name="subjects" id="rv-2-contact-subject">
-                      <option value="Selects Subject" hidden="">
-                        Select Subject
-                      </option>
-                      <option value="Project Buy">Project Buy</option>
-                      <option value="Custom Project">Custom Project</option>
-                      <option value="Partnership Offer">
-                        Partnership Offer
-                      </option>
-                      <option value="others">Others</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      id="rv-2-contact-message"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="rv-snd-msg-btn">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <script>
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        const name = document.getElementById('rv-2-contact-name').value;
-        const email = document.getElementById('rv-2-contact-email').value;
-        const subject = document.getElementById('rv-2-contact-subject').value;
-        const message = document.getElementById('rv-2-contact-message').value;
-    
-        fetch('https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            name: name,
-            email: email,
-            subjects: subject,
-            message: message
-          })
-        })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Success:', data);
-          alert('Message sent successfully!');
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-          alert('Error sending message.');
-        });
-      });
-    </script>
-
-          <!-- map -->
-          <div class="col-xxl-4 col-lg-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865828.261474472!2d115.30206491641833!3d-32.038357208997795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2s!4v1710948059129!5m2!1sen!2s"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+    <div class="row rv-service-details__row g-30 justify-content-center">
+      <div class="col-md-6">
+        <div class="rv-8-service" style="margin-top: 50px; margin-bottom: 50px">
+          <iframe
+            class="VisiCalcClass"
+            id="Loan_Repayment_Calculator"
+            src=" https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Loan_Repayment_Calculator/BlueOrange"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
         </div>
       </div>
-    </section>
-    <!-- CONTACT SECTION END -->
+    </div>
 
     <!-- FOOTER SECTION START -->
     <footer class="rv-1-footer rv-6-footer">
@@ -429,21 +256,5 @@
       </div>
     </footer>
     <!-- FOOTER SECTION END -->
-
-    <!-- JS FILES -->
-    
-    <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
-    <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
-    <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
-    <script src="assets\vendor\swiper\swiper-bundle.min.js"></script>
-    <script src="assets\vendor\aos\aos.js"></script>
-    <script src="assets\vendor\fslightbox\fslightbox.js"></script>
-    <script src="assets\vendor\mixitup\mixitup.min.js"></script>
-    <script src="assets\vendor\gsap\gsap.min.js"></script>
-    <script src="assets\vendor\gsap\gsap-scroll-trigger.min.js"></script>
-    <script src="assets\vendor\split-type\split-type-0.3.3.min.js"></script>
-    <script src="assets\vendor\lenis\lenis.js"></script>
-    <script src="assets\vendor\anime\anime.min.js"></script>
-    <script src="assets\js\main.js"></script>
   </body>
 </html>
