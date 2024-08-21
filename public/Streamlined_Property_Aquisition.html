@@ -77,9 +77,13 @@
                   </li>
                   <li>
                     <a href="">Resources</a>
-                                    <ul class="sub-menu rv-mega-menu">
-                                        <li><a href="Interest Calculator.html">Interest Calculator</a></li>
-                                    </ul>
+                    <ul class="sub-menu rv-mega-menu">
+                      <li>
+                        <a href="Interest Calculator.html"
+                          >Interest Calculator</a
+                        >
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -107,7 +111,9 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">Wholesale Property Direct – Direct from the Builder</h1>
+        <h1 class="rv-breadcrumb__title">
+          Wholesale Property Direct – Direct from the Builder
+        </h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
@@ -117,7 +123,9 @@
           </li>
           <li class="current-page">
             <span class="dvdr"> &#47;</span>
-              <a href="Real Estate Solutions.html"><span >Real Estate Solutions</span></a>
+            <a href="Real Estate Solutions.html"
+              ><span>Real Estate Solutions</span></a
+            >
           </li>
           <li class="current-page">
             <span class="dvdr"> &#47;</span
@@ -149,37 +157,73 @@
               >
                 <div class="row">
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-name"
                       >Name</label
                     >
                     <input
+                      required
                       type="text"
                       name="name"
-                      id="service-preference"
+                      id="service-name"
                       placeholder="Enter your Name"
                     />
+                    <p
+                      id="name-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Name is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-phone"
                       >Phone</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="phoneNumber"
-                      id="phoneNumber"
+                      id="service-phone"
                       placeholder="Phone number"
                     />
+                    <p
+                      id="phone-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Phone Number is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-email"
                       >Email</label
                     >
                     <input
+                      required
                       type="email"
                       name="email"
-                      id="service-preference"
+                      id="service-email"
                       placeholder="Enter Email"
                     />
+                    <p
+                      id="email-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Email is required.
+                    </p>
                   </div>
 
                   <div class="col-sm-12">
@@ -187,7 +231,7 @@
                       >What type of off-the-plan property are you interested in
                       purchasing?</label
                     >
-                    <select name="propertyType" id="propertyType">
+                    <select name="propertyType" id="propertyType" required>
                       <option value="" hidden="">Select</option>
                       <option value="apartment">Apartment</option>
                       <option value="town_house">Town House</option>
@@ -202,11 +246,23 @@
                       off-the-plan property?</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="budgetRange"
                       id="budgetRange"
                       placeholder="Please provide it."
                     />
+                    <p
+                      id="budget-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Budget is required.
+                    </p>
                   </div>
                   <div class="col-12">
                     <label style="margin-bottom: 10px" for="preferredLocation"
@@ -214,18 +270,30 @@
                       new development?</label
                     >
                     <input
+                      required
                       type="text"
                       name="preferredLocation"
                       id="preferredLocation"
                       placeholder="Please provide it."
                     />
+                    <p
+                      id="location-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Location is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="features"
                       >What specific features or amenities are you looking for
                       in an off-the-plan property?</label
                     >
-                    <select name="features" id="features">
+                    <select name="features" id="features" required>
                       <option value="" hidden="">Select</option>
                       <option value="bedrooms">Number of bedrooms</option>
                       <option value="parking">Parking</option>
@@ -238,11 +306,23 @@
                       associated with purchasing off-the-plan properties?</label
                     >
                     <input
+                      required
                       type="text"
                       name="awareness"
                       id="awareness"
                       placeholder=""
                     />
+                    <p
+                      id="awareness-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please fill out.
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="timeline"
@@ -250,10 +330,11 @@
                       handover of the property?</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="timeline"
                       id="timeline"
-                      placeholder="Mention your timeline here"
+                      placeholder="Mention your timeline here (only in Digits)"
                     />
                   </div>
                   <div class="col-sm-12">
@@ -262,11 +343,23 @@
                       your decision to purchase this property?</label
                     >
                     <input
+                      required
                       type="text"
                       name="factors"
                       id="factors"
                       placeholder="Please specify."
                     />
+                    <p
+                      id="factors-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please fill out.
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="receiveInfo"
@@ -276,11 +369,23 @@
                       purchases?</label
                     >
                     <input
+                      required
                       type="text"
                       name="receiveInfo"
                       id="receiveInfo"
                       placeholder=""
                     />
+                    <p
+                      id="info-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please fill out.
+                    </p>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="rv-snd-msg-btn">Submit</button>
@@ -423,8 +528,76 @@
       document
         .getElementById("businessForm")
         .addEventListener("submit", function (event) {
-          event.preventDefault();
+          const name = document.getElementById("service-name").value;
+          const nameElement = document.getElementById("service-name");
+          const errorElement = document.getElementById("name-error");
+          const phone = document.getElementById("service-phone").value;
+          const phoneElement = document.getElementById("service-phone");
+          const phoneElementError = document.getElementById("phone-error");
+          const email = document.getElementById("service-email").value.trim();
+          const EmailElement = document.getElementById("service-email");
+          const EmailElementError = document.getElementById("email-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const budget = document.getElementById("budgetRange").value;
+          const BudgetElement = document.getElementById("budgetRange");
+          const budgetElementError = document.getElementById("budget-error");
+          const location = document.getElementById("preferredLocation").value;
+          const locationElement = document.getElementById("preferredLocation");
+          const locationElementError =
+            document.getElementById("location-error");
+          const Awareness = document.getElementById("awareness").value;
+          const awarenessElement = document.getElementById("awareness");
+          const awarenessElementError =
+            document.getElementById("awareness-error");
+          const Factor = document.getElementById("factors").value;
+          const factorsElement = document.getElementById("factors");
+          const factorsElementError = document.getElementById("factors-error");
+          const ReceiveInfo = document.getElementById("receiveInfo").value;
+          const receiveInfoElement = document.getElementById("receiveInfo");
+          const receiveInfoElementError =
+            document.getElementById("receive-error");
 
+          event.preventDefault();
+          if (name.trim() === "") {
+            errorElement.style.display = "block";
+            nameElement.focus();
+            return;
+          }
+          if (phone.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (!emailPattern.test(email) && EmailElement.value.trim() === "") {
+            EmailElementError.style.display = "block";
+            EmailElement.focus();
+            return;
+          }
+          if (budget.trim() === "") {
+            budgetElementError.style.display = "block";
+            BudgetElement.focus();
+            return;
+          }
+          if (location.trim() === "") {
+            locationElementError.style.display = "block";
+            locationElement.focus();
+            return;
+          }
+          if (Awareness.trim() === "") {
+            awarenessElementError.style.display = "block";
+            awarenessElement.focus();
+            return;
+          }
+          if (Factor.trim() === "") {
+            factorsElementError.style.display = "block";
+            factorsElement.focus();
+            return;
+          }
+          if (ReceiveInfo.trim() === "") {
+            receiveInfoElementError.style.display = "block";
+            receiveInfoElement.focus();
+            return;
+          }
           const formData = {
             propertyType: document.getElementById("propertyType").value,
             budgetRange: document.getElementById("budgetRange").value,
