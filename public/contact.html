@@ -77,9 +77,13 @@
                   </li>
                   <li>
                     <a href="">Resources</a>
-                                    <ul class="sub-menu rv-mega-menu">
-                                        <li><a href="Interest Calculator.html">Interest Calculator</a></li>
-                                    </ul>
+                    <ul class="sub-menu rv-mega-menu">
+                      <li>
+                        <a href="Interest Calculator.html"
+                          >Interest Calculator</a
+                        >
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -88,7 +92,10 @@
 
           <div class="col-lg-2 col-6 order-1 order-lg-2 align-self-stretch">
             <div class="rv-6-header__right">
-              <a href="#" class="rv-1-def-btn rv-1-header__btn">
+              <a
+                href="https://calendly.com/mack_capital/15-minute-meeting"
+                class="rv-1-def-btn rv-1-header__btn"
+              >
                 <span class="txt">Book a Call</span>
               </a>
               <button
@@ -264,37 +271,47 @@
             </div>
           </div>
           <script>
-      document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        const name = document.getElementById('rv-2-contact-name').value;
-        const email = document.getElementById('rv-2-contact-email').value;
-        const subject = document.getElementById('rv-2-contact-subject').value;
-        const message = document.getElementById('rv-2-contact-message').value;
-    
-        fetch('https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            name: name,
-            email: email,
-            subjects: subject,
-            message: message
-          })
-        })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Success:', data);
-          alert('Message sent successfully!');
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-          alert('Error sending message.');
-        });
-      });
-    </script>
+            document
+              .getElementById("contactForm")
+              .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const name = document.getElementById("rv-2-contact-name").value;
+                const email =
+                  document.getElementById("rv-2-contact-email").value;
+                const subject = document.getElementById(
+                  "rv-2-contact-subject"
+                ).value;
+                const message = document.getElementById(
+                  "rv-2-contact-message"
+                ).value;
+
+                fetch(
+                  "https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1",
+                  {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                      name: name,
+                      email: email,
+                      subjects: subject,
+                      message: message,
+                    }),
+                  }
+                )
+                  .then((response) => response.json())
+                  .then((data) => {
+                    console.log("Success:", data);
+                    alert("Message sent successfully!");
+                  })
+                  .catch((error) => {
+                    console.error("Error:", error);
+                    alert("Error sending message.");
+                  });
+              });
+          </script>
 
           <!-- map -->
           <div class="col-xxl-4 col-lg-5">
@@ -324,8 +341,7 @@
                     class="logo"
                 /></a>
                 <p class="rv-1-footer__about-txt">
-                  Your trusted gateway to the world of finance and real
-                  estate
+                  Your trusted gateway to the world of finance and real estate
                 </p>
                 <div class="rv-1-socials">
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -431,7 +447,7 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
-    
+
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
