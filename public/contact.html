@@ -305,11 +305,19 @@
                   .then((response) => response.json())
                   .then((data) => {
                     console.log("Success:", data);
-                    alert("Message sent successfully!");
+                    Swal.fire({
+                      icon: "success",
+                      title: "Form Submitted Successfully",
+                      text: "Thank you! We have received your information.",
+                    });
                   })
                   .catch((error) => {
                     console.error("Error:", error);
-                    alert("Error sending message.");
+                    Swal.fire({
+                      icon: "error",
+                      title: "Submission Failed",
+                      text: "There was an error sending your information. Please try again.",
+                    });
                   });
               });
           </script>
