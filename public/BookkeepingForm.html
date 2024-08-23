@@ -153,49 +153,85 @@
                 Bookkeeping Services Inquiry
               </h6>
               <form
-                id="contactForm"
+                id="businessForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-name"
                       >Name</label
                     >
                     <input
+                      required
                       type="text"
                       name="name"
-                      id="service-preference"
+                      id="service-name"
                       placeholder="Enter your Name"
                     />
+                    <p
+                      id="name-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Name is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
-                      >Phone</label
-                    >
-                    <input
-                      type="text"
-                      name="phoneNumber"
-                      id="phoneNumber"
-                      placeholder="Phone number"
-                    />
+                    <label style="margin-bottom: 10px" for="service-phone"
+                    >Phone</label
+                  >
+                  <input
+                    required
+                    type="number"
+                    name="phoneNumber"
+                    id="service-phone"
+                    placeholder="Phone number"
+                  />
+                  <p
+                    id="phone-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                    Phone Number is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      name="email"
-                      id="service-preference"
-                      placeholder="Enter Email"
-                    />
+                    <label style="margin-bottom: 10px" for="service-email"
+                    >Email</label
+                  >
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    id="service-email"
+                    placeholder="Enter Email"
+                  />
+                  <p
+                    id="email-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                    Email is required.
+                  </p>
                   </div>
 
                   <div class="col-12">
                     <label style="margin-bottom: 10px" for="business-structure"
                       >What type of business structure do you have?</label
                     >
-                    <select name="businessStructure" id="business-structure">
+                    <select name="businessStructure" id="business-structure" required>
                       <option value="" hidden="">Select</option>
                       <option value="Sole Trader">Sole Trader</option>
                       <option value="Partnership">Partnership</option>
@@ -208,7 +244,8 @@
                       >ABN (Australian Business Number)</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="abn"
                       id="abn"
                       placeholder="If yes, please provide it."
@@ -219,7 +256,8 @@
                       >Number of Employees</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="employees"
                       id="employees"
                       placeholder="e.g 10, 50, 100 "
@@ -232,6 +270,7 @@
                       >What specific bookkeeping services do you require?</label
                     >
                     <select
+                      required
                       name="bookkeepingServices"
                       id="bookkeeping-services"
                     >
@@ -254,6 +293,7 @@
                       >How frequently do you need bookkeeping services?</label
                     >
                     <select
+                      required
                       name="bookkeepingFrequency"
                       id="bookkeeping-frequency"
                     >
@@ -274,18 +314,40 @@
                       id="challenges"
                       placeholder=""
                     />
+                    <p
+                    id="challenges-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                    is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="virtualbookkeeping"
                       >Do you prefer virtual bookkeeping services or on-site
                       support?</label
                     >
                     <input
                       type="text"
-                      name="servicePreference"
-                      id="service-preference"
+                      name="virtualbookkeeping"
+                      id="virtualbookkeeping"
                       placeholder=""
                     />
+                    <p
+                    id="virtualbookkeeping-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="budget"
@@ -293,7 +355,8 @@
                       services?</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="budget"
                       id="budget"
                       placeholder=""
@@ -402,25 +465,73 @@
     <!-- JS FILES -->
     <script>
       document
-        .getElementById("contactForm")
+        .getElementById("businessForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
+          const nameElement = document.getElementById("service-name");
+          const errorElement = document.getElementById("name-error");
+          const phoneElement = document.getElementById("service-phone");
+          const phoneElementError = document.getElementById("phone-error");
+          const EmailElement = document.getElementById("service-email");
+          const EmailElementError = document.getElementById("email-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const challengesElement = document.getElementById("challenges");
+          const challengesElementError = document.getElementById("challenges-error");
+          const virtualbookkeepingElement = document.getElementById("virtualbookkeeping");
+          const virtualbookkeepingElementError = document.getElementById("virtualbookkeeping-error");
+
+
+
+          // Validation 
+          if (nameElement.value.trim() === "") {
+            errorElement.style.display = "block";
+            nameElement.focus();
+            return;
+          }
+          if (phoneElement.value.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (!emailPattern.test(EmailElement.value.trim())) {
+            EmailElementError.style.display = "block";
+            EmailElement.focus();
+            return;
+          }
+          if (challengesElement.value.trim() === "") {
+            challengesElementError.style.display = "block";
+            challengesElement.focus();
+            return;
+          }
+          if (virtualbookkeepingElement.value.trim() === "") {
+            virtualbookkeepingElementError.style.display = "block";
+            virtualbookkeepingElement.focus();
+            return;
+          }
+          
+
           const formData = {
-            businessStructure:
-              document.getElementById("business-structure").value,
-            abn: document.getElementById("abn").value,
-            employees: document.getElementById("employees").value,
-            bookkeepingServices: document.getElementById("bookkeeping-services")
-              .value,
-            bookkeepingFrequency: document.getElementById(
-              "bookkeeping-frequency"
-            ).value,
-            challenges: document.getElementById("challenges").value,
-            servicePreference:
-              document.getElementById("service-preference").value,
-            budget: document.getElementById("budget").value,
-            type: "book-keeping",
+            nameElement : document.getElementById("service-name").value,
+            phoneElement : document.getElementById("service-phone").value,   
+            EmailElement : document.getElementById("service-email").value,
+            businessstructureElement : document.getElementById("business-structure").value,
+            abnElement : document.getElementById("abn").value,
+            employeesElement : document.getElementById("employees").value,
+            bookkeepingservicesElement : document.getElementById("bookkeeping-services").value,
+            bookkeepingfrequencyElement : document.getElementById("bookkeeping-frequency").value,
+            challengesElement : document.getElementById("challenges").value,
+            virtualbookkeepingElement : document.getElementById("virtualbookkeeping").value,
+            budgetElement : document.getElementById("budget").value,
+            
+            
+            
+            
+            
+            
+
+
+            
           };
 
           fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
@@ -438,8 +549,8 @@
                 title: "Form Submitted Successfully",
                 text: "Thank you! We have received your information.",
               });
-              // handle success response
-              document.getElementById("contactForm").reset();
+              // Reset the form after success
+              document.getElementById("businessForm").reset();
             })
             .catch((error) => {
               console.error("Error:", error);
@@ -448,9 +559,37 @@
                 title: "Submission Failed",
                 text: "There was an error sending your information. Please try again.",
               });
-              // handle error response
-              document.getElementById("contactForm").reset();
+              // Reset the form after failure
+              document.getElementById("businessForm").reset();
             });
+        });
+
+
+       // Adding event listeners to hide error messages on input
+      document
+        .getElementById("service-name")
+        .addEventListener("input", function () {
+          document.getElementById("name-error").style.display = "none";
+        });
+      document
+        .getElementById("service-phone")
+        .addEventListener("input", function () {
+          document.getElementById("phone-error").style.display = "none";
+        });
+      document
+        .getElementById("service-email")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").style.display = "none";
+        });
+      document
+        .getElementById("challenges")
+        .addEventListener("input", function () {
+          document.getElementById("challenges-error").style.display = "none";
+        });
+      document
+        .getElementById("virtualbookkeeping")
+        .addEventListener("input", function () {
+          document.getElementById("virtualbookkeeping-error").style.display = "none";
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
