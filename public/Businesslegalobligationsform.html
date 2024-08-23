@@ -244,37 +244,73 @@
               >
                 <div class="row">
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-name"
                       >Name</label
                     >
                     <input
+                      required
                       type="text"
                       name="name"
-                      id="service-preference"
+                      id="service-name"
                       placeholder="Enter your Name"
                     />
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
-                      >Phone</label
+                    <p
+                      id="name-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
                     >
-                    <input
-                      type="text"
-                      name="phoneNumber"
-                      id="phoneNumber"
-                      placeholder="Phone number"
-                    />
+                      Name is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-phone"
+                    >Phone</label
+                  >
+                  <input
+                    required
+                    type="number"
+                    name="phoneNumber"
+                    id="service-phone"
+                    placeholder="Phone number"
+                  />
+                  <p
+                    id="phone-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                    Phone Number is required.
+                  </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="service-email"
                       >Email</label
                     >
                     <input
+                      required
                       type="email"
                       name="email"
-                      id="service-preference"
+                      id="service-email"
                       placeholder="Enter Email"
                     />
+                    <p
+                      id="email-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Email is required.
+                    </p>
                   </div>
 
                   <div class="col-sm-12">
@@ -282,18 +318,31 @@
                       >What industry does your business operate in?</label
                     >
                     <input
+                      required
                       type="text"
                       name="industry"
                       id="industry"
                       placeholder="Please describe."
                     />
+                    <p
+                    id="industry-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="abn"
                       >ABN (Australian Business Number)</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="abn"
                       id="abn"
                       placeholder="If yes, please provide it."
@@ -304,7 +353,7 @@
                       >Are there any specific legal aspects of your business
                       that you're particularly concerned about?</label
                     >
-                    <select name="legalAspects" id="legal-aspects">
+                    <select name="legalAspects" id="legal-aspects" required>
                       <option value="" hidden="">Select</option>
                       <option value="Contracts">Contracts</option>
                       <option value="Intellectual property">
@@ -319,11 +368,23 @@
                       business operations before?</label
                     >
                     <input
+                      required
                       type="text"
                       name="legalChallenges"
                       id="legal-challenges"
                       placeholder="If yes, please describe."
                     />
+                    <p
+                    id="legal-challenges-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="gst-assistance"
@@ -331,11 +392,23 @@
                       assistance with GST-related legal matters?</label
                     >
                     <input
+                      required
                       type="text"
                       name="gstAssistance"
                       id="gst-assistance"
                       placeholder=""
                     />
+                    <p
+                    id="gst-assistance-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="legal-docs"
@@ -343,11 +416,23 @@
                       business (e.g., contracts, agreements)?</label
                     >
                     <input
+                      required
                       type="text"
                       name="legalDocs"
                       id="legal-docs"
                       placeholder="If yes, are they regularly reviewed and updated?"
                     />
+                    <p
+                    id="legal-docs=error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="legal-guidance"
@@ -355,18 +440,31 @@
                       a specific legal matter?</label
                     >
                     <input
+                      required
                       type="text"
                       name="legalGuidance"
                       id="legal-guidance"
                       placeholder="If specific, please specify."
                     />
+                    <p
+                    id="legal-guidance-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="revenue"
                       >What is your approximate annual revenue or income?</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="revenue"
                       id="revenue"
                       placeholder=""
@@ -378,11 +476,23 @@
                       before?</label
                     >
                     <input
+                      required
                       type="text"
                       name="previousEngagement"
                       id="previous-engagement"
                       placeholder=""
                     />
+                    <p
+                    id="previous-engagement-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     is required.
+                  </p>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="rv-snd-msg-btn">Submit</button>
@@ -518,12 +628,83 @@
 
     <!-- JS FILES -->
     <script>
-      document
+       document
         .getElementById("businessForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
+          const nameElement = document.getElementById("service-name");
+          const errorElement = document.getElementById("name-error");
+          const phoneElement = document.getElementById("service-phone");
+          const phoneElementError = document.getElementById("phone-error");
+          const EmailElement = document.getElementById("service-email");
+          const EmailElementError = document.getElementById("email-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const industryElement = document.getElementById("industry");
+          const industryElementError = document.getElementById("industry-error");         
+          const legalchallengesElement = document.getElementById("legal-challenges");
+          const legalchallengesElementError = document.getElementById("legal-challenges-error");
+          const gstassistanceElement = document.getElementById("gst-assistance");
+          const gstassistanceElementError = document.getElementById("gst-assistance-error");
+          const legaldocsElement = document.getElementById("legal-docs");
+          const legaldocsElementError = document.getElementById("legal-docs-error");
+          const legalguidanceElement = document.getElementById("legal-guidance");
+          const legalguidanceElementError = document.getElementById("legal-guidance-error");
+          const previousengagementElement = document.getElementById("previous-engagement");
+          const previousengagementElementError = document.getElementById("previous-engagement-error");
+   
+           
+           // Validation 
+           if (nameElement.value.trim() === "") {
+            errorElement.style.display = "block";
+            nameElement.focus();
+            return;
+          }
+          if (phoneElement.value.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (!emailPattern.test(EmailElement.value.trim())) {
+            EmailElementError.style.display = "block";
+            EmailElement.focus();
+            return;
+          }
+          if (industryElement.value.trim() === "") {
+            industryElementError.style.display = "block";
+            industryElement.focus();
+            return;
+          }
+          if (legalchallengesElement.value.trim() === "") {
+            legalchallengesElementError.style.display = "block";
+            legalchallengesElement.focus();
+            return;
+          }
+          if (gstassistanceElement.value.trim() === "") {
+            gstassistanceElementError.style.display = "block";
+            gstassistanceElement.focus();
+            return;
+          }
+          if (legaldocsElement.value.trim() === "") {
+            legaldocsElementError.style.display = "block";
+            legaldocsElement.focus();
+            return;
+          }
+          if (legalguidanceElement.value.trim() === "") {
+            legalguidanceElementError.style.display = "block";
+            legalguidanceElement.focus();
+            return;
+          }
+          if (previousengagementElement.value.trim() === "") {
+            previousengagementElementError.style.display = "block";
+            previousengagementElement.focus();
+            return;
+          }
+
           const formData = {
+            nameElement : document.getElementById("service-name").value,
+            phoneElement : document.getElementById("service-phone").value,   
+            EmailElement : document.getElementById("service-email").value,
             industry: document.getElementById("industry").value,
             abn: document.getElementById("abn").value,
             legalAspects: document.getElementById("legal-aspects").value,
@@ -552,7 +733,7 @@
                 title: "Form Submitted Successfully",
                 text: "Thank you! We have received your information.",
               });
-              // handle success response
+              // Reset the form after success
               document.getElementById("businessForm").reset();
             })
             .catch((error) => {
@@ -562,10 +743,67 @@
                 title: "Submission Failed",
                 text: "There was an error sending your information. Please try again.",
               });
-              // handle error response
+              // Reset the form after failure
               document.getElementById("businessForm").reset();
             });
         });
+
+
+      // Adding event listeners to hide error messages on input
+      document
+        .getElementById("service-name")
+        .addEventListener("input", function () {
+          document.getElementById("name-error").style.display = "none";
+        });
+      document
+        .getElementById("service-phone")
+        .addEventListener("input", function () {
+          document.getElementById("phone-error").style.display = "none";
+        });
+      document
+        .getElementById("service-email")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").style.display = "none";
+        });
+        document
+        .getElementById("industry")
+        .addEventListener("input", function () {
+          document.getElementById("industry-error").style.display = "none";
+        });
+
+        document
+        .getElementById("legal-challenges")
+        .addEventListener("input", function () {
+          document.getElementById("legal-challenges-error").style.display = "none";
+        });
+
+        document
+        .getElementById("gst-assistance")
+        .addEventListener("input", function () {
+          document.getElementById("gst-assistance-error").style.display = "none";
+        });
+
+        document
+        .getElementById("legal-docs")
+        .addEventListener("input", function () {
+          document.getElementById("legal-docs-error").style.display = "none";
+        });
+        document
+        .getElementById("legal-guidance")
+        .addEventListener("input", function () {
+          document.getElementById("legal-guidance-error").style.display = "none";
+        });
+        document
+        .getElementById("previous-engagement")
+        .addEventListener("input", function () {
+          document.getElementById("previous-engagement-error").style.display = "none";
+        });
+
+
+
+
+
+                   
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
