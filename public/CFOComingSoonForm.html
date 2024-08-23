@@ -494,6 +494,7 @@
                 text: "Thank you! We have received your information.",
               });
               // handle success response
+              document.getElementById("legalForm").reset();
             })
             .catch((error) => {
               console.error("Error:", error);
@@ -503,6 +504,7 @@
                 text: "There was an error sending your information. Please try again.",
               });
               // handle error response
+              document.getElementById("legalForm").reset();
             });
         });
     </script>

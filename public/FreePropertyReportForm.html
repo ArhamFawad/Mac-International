@@ -490,10 +490,12 @@
             .then((data) => {
               console.log("Success the data sent successfully:", data);
               // handle success response
+              document.getElementById("contactForm").reset();
             })
             .catch((error) => {
               console.error("Error:", error);
               // handle error response
+              document.getElementById("contactForm").reset();
             });
         });
     </script>

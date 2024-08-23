@@ -191,28 +191,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- <div class="rv-inner-contact-info">
-                    <div class="rv-inner-contact-info__heading">
-                        <div class="rv-inner-contact-info__icon">
-                            <i class="fa-regular fa-clock"></i>
-                        </div>
-                        <h5 class="rv-inner-contact-info__title">Hours of Operation</h5>
-                    </div>
-
-                    <div class="rv-inner-contact-info__bottom">
-                        <ul class="rv-5-footer-timings">
-                            <li>
-                                <span class="key">Monday - Friday : </span>
-                                <span class="value">08:30 am - 10:00 pm</span>
-                            </li>
-                            <li>
-                                <span class="key">Saturday - Sunday : </span>
-                                <span class="value">10:30 am - 08:00 pm</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
         </div>
 
         <div class="row gy-3 gy-sm-4">
@@ -221,7 +199,7 @@
             <div class="rv-2-contact__txt rv-inner-contact__txt">
               <h3 class="rv-2-contact-form-title">Get in Touch</h3>
               <form
-                action="#"
+                id="contactForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
@@ -302,7 +280,7 @@
                     }),
                   }
                 )
-                  .then((response) => response.json())
+                  .then((response) => response.text())
                   .then((data) => {
                     console.log("Success:", data);
                     Swal.fire({
@@ -310,6 +288,9 @@
                       title: "Form Submitted Successfully",
                       text: "Thank you! We have received your information.",
                     });
+
+                    // Clear out the form fields after success
+                    document.getElementById("contactForm").reset();
                   })
                   .catch((error) => {
                     console.error("Error:", error);
@@ -318,6 +299,9 @@
                       title: "Submission Failed",
                       text: "There was an error sending your information. Please try again.",
                     });
+
+                    // Optionally, clear out the form fields after failure
+                    document.getElementById("contactForm").reset();
                   });
               });
           </script>
@@ -427,6 +411,7 @@
     <!-- JS FILES -->
 
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
     <script src="assets\vendor\swiper\swiper-bundle.min.js"></script>

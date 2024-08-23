@@ -167,6 +167,17 @@
                       id="service-preference"
                       placeholder="Enter your Name"
                     />
+                    <p
+                      id="name-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Name is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="service-preference"
@@ -178,6 +189,17 @@
                       id="phoneNumber"
                       placeholder="Phone number"
                     />
+                    <p
+                      id="phone-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Phone Number is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="service-preference"
@@ -189,6 +211,17 @@
                       id="service-preference"
                       placeholder="Enter Email"
                     />
+                    <p
+                      id="email-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Email is required.
+                    </p>
                   </div>
 
                   <div class="col-sm-12">
@@ -202,6 +235,17 @@
                       id="propertyType"
                       placeholder="Please provide it."
                     />
+                    <p
+                      id="propertyType-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Property Type is required
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="budgetRange">
@@ -213,6 +257,17 @@
                       id="budgetRange"
                       placeholder="Please provide it."
                     />
+                    <p
+                      id="budgetRange-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Budget Range is required
+                    </p>
                   </div>
                   <div class="col-12">
                     <label style="margin-bottom: 10px" for="preferredLocation">
@@ -225,6 +280,17 @@
                       id="preferredLocation"
                       placeholder="Please provide it."
                     />
+                    <p
+                      id="preferredLocation-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Property Location is required
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="firstTimeBuyer">
@@ -237,6 +303,17 @@
                       id="firstTimeBuyer"
                       placeholder=""
                     />
+                    <p
+                      id="firstTimeBuyer-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      This field is also required
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="financingStatus">
@@ -249,6 +326,17 @@
                       id="financingStatus"
                       placeholder=""
                     />
+                    <p
+                      id="financingStatus-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your finance status
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="propertyFeatures">
@@ -261,6 +349,17 @@
                       id="propertyFeatures"
                       placeholder="Mention your features here"
                     />
+                    <p
+                      id="propertyFeatures-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Tell us your requirements
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label
@@ -276,6 +375,17 @@
                       id="renovationWillingness"
                       placeholder="Please specify."
                     />
+                    <p
+                      id="renovationWillingness-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Tell us your requirements
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="idealTimeline">
@@ -288,6 +398,17 @@
                       id="idealTimeline"
                       placeholder=""
                     />
+                    <p
+                      id="idealTimeline-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Tell us your timeline
+                    </p>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="rv-snd-msg-btn">Submit</button>
@@ -426,6 +547,7 @@
                 title: "Form Submitted Successfully",
                 text: "Thank you! We have received your information.",
               });
+              document.getElementById("businessForm").reset();
             })
             .catch((error) => {
               console.error("Error:", error);
@@ -434,6 +556,7 @@
                 title: "Submission Failed",
                 text: "There was an error sending your information. Please try again.",
               });
+              document.getElementById("businessForm").reset();
             });
         });
     </script>

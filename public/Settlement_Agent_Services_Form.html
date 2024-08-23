@@ -168,6 +168,17 @@
                       id="service-preference"
                       placeholder="Enter your Name"
                     />
+                    <p
+                      id="name-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Name is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="service-preference"
@@ -179,6 +190,17 @@
                       id="phoneNumber"
                       placeholder="Phone number"
                     />
+                    <p
+                      id="phone-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Phone Number is required.
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="service-preference"
@@ -190,6 +212,17 @@
                       id="service-preference"
                       placeholder="Enter Email"
                     />
+                    <p
+                      id="email-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Email is required.
+                    </p>
                   </div>
 
                   <div class="col-sm-12">
@@ -203,6 +236,17 @@
                       id="transactionType"
                       placeholder="Please provide it."
                     />
+                    <p
+                      id="transactionType-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please Mention Your Type
+                    </p>
                   </div>
                   <div class="col-12">
                     <label style="margin-bottom: 10px" for="propertyChoice">
@@ -215,6 +259,17 @@
                       id="propertyChoice"
                       placeholder="Please provide it."
                     />
+                    <p
+                      id="propertyChoice-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your choice
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="settlementTimeline">
@@ -227,6 +282,17 @@
                       id="settlementTimeline"
                       placeholder=""
                     />
+                    <p
+                      id="settlementTimeline-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your preferred time
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label
@@ -243,6 +309,17 @@
                       id="professionalEngagement"
                       placeholder=""
                     />
+                    <p
+                      id="professionalEngagement-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your choice
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="specificConcerns">
@@ -255,6 +332,17 @@
                       id="specificConcerns"
                       placeholder="Mention your concerns here"
                     />
+                    <p
+                      id="specificConcerns-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your concerns or type No if there's nothing
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="legalAssistance">
@@ -267,6 +355,17 @@
                       id="legalAssistance"
                       placeholder="Please specify."
                     />
+                    <p
+                      id="legalAssistance-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your concerns or type No if not required
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="financingStatus">
@@ -279,6 +378,17 @@
                       id="financingStatus"
                       placeholder=""
                     />
+                    <p
+                      id="financingStatus-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your current Status
+                    </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="specialRequests">
@@ -292,6 +402,18 @@
                       id="specialRequests"
                       placeholder=""
                     />
+                    <p
+                      id="specialRequests-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Please mention your special requests or Type No if there's
+                      nothing
+                    </p>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="rv-snd-msg-btn">Submit</button>
@@ -436,6 +558,7 @@
                 text: "Thank you! We have received your information.",
               });
               // handle success response
+              document.getElementById("businessForm").reset();
             })
             .catch((error) => {
               console.error("Error:", error);
@@ -445,6 +568,7 @@
                 text: "There was an error sending your information. Please try again.",
               });
               // handle error response
+              document.getElementById("businessForm").reset();
             });
         });
     </script>
