@@ -532,86 +532,80 @@
       document
         .getElementById("businessForm")
         .addEventListener("submit", function (event) {
-          const name = document.getElementById("service-name").value;
+          event.preventDefault();
+
           const nameElement = document.getElementById("service-name");
           const errorElement = document.getElementById("name-error");
-          const phone = document.getElementById("service-phone").value;
           const phoneElement = document.getElementById("service-phone");
           const phoneElementError = document.getElementById("phone-error");
-          const email = document.getElementById("service-email").value.trim();
           const EmailElement = document.getElementById("service-email");
           const EmailElementError = document.getElementById("email-error");
-          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          const budget = document.getElementById("budgetRange").value;
           const BudgetElement = document.getElementById("budgetRange");
           const budgetElementError = document.getElementById("budget-error");
-          const location = document.getElementById("preferredLocation").value;
           const locationElement = document.getElementById("preferredLocation");
           const locationElementError =
             document.getElementById("location-error");
-          const Awareness = document.getElementById("awareness").value;
           const awarenessElement = document.getElementById("awareness");
           const awarenessElementError =
             document.getElementById("awareness-error");
-          const Factor = document.getElementById("factors").value;
           const factorsElement = document.getElementById("factors");
           const factorsElementError = document.getElementById("factors-error");
-          const ReceiveInfo = document.getElementById("receiveInfo").value;
           const receiveInfoElement = document.getElementById("receiveInfo");
           const receiveInfoElementError =
             document.getElementById("receive-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-          event.preventDefault();
-          if (name.trim() === "") {
+          // Validation
+          if (nameElement.value.trim() === "") {
             errorElement.style.display = "block";
             nameElement.focus();
             return;
           }
-          if (phone.trim() === "") {
+          if (phoneElement.value.trim() === "") {
             phoneElementError.style.display = "block";
             phoneElement.focus();
             return;
           }
-          if (!emailPattern.test(email) && EmailElement.value.trim() === "") {
+          if (!emailPattern.test(EmailElement.value.trim())) {
             EmailElementError.style.display = "block";
             EmailElement.focus();
             return;
           }
-          if (budget.trim() === "") {
+          if (BudgetElement.value.trim() === "") {
             budgetElementError.style.display = "block";
             BudgetElement.focus();
             return;
           }
-          if (location.trim() === "") {
+          if (locationElement.value.trim() === "") {
             locationElementError.style.display = "block";
             locationElement.focus();
             return;
           }
-          if (Awareness.trim() === "") {
+          if (awarenessElement.value.trim() === "") {
             awarenessElementError.style.display = "block";
             awarenessElement.focus();
             return;
           }
-          if (Factor.trim() === "") {
+          if (factorsElement.value.trim() === "") {
             factorsElementError.style.display = "block";
             factorsElement.focus();
             return;
           }
-          if (ReceiveInfo.trim() === "") {
+          if (receiveInfoElement.value.trim() === "") {
             receiveInfoElementError.style.display = "block";
             receiveInfoElement.focus();
             return;
           }
+
           const formData = {
             propertyType: document.getElementById("propertyType").value,
-            budgetRange: document.getElementById("budgetRange").value,
-            preferredLocation:
-              document.getElementById("preferredLocation").value,
+            budgetRange: BudgetElement.value,
+            preferredLocation: locationElement.value,
             features: document.getElementById("features").value,
-            awareness: document.getElementById("awareness").value,
+            awareness: awarenessElement.value,
             timeline: document.getElementById("timeline").value,
-            factors: document.getElementById("factors").value,
-            receiveInfo: document.getElementById("receiveInfo").value,
+            factors: factorsElement.value,
+            receiveInfo: receiveInfoElement.value,
             type: "streamlined-property-acquisition",
           };
 
@@ -630,7 +624,8 @@
                 title: "Form Submitted Successfully",
                 text: "Thank you! We have received your information.",
               });
-              // handle success response
+              // Reset the form after success
+              document.getElementById("businessForm").reset();
             })
             .catch((error) => {
               console.error("Error:", error);
@@ -639,10 +634,52 @@
                 title: "Submission Failed",
                 text: "There was an error sending your information. Please try again.",
               });
-              // handle error response
+              // Reset the form after failure
+              document.getElementById("businessForm").reset();
             });
         });
+
+      // Adding event listeners to hide error messages on input
+      document
+        .getElementById("service-name")
+        .addEventListener("input", function () {
+          document.getElementById("name-error").style.display = "none";
+        });
+      document
+        .getElementById("service-phone")
+        .addEventListener("input", function () {
+          document.getElementById("phone-error").style.display = "none";
+        });
+      document
+        .getElementById("service-email")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").style.display = "none";
+        });
+      document
+        .getElementById("budgetRange")
+        .addEventListener("input", function () {
+          document.getElementById("budget-error").style.display = "none";
+        });
+      document
+        .getElementById("preferredLocation")
+        .addEventListener("input", function () {
+          document.getElementById("location-error").style.display = "none";
+        });
+      document
+        .getElementById("awareness")
+        .addEventListener("input", function () {
+          document.getElementById("awareness-error").style.display = "none";
+        });
+      document.getElementById("factors").addEventListener("input", function () {
+        document.getElementById("factors-error").style.display = "none";
+      });
+      document
+        .getElementById("receiveInfo")
+        .addEventListener("input", function () {
+          document.getElementById("receive-error").style.display = "none";
+        });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
