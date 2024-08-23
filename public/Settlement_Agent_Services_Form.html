@@ -159,13 +159,14 @@
               >
                 <div class="row">
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-name"
                       >Name</label
                     >
                     <input
+                      required
                       type="text"
                       name="name"
-                      id="service-preference"
+                      id="service-name"
                       placeholder="Enter your Name"
                     />
                     <p
@@ -181,13 +182,14 @@
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-phone"
                       >Phone</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="phoneNumber"
-                      id="phoneNumber"
+                      id="service-phone"
                       placeholder="Phone number"
                     />
                     <p
@@ -203,13 +205,14 @@
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-email"
                       >Email</label
                     >
                     <input
+                      required
                       type="email"
                       name="email"
-                      id="service-preference"
+                      id="service-email"
                       placeholder="Enter Email"
                     />
                     <p
@@ -231,6 +234,7 @@
                       (e.g., purchase, sale, refinance)?
                     </label>
                     <input
+                      required
                       type="text"
                       name="transactionType"
                       id="transactionType"
@@ -254,6 +258,7 @@
                       process of doing so?
                     </label>
                     <input
+                      required
                       type="text"
                       name="propertyChoice"
                       id="propertyChoice"
@@ -277,6 +282,7 @@
                       settlement process?
                     </label>
                     <input
+                      required
                       type="text"
                       name="settlementTimeline"
                       id="settlementTimeline"
@@ -304,6 +310,7 @@
                       transaction?
                     </label>
                     <input
+                      required
                       type="text"
                       name="professionalEngagement"
                       id="professionalEngagement"
@@ -327,6 +334,7 @@
                       regarding the settlement process?
                     </label>
                     <input
+                      required 
                       type="text"
                       name="specificConcerns"
                       id="specificConcerns"
@@ -350,6 +358,7 @@
                       documents or contracts related to the transaction?
                     </label>
                     <input
+                      required
                       type="text"
                       name="legalAssistance"
                       id="legalAssistance"
@@ -373,6 +382,7 @@
                       approval for your property transaction?
                     </label>
                     <input
+                      required
                       type="text"
                       name="financingStatus"
                       id="financingStatus"
@@ -397,6 +407,7 @@
                       of attorney)?
                     </label>
                     <input
+                      required
                       type="text"
                       name="specialRequests"
                       id="specialRequests"
@@ -522,11 +533,99 @@
 
     <!-- JS FILES -->
     <script>
-      document
+       document
         .getElementById("businessForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
+          const nameElement = document.getElementById("service-name");
+          const errorElement = document.getElementById("name-error");
+          const phoneElement = document.getElementById("service-phone");
+          const phoneElementError = document.getElementById("phone-error");
+          const EmailElement = document.getElementById("service-email");
+          const EmailElementError = document.getElementById("email-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const transactionTypeElement = document.getElementById("transactionType");
+          const transactionTypeElementError = document.getElementById("transactionType-error");
+          const propertyChoiceElement = document.getElementById("propertyChoice");
+          const propertyChoiceElementError = document.getElementById("propertyChoice-error");
+          const settlementTimelineElement = document.getElementById("settlementTimeline");
+          const settlementTimelineElementError = document.getElementById("settlementTimeline-error");
+          const professionalEngagementElement = document.getElementById("professionalEngagement");
+          const professionalEngagementElementError = document.getElementById("professionalEngagement-error");
+          const specificConcernsElement = document.getElementById("specificConcerns");
+          const specificConcernsElementError = document.getElementById("specificConcerns-error");
+          const legalAssistancetElement = document.getElementById("legalAssistance");
+          const legalAssistanceElementError = document.getElementById("legalAssistance-error");
+          const financingStatusElement = document.getElementById("financingStatus");
+          const financingStatusElementError = document.getElementById("financingStatus-error");
+          const specialRequestsElement = document.getElementById("specialRequests");
+          const specialRequestsElementError = document.getElementById("specialRequests-error");
+          
+          
+          
+
+
+
+
+          // Validation  
+          if (nameElement.value.trim() === "") {
+            errorElement.style.display = "block";
+            nameElement.focus();
+            return;
+          }
+          if (phoneElement.value.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (!emailPattern.test(EmailElement.value.trim())) {
+            EmailElementError.style.display = "block";
+            EmailElement.focus();
+            return;
+          }
+          if (transactionTypeElement.value.trim() === "") {
+            transactionTypeElementError.style.display = "block";
+            transactionTypeElement.focus();
+            return;
+          }
+          if (propertyChoiceElement.value.trim() === "") {
+            propertyChoiceElementError.style.display = "block";
+            propertyChoiceElement.focus();
+            return;
+          }
+          if (settlementTimelineElement.value.trim() === "") {
+            settlementTimelineElementError.style.display = "block";
+            settlementTimelineElement.focus();
+            return;
+          }
+          if (professionalEngagementElement.value.trim() === "") {
+            professionalEngagementElementError.style.display = "block";
+            professionalEngagementElement.focus();
+            return;
+          }
+          if (specificConcernsElement.value.trim() === "") {
+            specificConcernsElementError.style.display = "block";
+            specificConcernsElement.focus();
+            return;
+          }
+          if (legalAssistancetElement.value.trim() === "") {
+            legalAssistanceElementError.style.display = "block";
+            legalAssistancetElement.focus();
+            return;
+          }
+          if (financingStatusElement.value.trim() === "") {
+            financingStatusElementError.style.display = "block";
+            financingStatusElement.focus();
+            return;
+          }
+          if (specialRequestsElement.value.trim() === "") {
+            settlementTimelineElementError.style.display = "block";
+            specialRequestsElement.focus();
+            return;
+          }
+         
+          
           const formData = {
             transactionType: document.getElementById("transactionType").value,
             propertyChoice: document.getElementById("propertyChoice").value,
@@ -571,6 +670,66 @@
               document.getElementById("businessForm").reset();
             });
         });
+        
+       // Adding event listeners to hide error messages on input
+       document
+        .getElementById("service-name")
+        .addEventListener("input", function () {
+          document.getElementById("name-error").style.display = "none";
+        });
+      document
+        .getElementById("service-phone")
+        .addEventListener("input", function () {
+          document.getElementById("phone-error").style.display = "none";
+        });
+      document
+        .getElementById("service-email")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").style.display = "none";
+        });
+      document
+        .getElementById("transactionType")
+        .addEventListener("input", function () {
+          document.getElementById("transactionType-error").style.display = "none";
+        });
+      document
+        .getElementById("propertyChoice")
+        .addEventListener("input", function () {
+          document.getElementById("propertyChoice-error").style.display = "none";
+        });
+      document
+        .getElementById("settlementTimeline")
+        .addEventListener("input", function () {
+          document.getElementById("settlementTimeline-error").style.display = "none";
+        });
+      document
+        .getElementById("professionalEngagement")
+        .addEventListener("input", function () {
+          document.getElementById("professionalEngagement-error").style.display = "none";
+        });
+      document
+        .getElementById("specificConcerns")
+        .addEventListener("input", function () {
+          document.getElementById("specificConcerns-error").style.display = "none";
+        });
+      document
+        .getElementById("legalAssistance")
+        .addEventListener("input", function () {
+          document.getElementById("legalAssistance-error").style.display = "none";
+        });
+      document
+        .getElementById("financingStatus")
+        .addEventListener("input", function () {
+          document.getElementById("financingStatus-error").style.display = "none";
+        });
+      document
+        .getElementById("specialRequests")
+        .addEventListener("input", function () {
+          document.getElementById("specialRequests-error").style.display = "none";
+        });
+      
+
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>

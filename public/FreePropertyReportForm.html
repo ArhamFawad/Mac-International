@@ -153,7 +153,7 @@
                 Free Property Report Inquiry
               </h6>
               <form
-                id="contactForm"
+                id="businessForm"
                 class="rv-2-contact__form rv-inner-contact__form"
               >
                 <div class="row">
@@ -161,37 +161,73 @@
                     <h5 style="font-weight: 600; text-decoration: underline">
                       Personal Details
                     </h5>
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-name"
                       >Name</label
                     >
                     <input
+                      required
                       type="text"
                       name="name"
-                      id="service-preference"
+                      id="service-name"
                       placeholder=""
                     />
+                    <p
+                    id="name-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                    Name is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-phone"
                       >Phone</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="phoneNumber"
-                      id="phoneNumber"
+                      id="service-phone"
                       placeholder=""
                     />
+                    <p
+                    id="phone-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                    Phone Number is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-email"
                       >Email</label
                     >
                     <input
+                      required
                       type="email"
                       name="email"
-                      id="service-preference"
+                      id="service-email"
                       placeholder=""
                     />
+                    <p
+                    id="email-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                    Email is required.
+                  </p>
                   </div>
 
                   <div class="col-12">
@@ -202,13 +238,37 @@
                       >What is the address of the property you want the report
                       for?</label
                     >
-                    <input type="text" name="abn" id="abn" placeholder="" />
+                    <input required type="text" name="abn" id="property-address" placeholder=""
+                     />
+                    <p
+                    id="property-address-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="property-status"
                       >Is this property residential or commercial?</label
                     >
-                    <input type="text" name="abn" id="abn" placeholder="" />
+                    <input required type="text" name="abn" id="property-status" placeholder="" 
+                    />
+                    <p
+                    id="property-status-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
@@ -219,22 +279,46 @@
                       or is it vacant?</label
                     >
                     <input
+                      required
                       type="text"
                       name="employees"
-                      id="employees"
+                      id="building-status"
                       placeholder=""
                     />
+                    <p
+                    id="building-status-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="owned-period"
                       >How long have you owned the property?</label
                     >
                     <input
+                      required
                       type="text"
                       name="employees"
-                      id="employees"
+                      id="owned-period"
                       placeholder=""
                     />
+                    <p
+                    id="owned-period-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
@@ -248,11 +332,24 @@
                       investment analysis, market trends, etc.)</label
                     >
                     <input
+                      required
                       type="text"
                       name="employees"
-                      id="employees"
+                      id="property-report-reason"
                       placeholder=""
                     />
+                    <p
+                    id="property-report-reason-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
+                    
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="sell-property"
@@ -260,11 +357,23 @@
                       future?</label
                     >
                     <input
+                      required
                       type="text"
                       name="challenges"
-                      id="challenges"
+                      id="sell-property"
                       placeholder=""
                     />
+                    <p
+                    id="sell-property-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
@@ -277,22 +386,46 @@
                       property? If so, please describe.</label
                     >
                     <input
+                      required
                       type="text"
-                      name="servicePreference"
-                      id="service-preference"
+                      name="upgrades-renovations"
+                      id="upgrades-renovations"
                       placeholder=""
                     />
+                    <p
+                    id="upgrades-renovations-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="issues-repairs"
                       >Are there any known issues or needed repairs?</label
                     >
                     <input
+                      required
                       type="text"
-                      name="budget"
-                      id="budget"
+                      name="issues-repairs"
+                      id="issues-repairs"
                       placeholder=""
                     />
+                    <p
+                    id="issues-repairs-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
@@ -302,33 +435,69 @@
                       >What is your name?</label
                     >
                     <input
+                      required
                       type="text"
-                      name="servicePreference"
-                      id="service-preference"
+                      name="user-name"
+                      id="user-name"
                       placeholder=""
                     />
+                    <p
+                    id="user-name-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="phone-number"
+                    <label style="margin-bottom: 10px" for="user-phone"
                       >What is the best phone number to reach you at?</label
                     >
                     <input
-                      type="text"
-                      name="budget"
-                      id="budget"
+                      required
+                      type="number"
+                      name="user-phone"
+                      id="user-phone"
                       placeholder=""
                     />
+                    <p
+                    id="user-phone-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="email-address"
+                    <label style="margin-bottom: 10px" for="user-email"
                       >What is your email address?</label
                     >
                     <input
-                      type="text"
-                      name="budget"
-                      id="budget"
+                      required
+                      type="email"
+                      name="user-email"
+                      id="user-email"
                       placeholder=""
                     />
+                    <p
+                    id="user-email-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
@@ -339,21 +508,46 @@
                       property or market trends?</label
                     >
                     <input
+                      required
                       type="text"
-                      name="servicePreference"
-                      id="service-preference"
+                      name="questions-concerns"
+                      id="questions-concerns"
                       placeholder=""
                     />
+                    <p
+                    id="questions-concerns-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
+
                     <label style="margin-bottom: 10px" for="unique-features"
                       >Are there any unique features of the property that should
                       be noted?</label
                     >
                     <input
+                      required
                       type="text"
-                      name="servicePreference"
-                      id="service-preference"
+                      name="unique-features"
+                      id="unique-features"
                       placeholder=""
                     />
+                    <p
+                    id="unique-features-error"
+                    style="
+                      color: red;
+                      margin-top: 3px;
+                      margin-bottom: 3px;
+                      display: none;
+                    "
+                  >
+                     Is required.
+                  </p>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="rv-snd-msg-btn">Submit</button>
@@ -458,25 +652,160 @@
     <!-- JS FILES -->
     <script>
       document
-        .getElementById("contactForm")
+        .getElementById("businessForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
+          const nameElement = document.getElementById("service-name");
+          const errorElement = document.getElementById("name-error");
+          const phoneElement = document.getElementById("service-phone");
+          const phoneElementError = document.getElementById("phone-error");
+          const EmailElement = document.getElementById("service-email");
+          const EmailElementError = document.getElementById("email-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const propertyaddressElement = document.getElementById("property-address");
+          const propertyaddressElementError = document.getElementById("property-address-error");
+          const propertystatusElement = document.getElementById("property-status");
+          const propertystatusElementError = document.getElementById("property-status-error");
+          const buildingstatusElement = document.getElementById("building-status");
+          const buildingstatusElementError = document.getElementById("building-status-error");
+          const ownedperiodElement = document.getElementById("owned-period");
+          const ownedperiodElementError = document.getElementById("owned-period-error");
+          const propertyreportreasonElement = document.getElementById("property-report-reason");
+          const propertyreportreasonElementError = document.getElementById("property-report-reason-error");
+          const sellpropertyElement = document.getElementById("sell-property");
+          const sellpropertyElementError = document.getElementById("sell-property-error");
+          const upgradesrenovationsElement = document.getElementById("upgrades-renovations");
+          const upgradesrenovationsError = document.getElementById("upgrades-renovations-error");
+          const issuesrepairsElement = document.getElementById("issues-repairs");
+          const issuesrepairsError = document.getElementById("issues-repairs-error");
+          const usernameElement = document.getElementById("user-name");
+          const usernameElementError = document.getElementById("user-name-error");
+          const userphoneElement = document.getElementById("user-phone");
+          const userphoneElementError = document.getElementById("user-phone-error");
+          const useremailElement = document.getElementById("user-email");
+          const useremailElementError = document.getElementById("user-email-error");
+          const questionsconcernsElement = document.getElementById("questions-concerns");
+          const questionsconcernsElementError = document.getElementById("questions-concerns-error");
+          const uniquefeaturesElement = document.getElementById("unique-features");
+          const uniquefeaturesElementError = document.getElementById("unique-features-error");
+
+
+
+
+        
+          // Validation 
+          if (nameElement.value.trim() === "") {
+            errorElement.style.display = "block";
+            nameElement.focus();
+            return;
+          }
+          if (phoneElement.value.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (!emailPattern.test(EmailElement.value.trim())) {
+            EmailElementError.style.display = "block";
+            EmailElement.focus();
+            return;
+          }
+          if (phoneElement.value.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (propertyaddressElement.value.trim() === "") {
+            propertyaddressElementError.style.display = "block";
+            propertyaddressElement.focus();
+            return;
+          }
+          if (propertystatusElement.value.trim() === "") {
+            propertystatusElementError.style.display = "block";
+            propertyaddressElement.focus();
+            return;
+          }
+          if (buildingstatusElement.value.trim() === "") {
+            buildingstatusElementError.style.display = "block";
+            buildingstatusElement.focus();
+            return;
+          }
+          if (ownedperiodElement.value.trim() === "") {
+            ownedperiodElementError.style.display = "block";
+            ownedperiodElement.focus();
+            return;
+          }
+          if (propertyreportreasonElement.value.trim() === "") {
+            propertyreportreasonElementError.style.display = "block";
+            propertyreportreasonElement.focus();
+            return;
+          }
+          if (sellpropertyElement.value.trim() === "") {
+            sellpropertyElementError.style.display = "block";
+            sellpropertyElement.focus();
+            return;
+          }
+          if (upgradesrenovationsElement.value.trim() === "") {
+            upgradesrenovationsError.style.display = "block";
+            upgradesrenovationsElement.focus();
+            return;
+          }
+          if (issuesrepairsElement.value.trim() === "") {
+            issuesrepairsError.style.display = "block";
+            issuesrepairsElement.focus();
+            return;
+          }
+          if (usernameElement.value.trim() === "") {
+            usernameElementError.style.display = "block";
+            usernameElement.focus();
+            return;
+          }
+          if (userphoneElement.value.trim() === "") {
+            userphoneElementError.style.display = "block";
+            userphoneElement.focus();
+            return;
+          }
+          if (useremailElement.value.trim() === "") {
+            useremailElementError.style.display = "block";
+            useremailElement.focus();
+            return;
+          }
+          if (questionsconcernsElement.value.trim() === "") {
+            questionsconcernsElementError.style.display = "block";
+            questionsconcernsElement.focus();
+            return;
+          }
+          if (uniquefeaturesElement.value.trim() === "") {
+            uniquefeaturesElementError.style.display = "block";
+            uniquefeaturesElement.focus();
+            return;
+          }
+          
+          
+
+          
           const formData = {
-            businessStructure:
-              document.getElementById("business-structure").value,
-            abn: document.getElementById("abn").value,
-            employees: document.getElementById("employees").value,
-            bookkeepingServices: document.getElementById("bookkeeping-services")
-              .value,
-            bookkeepingFrequency: document.getElementById(
-              "bookkeeping-frequency"
-            ).value,
-            challenges: document.getElementById("challenges").value,
-            servicePreference:
-              document.getElementById("service-preference").value,
-            budget: document.getElementById("budget").value,
-            type: "book-keeping",
+            nameElement : document.getElementById("service-name").value,
+            phoneElement : document.getElementById("service-phone").value,   
+            EmailElement : document.getElementById("service-email").value,
+            propertyaddressElement : document.getElementById("property-address").value,
+            propertystatusElement : document.getElementById("property-status").value,
+            buildingstatusElement : document.getElementById("building-status").value,
+            ownedperiodElement : document.getElementById("owned-period").value,
+            propertyreportreasonElement : document.getElementById("property-report-reason").value,
+            sellpropertyElement : document.getElementById("sell-property").value,
+            upgradesrenovationsElement : document.getElementById("upgrades-renovations").value,
+            issuesrepairsElement : document.getElementById("issues-repairs").value,
+            usernameElement : document.getElementById("user-name").value,
+            userphoneElement : document.getElementById("user-phone").value,
+            useremailElement : document.getElementById("user-email").value,
+            questionsconcernsElement : document.getElementById("questions-concerns").value,
+            uniquefeaturesElement : document.getElementById("unique-features").value,
+
+
+
+
+
           };
 
           fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
@@ -489,16 +818,114 @@
             .then((response) => response.text())
             .then((data) => {
               console.log("Success the data sent successfully:", data);
-              // handle success response
-              document.getElementById("contactForm").reset();
+              Swal.fire({
+                icon: "success",
+                title: "Form Submitted Successfully",
+                text: "Thank you! We have received your information.",
+              });
+              // Reset the form after success
+              document.getElementById("businessForm").reset();
             })
             .catch((error) => {
               console.error("Error:", error);
-              // handle error response
-              document.getElementById("contactForm").reset();
+              Swal.fire({
+                icon: "error",
+                title: "Submission Failed",
+                text: "There was an error sending your information. Please try again.",
+              });
+              // Reset the form after failure
+              document.getElementById("businessForm").reset();
             });
         });
+
+          // Adding event listeners to hide error messages on input
+      document
+        .getElementById("service-name")
+        .addEventListener("input", function () {
+          document.getElementById("name-error").style.display = "none";
+        });
+      document
+        .getElementById("service-phone")
+        .addEventListener("input", function () {
+          document.getElementById("phone-error").style.display = "none";
+        });
+      document
+        .getElementById("service-email")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").style.display = "none";
+        });
+      document
+        .getElementById("property-address")
+        .addEventListener("input", function () {
+          document.getElementById("property-address-error").style.display = "none";
+        });
+      document
+        .getElementById("property-status")
+        .addEventListener("input", function () {
+          document.getElementById("property-status-error").style.display = "none";
+        });
+      document
+        .getElementById("building-status")
+        .addEventListener("input", function () {
+          document.getElementById("building-status-error").style.display = "none";
+        });
+      document
+        .getElementById("owned-period")
+        .addEventListener("input", function () {
+          document.getElementById("owned-period-error").style.display = "none";
+        });
+      document
+        .getElementById("property-report-reason")
+        .addEventListener("input", function () {
+          document.getElementById("property-report-reason-error").style.display = "none";
+        });
+      document
+        .getElementById("sell-property")
+        .addEventListener("input", function () {
+          document.getElementById("sell-property-error").style.display = "none";
+        });
+      document
+        .getElementById("upgrades-renovations")
+        .addEventListener("input", function () {
+          document.getElementById("upgrades-renovations-error").style.display = "none";
+        });
+      document
+        .getElementById("issues-repairs")
+        .addEventListener("input", function () {
+          document.getElementById("issues-repairs-error").style.display = "none";
+        });
+      document
+        .getElementById("user-name")
+        .addEventListener("input", function () {
+          document.getElementById("user-name-error").style.display = "none";
+        });
+      document
+        .getElementById("user-phone")
+        .addEventListener("input", function () {
+          document.getElementById("user-phone-error").style.display = "none";
+        });
+      document
+        .getElementById("user-email")
+        .addEventListener("input", function () {
+          document.getElementById("user-email-error").style.display = "none";
+        });
+        document
+        .getElementById("questions-concerns")
+        .addEventListener("input", function () {
+          document.getElementById("questions-concerns-error").style.display = "none";
+        });
+        document
+        .getElementById("unique-features")
+        .addEventListener("input", function () {
+          document.getElementById("unique-features-error").style.display = "none";
+        });
+        
+
+ 
+        
+         
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>

@@ -158,13 +158,14 @@
               >
                 <div class="row">
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-name"
                       >Name</label
                     >
                     <input
+                      required
                       type="text"
                       name="name"
-                      id="service-preference"
+                      id="service-name"
                       placeholder="Enter your Name"
                     />
                     <p
@@ -180,13 +181,14 @@
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-phone"
                       >Phone</label
                     >
                     <input
-                      type="text"
+                      required
+                      type="number"
                       name="phoneNumber"
-                      id="phoneNumber"
+                      id="service-phone"
                       placeholder="Phone number"
                     />
                     <p
@@ -202,13 +204,14 @@
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="service-preference"
+                    <label style="margin-bottom: 10px" for="service-email"
                       >Email</label
                     >
                     <input
+                      required
                       type="email"
                       name="email"
-                      id="service-preference"
+                      id="service-email"
                       placeholder="Enter Email"
                     />
                     <p
@@ -230,6 +233,7 @@
                       (Investment or owner occupied)?
                     </label>
                     <input
+                      required
                       type="text"
                       name="propertyType"
                       id="propertyType"
@@ -252,6 +256,7 @@
                       What is your budget range for purchasing a property?
                     </label>
                     <input
+                      required
                       type="text"
                       name="budgetRange"
                       id="budgetRange"
@@ -275,6 +280,7 @@
                       for your purchase?
                     </label>
                     <input
+                      required
                       type="text"
                       name="preferredLocation"
                       id="preferredLocation"
@@ -298,6 +304,7 @@
                       before?
                     </label>
                     <input
+                      required
                       type="text"
                       name="firstTimeBuyer"
                       id="firstTimeBuyer"
@@ -321,6 +328,7 @@
                       assistance with securing a mortgage?
                     </label>
                     <input
+                      required
                       type="text"
                       name="financingStatus"
                       id="financingStatus"
@@ -344,6 +352,7 @@
                       a property (e.g., number of bedrooms, parking, garden)?
                     </label>
                     <input
+                      required
                       type="text"
                       name="propertyFeatures"
                       id="propertyFeatures"
@@ -370,6 +379,7 @@
                       willing to consider properties that need renovation?
                     </label>
                     <input
+                      required
                       type="text"
                       name="renovationWillingness"
                       id="renovationWillingness"
@@ -393,6 +403,7 @@
                       are there any specific deadlines you need to meet?
                     </label>
                     <input
+                      required
                       type="text"
                       name="idealTimeline"
                       id="idealTimeline"
@@ -512,19 +523,108 @@
 
     <!-- JS FILES -->
     <script>
-      document
+       document
         .getElementById("businessForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
 
+          const nameElement = document.getElementById("service-name");
+          const errorElement = document.getElementById("name-error");
+          const phoneElement = document.getElementById("service-phone");
+          const phoneElementError = document.getElementById("phone-error");
+          const EmailElement = document.getElementById("service-email");
+          const EmailElementError = document.getElementById("email-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const propertyElement = document.getElementById("propertyType");
+          const propertyElementError = document.getElementById("propertyType-error");
+          const BudgetElement = document.getElementById("budgetRange");
+          const budgetElementError = document.getElementById("budgetRange-error");
+          const locationElement = document.getElementById("preferredLocation");
+          const locationElementError = document.getElementById("preferredLocation-error");
+          const firstTimeBuyerElement = document.getElementById("firstTimeBuyer");
+          const firstTimeBuyerElementError = document.getElementById("firstTimeBuyer-error");
+          const financingStatusElement = document.getElementById("financingStatus");
+          const financingStatusElementError = document.getElementById("financingStatus-error");
+          const propertyFeaturesElement = document.getElementById("propertyFeatures");
+          const propertyFeaturesElementError = document.getElementById("propertyFeatures-error");
+          const renovationWillingnessElement = document.getElementById("renovationWillingness");
+          const renovationWillingnessElementError = document.getElementById("renovationWillingness-error");
+          const idealTimelineElement = document.getElementById("idealTimeline");
+          const idealTimelineElementError = document.getElementById("idealTimeline-error");
+
+
+           // Validation 
+           if (nameElement.value.trim() === "") {
+            errorElement.style.display = "block";
+            nameElement.focus();
+            return;
+          }
+          if (phoneElement.value.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (!emailPattern.test(EmailElement.value.trim())) {
+            EmailElementError.style.display = "block";
+            EmailElement.focus();
+            return;
+          }
+          if (propertyElement.value.trim() === "") {
+            propertyElementError.style.display = "block";
+            propertyElement.focus();
+            return;
+          }
+          if (BudgetElement.value.trim() === "") {
+            budgetElementError.style.display = "block";
+            BudgetElement.focus();
+            return;
+          }
+          if (locationElement.value.trim() === "") {
+            locationElementError.style.display = "block";
+            locationElement.focus();
+            return;
+          }
+          if (firstTimeBuyerElement.value.trim() === "") {
+            firstTimeBuyerElementError.style.display = "block";
+            firstTimeBuyerElement.focus();
+            return;
+          }
+          if (financingStatusElement.value.trim() === "") {
+            financingStatusElementError.style.display = "block";
+            financingStatusElement.focus();
+            return;
+          }
+          if (propertyFeaturesElement.value.trim() === "") {
+            propertyFeaturesElementError.style.display = "block";
+            propertyFeaturesElement.focus();
+            return;
+          }
+          if (renovationWillingnessElement.value.trim() === "") {
+            renovationWillingnessElementError.style.display = "block";
+            renovationWillingnessElement.focus();
+            return;
+          }
+          if (idealTimelineElement.value.trim() === "") {
+            idealTimelineElementError.style.display = "block";
+            idealTimelineElement.focus();
+            return;
+          }
+
+
+
+
+
           const formData = {
-            propertyType: document.getElementById("propertyType").value,
+          
             budgetRange: document.getElementById("budgetRange").value,
-            preferredLocation:
-              document.getElementById("preferredLocation").value,
+            preferredLocation: locationElement.value,
+            nameElement : document.getElementById("service-name").value,
+            phoneElement : document.getElementById("service-phone").value,   
+            EmailElement : document.getElementById("service-email").value,
             firstTimeBuyer: document.getElementById("firstTimeBuyer").value,
             financingStatus: document.getElementById("financingStatus").value,
             propertyFeatures: document.getElementById("propertyFeatures").value,
+            propertyElement : document.getElementById("propertyType").value,
             renovationWillingness: document.getElementById(
               "renovationWillingness"
             ).value,
@@ -558,6 +658,64 @@
               });
               document.getElementById("businessForm").reset();
             });
+        });
+
+
+       // Adding event listeners to hide error messages on input
+       document
+        .getElementById("service-name")
+        .addEventListener("input", function () {
+          document.getElementById("name-error").style.display = "none";
+        });
+      document
+        .getElementById("service-phone")
+        .addEventListener("input", function () {
+          document.getElementById("phone-error").style.display = "none";
+        });
+      document
+        .getElementById("service-email")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").style.display = "none";
+        });
+      document
+        .getElementById("propertyType")
+        .addEventListener("input", function () {
+          document.getElementById("propertyType-error").style.display = "none";
+        });
+      document
+        .getElementById("budgetRange")
+        .addEventListener("input", function () {
+          document.getElementById("budget-error").style.display = "none";
+        });
+      document
+        .getElementById("preferredLocation")
+        .addEventListener("input", function () {
+          document.getElementById("location-error").style.display = "none";
+        });
+      document
+        .getElementById("firstTimeBuyer")
+        .addEventListener("input", function () {
+          document.getElementById("firstTimeBuyer-error").style.display = "none";
+        });
+      document
+        .getElementById("financingStatus")
+        .addEventListener("input", function () {
+          document.getElementById("financingStatus-error").style.display = "none";
+        });
+      document
+        .getElementById("propertyFeatures")
+        .addEventListener("input", function () {
+          document.getElementById("propertyFeatures-error").style.display = "none";
+        });
+      document
+        .getElementById("renovationWillingness")
+        .addEventListener("input", function () {
+          document.getElementById("renovationWillingness-error").style.display = "none";
+        });
+      document
+        .getElementById("idealTimeline")
+        .addEventListener("input", function () {
+          document.getElementById("idealTimeline-error").style.display = "none";
         });
     </script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
