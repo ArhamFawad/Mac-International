@@ -235,33 +235,146 @@
                     </div>
                   </div>
                 </div>
-              </section>
-              <!-- <div>
-                <h4 class="rv-14-service__title">Rewards</h4>
-                <ul>
-                  <li class="rv-3-service__descr">
-                    Earn commmission-based rewards for successfull referrals.
-                    Gain access to exclusive partner events and receive
-                    recognition for your contributions.
-                  </li>
-                </ul>
-              </div> -->
-              <div>
-                <h4 class="rv-14-service__title">Partnering Companies</h4>
-                <p class="rv-3-service__descr">
-                  Attract and maintain high-quality clients by partnering with
-                  Mack Capital. Our strategic alliances with reputable companies
-                  ensure tailored finance and real estate solutions for your
-                  clients. Collaborate with us to elevate your offerings and
-                  empower individuals and businesses on their path to financial
-                  success.
-                </p>
+              <!-- Form Start -->
+              <div class="row gy-3 gy-sm-4">
+                <!-- Referral Page -->
+                <div class="col-xxl-12 col-lg-9">
+                  <div class="rv-2-contact__txt rv-inner-contact__txt">
+                    <h6 class="rv-2-contact-form-title">
+                      Referral Form
+                    </h6>
+                    <form
+                      id="businessForm"
+                      class="rv-2-contact__form rv-inner-contact__form"
+                    >
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <h5 style="font-weight: 600; text-decoration: underline">
+                            Personal Details
+                          </h5>
+                          <label style="margin-bottom: 10px" for="service-name"
+                            >Name</label
+                          >
+                          <input
+                            required
+                            type="text"
+                            name="name"
+                            id="service-name"
+                            placeholder=""
+                          />
+                          <p
+                            id="name-error"
+                            style="
+                              color: red;
+                              margin-top: 3px;
+                              margin-bottom: 3px;
+                              display: none;
+                            "
+                          >
+                            Name is required.
+                          </p>
+                        </div>
+                        <div class="col-sm-12">
+                          <label style="margin-bottom: 10px" for="service-company"
+                            >Company Name</label
+                          >
+                          <input
+                            required
+                            type="name"
+                            name="CompanyName"
+                            id="service-company"
+                            placeholder=""
+                          />
+                          <p
+                            id="company-error"
+                            style="
+                              color: red;
+                              margin-top: 3px;
+                              margin-bottom: 3px;
+                              display: none;
+                            "
+                          >
+                            Company Name is required.
+                          </p>
+                        </div>
+                        <div class="col-sm-12">
+                          <label style="margin-bottom: 10px" for="service-phone"
+                            >Phone</label
+                          >
+                          <input
+                            required
+                            type="number"
+                            name="phoneNumber"
+                            id="service-phone"
+                            placeholder=""
+                          />
+                          <p
+                            id="phone-error"
+                            style="
+                              color: red;
+                              margin-top: 3px;
+                              margin-bottom: 3px;
+                              display: none;
+                            "
+                          >
+                            Phone Number is required.
+                          </p>
+                        </div>
+                        <div class="col-sm-12">
+                          <label style="margin-bottom: 10px" for="service-email"
+                            >Email</label
+                          >
+                          <input
+                            required
+                            type="email"
+                            name="email"
+                            id="service-email"
+                            placeholder=""
+                          />
+                          <p
+                            id="email-error"
+                            style="
+                              color: red;
+                              margin-top: 3px;
+                              margin-bottom: 3px;
+                              display: none;
+                            "
+                          >
+                            Email is required.
+                          </p>
+                        </div>                  
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="rv-snd-msg-btn">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- <div>
+                    <h4 class="rv-14-service__title">Rewards</h4>
+                    <ul>
+                      <li class="rv-3-service__descr">
+                        Earn commmission-based rewards for successfull referrals.
+                      </li>
+                    </ul>
+                  </div> -->
+                  <div>
+                    <h4 class="rv-14-service__title">Partnering Companies</h4>
+                    <p class="rv-3-service__descr">
+                      Attract and maintain high-quality clients by partnering with
+                      Mack Capital. Our strategic alliances with reputable companies
+                      ensure tailored finance and real estate solutions for your
+                      clients. Collaborate with us to elevate your offerings and
+                      empower individuals and businesses on their path to financial
+                      success.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </section>
+              
+    
     <!-- SERVICE DETAILS SECTION END -->
 
     <!-- FOOTER SECTION START -->
@@ -279,10 +392,10 @@
                 /></a>
                 <p class="rv-1-footer__about-txt">Finance and Real Estate</p>
                 <div class="rv-1-socials">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+                  <a href="https://www.instagram.com/mack_capital?igsh=ZnpnZGh1ZDF0cDNy"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61563492347901"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/paul-mcphee-aus?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
               </div>
             </div>
 
@@ -380,6 +493,108 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      document
+        .getElementById("businessForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const nameElement = document.getElementById("service-name");
+          const errorElement = document.getElementById("name-error");
+          const companyElement = document.getElementById("service-company");
+          const companyElementError = document.getElementById("company-error");
+          const phoneElement = document.getElementById("service-phone");
+          const phoneElementError = document.getElementById("phone-error");
+          const EmailElement = document.getElementById("service-email");
+          const EmailElementError = document.getElementById("email-error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          
+          // Validation
+          if (nameElement.value.trim() === "") {
+            errorElement.style.display = "block";
+            nameElement.focus();
+            return;
+          }
+          if (companyElement.value.trim() === "") {
+            companyElementError.style.display = "block";
+            companyElement.focus();
+            return;
+          }
+          if (phoneElement.value.trim() === "") {
+            phoneElementError.style.display = "block";
+            phoneElement.focus();
+            return;
+          }
+          if (!emailPattern.test(EmailElement.value.trim())) {
+            EmailElementError.style.display = "block";
+            EmailElement.focus();
+            return;
+          }
+          
+          
+        
+
+          const formData = {
+            nameElement: document.getElementById("service-name").value,
+            phoneElement: document.getElementById("service-phone").value,
+            EmailElement: document.getElementById("service-email").value,
+            companyElement: document.getElementById("service-company").value,
+
+          };
+
+          fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              console.log("Success the data sent successfully:", data);
+              Swal.fire({
+                icon: "success",
+                title: "Form Submitted Successfully",
+                text: "Thank you! We have received your information.",
+              });
+              // Reset the form after success
+              document.getElementById("businessForm").reset();
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              Swal.fire({
+                icon: "error",
+                title: "Submission Failed",
+                text: "There was an error sending your information. Please try again.",
+              });
+              // Reset the form after failure
+              document.getElementById("businessForm").reset();
+            });
+        });
+
+      // Adding event listeners to hide error messages on input
+      document
+        .getElementById("service-name")
+        .addEventListener("input", function () {
+          document.getElementById("name-error").style.display = "none";
+        });
+        document
+        .getElementById("service-company")
+        .addEventListener("input", function () {
+          document.getElementById("company-error").style.display = "none";
+        });
+      document
+        .getElementById("service-phone")
+        .addEventListener("input", function () {
+          document.getElementById("phone-error").style.display = "none";
+        });
+      document
+        .getElementById("service-email")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").style.display = "none";
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
