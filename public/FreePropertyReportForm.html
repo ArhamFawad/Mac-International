@@ -359,8 +359,7 @@
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="sell-property"
-                      >Are you planning to sell the property in the near
-                      future?</label
+                      >Are you looking to refinance or purchase the property?</label
                     >
                     <input
                       required
@@ -381,6 +380,29 @@
                       Is required.
                     </p>
                   </div>
+                  <!-- <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="current-property"
+                      >Are you currently living in the property, renting it out, or is it vacant?</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      name="currentproperty"
+                      id="current-property"
+                      placeholder=""
+                    />
+                    <p
+                      id="current-property-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
+                    </p>
+                  </div> -->
                   <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
                       Property Condition
@@ -433,7 +455,7 @@
                       Is required.
                     </p>
                   </div>
-                  <div class="col-sm-12">
+                  <!-- <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
                       Contact Information
                     </h5>
@@ -504,7 +526,7 @@
                     >
                       Is required.
                     </p>
-                  </div>
+                  </div> -->
                   <div class="col-sm-12">
                     <h5 style="font-weight: 600; text-decoration: underline">
                       Additional Information
@@ -735,15 +757,15 @@
           const issuesrepairsError = document.getElementById(
             "issues-repairs-error"
           );
-          const usernameElement = document.getElementById("user-name");
-          const usernameElementError =
-            document.getElementById("user-name-error");
-          const userphoneElement = document.getElementById("user-phone");
-          const userphoneElementError =
-            document.getElementById("user-phone-error");
-          const useremailElement = document.getElementById("user-email");
-          const useremailElementError =
-            document.getElementById("user-email-error");
+          // const usernameElement = document.getElementById("user-name");
+          // const usernameElementError =
+          //   document.getElementById("user-name-error");
+          // const userphoneElement = document.getElementById("user-phone");
+          // const userphoneElementError =
+          //   document.getElementById("user-phone-error");
+          // const useremailElement = document.getElementById("user-email");
+          // const useremailElementError =
+          //   document.getElementById("user-email-error");
           const questionsconcernsElement =
             document.getElementById("questions-concerns");
           const questionsconcernsElementError = document.getElementById(
@@ -754,8 +776,10 @@
           const uniquefeaturesElementError = document.getElementById(
             "unique-features-error"
           );
+          // const currentpropertyElement = document.getElementById("current-property");
+          // const currentpropertyElementError = document.getElementById("current-property-error");
 
-          // Validation
+          // Validation 
           if (nameElement.value.trim() === "") {
             errorElement.style.display = "block";
             nameElement.focus();
@@ -783,7 +807,7 @@
           }
           if (propertystatusElement.value.trim() === "") {
             propertystatusElementError.style.display = "block";
-            propertyaddressElement.focus();
+            propertystatusElement.focus();
             return;
           }
           if (buildingstatusElement.value.trim() === "") {
@@ -816,21 +840,21 @@
             issuesrepairsElement.focus();
             return;
           }
-          if (usernameElement.value.trim() === "") {
-            usernameElementError.style.display = "block";
-            usernameElement.focus();
-            return;
-          }
-          if (userphoneElement.value.trim() === "") {
-            userphoneElementError.style.display = "block";
-            userphoneElement.focus();
-            return;
-          }
-          if (useremailElement.value.trim() === "") {
-            useremailElementError.style.display = "block";
-            useremailElement.focus();
-            return;
-          }
+          // if (usernameElement.value.trim() === "") {
+          //   usernameElementError.style.display = "block";
+          //   usernameElement.focus();
+          //   return;
+          // }
+          // if (userphoneElement.value.trim() === "") {
+          //   userphoneElementError.style.display = "block";
+          //   userphoneElement.focus();
+          //   return;
+          // }
+          // if (useremailElement.value.trim() === "") {
+          //   useremailElementError.style.display = "block";
+          //   useremailElement.focus();
+          //   return;
+          // }
           if (questionsconcernsElement.value.trim() === "") {
             questionsconcernsElementError.style.display = "block";
             questionsconcernsElement.focus();
@@ -841,6 +865,11 @@
             uniquefeaturesElement.focus();
             return;
           }
+          // if (currentpropertyElement.value.trim() === "") {
+          //   currentpropertyElementError.style.display = "block";
+          //   currentpropertyElement.focus();
+          //   return;
+          // }
 
           const formData = {
             nameElement: document.getElementById("service-name").value,
@@ -862,13 +891,14 @@
             ).value,
             issuesrepairsElement:
               document.getElementById("issues-repairs").value,
-            usernameElement: document.getElementById("user-name").value,
-            userphoneElement: document.getElementById("user-phone").value,
-            useremailElement: document.getElementById("user-email").value,
+            // usernameElement: document.getElementById("user-name").value,
+            // userphoneElement: document.getElementById("user-phone").value,
+            // useremailElement: document.getElementById("user-email").value,
             questionsconcernsElement:
               document.getElementById("questions-concerns").value,
             uniquefeaturesElement:
               document.getElementById("unique-features").value,
+            // currentpropertyElement : document.getElementById("current-property").value,
           };
 
           fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
@@ -964,21 +994,21 @@
           document.getElementById("issues-repairs-error").style.display =
             "none";
         });
-      document
-        .getElementById("user-name")
-        .addEventListener("input", function () {
-          document.getElementById("user-name-error").style.display = "none";
-        });
-      document
-        .getElementById("user-phone")
-        .addEventListener("input", function () {
-          document.getElementById("user-phone-error").style.display = "none";
-        });
-      document
-        .getElementById("user-email")
-        .addEventListener("input", function () {
-          document.getElementById("user-email-error").style.display = "none";
-        });
+      // document
+      //   .getElementById("user-name")
+      //   .addEventListener("input", function () {
+      //     document.getElementById("user-name-error").style.display = "none";
+      //   });
+      // document
+      //   .getElementById("user-phone")
+      //   .addEventListener("input", function () {
+      //     document.getElementById("user-phone-error").style.display = "none";
+      //   });
+      // document
+      //   .getElementById("user-email")
+      //   .addEventListener("input", function () {
+      //     document.getElementById("user-email-error").style.display = "none";
+      //   });
       document
         .getElementById("questions-concerns")
         .addEventListener("input", function () {
@@ -991,6 +1021,14 @@
           document.getElementById("unique-features-error").style.display =
             "none";
         });
+        // document
+        // .getElementById("current-property")
+        // .addEventListener("input", function () {
+        //   document.getElementById("current-property-error").style.display =
+        //     "none";
+        // });
+
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
