@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,15 +25,13 @@
     <link rel="stylesheet" href="assets\vendor\aos\aos.css" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets\css\style.css" />
-    <link rel="stylesheet" href="assets/css/Calculator.css" />
   </head>
 
-  <body class="rv-6-body">
+  <body class="rv-14-body">
     <!-- ANIMATED CURSOR START -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
     <!-- ANIMATED CURSOR END -->
-
     <!-- HEADER SECTION START -->
     <header class="rv-6-header rv-1-header to-be-fixed">
       <div class="container">
@@ -77,12 +75,31 @@
                     <a href="contact.html">Contact Us</a>
                   </li>
                   <li>
-                    <a href="Resources.html">Resources</a>
+                    <a href="LoanRepaymentCalculator.html">Resources</a>
                     <ul class="sub-menu rv-mega-menu">
-                        <li><a href="Calculators.html">Calculators</a></li>
-                        <li>Ebooks (Coming Soon)</li>
+                      <li>
+                        <a href="LoanRepaymentCalculator.html"
+                          >Loan Repayment Calculator</a
+                        >
+                      </li>
+                      <li>
+                        <a href="BorrowingPowerCalculator.html"
+                          >Borrowing Power Calculator</a
+                        >
+                      </li>
+                      <li><a href="BudgetPlanner.html">Budget Planner</a></li>
+                      <li>
+                        <a href="InterestOnlyMortgageCalculator.html"
+                          >Interest Only Mortgage Calculator</a
+                        >
+                      </li>
+                      <li>
+                        <a href="IncomeTaxCalculator.html"
+                          >Income Tax Calculator</a
+                        >
+                      </li>
                     </ul>
-                </li>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -113,215 +130,155 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">Funding Solutions</h1>
+        <h1 class="rv-breadcrumb__title">Calculators</h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
-            <a href="index.html" class="mr-10"
-              ><i class="fa-solid fa-sharp fa-home"></i> Home
-            </a>
+            <a href="index.html"
+              ><i class="fa-solid fa-sharp fa-home"></i> Home</a
+            >
           </li>
           <li>
             <span class="dvdr"> &#47;</span>
-            <a href="services.html">Services</a>
+            <a href="Resources.html">Resources</a>
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Funding Solutions</span>
+            <span class="dvdr"> &#47;</span><span>Calculators</span>
           </li>
         </ul>
       </div>
     </div>
     <!-- BREADCRUMB ENDS HERE -->
 
-    <!-- <div id="repaymentWidget"></div>
-    <script>
-      (function () {
-        const params = new Proxy(new URLSearchParams(window.location.search), {
-          get: (searchParams, prop) => searchParams.get(prop),
-        });
-        if (params.partnerId) {
-          localStorage.setItem("externalPartnerId", params.partnerId);
-        } else {
-          localStorage.setItem("externalPartnerId", "2508");
-        }
-        localStorage.setItem("sourceUrl", "https://mac-international.web.app");
-        localStorage.setItem("source", "Mack Capital");
-        localStorage.setItem("targetSystem", "SKYNET");
-        localStorage.setItem("countryCode", "AU");
-      })();
-    </script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/css/main.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/css/main.css.map"
-    />
-    <script
-      src="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/js/main.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/js/main.js.map"
-      crossorigin
-    ></script> -->
-
-    <!-- SERVICE DETAILS SECTION START -->
-    <section class="rv-service-details rv-section-spacing">
+    <!-- SERVICE SECTION START -->
+    <section class="rv-14-services rv-section-spacing" data-aos="fade-up">
       <div class="container">
-      
-        <div class="row rv-service-details__row g-30 justify-content-center">
-          <iframe
-          id="loanoptions-v3-application"
-          height="100%"
-          width="100%"
-          style="height: 100vh; width: 80vw"
-        ></iframe>
-          <div class="col-lg-8">
-            
-            <div class="rv-service-details__left">
-              <div class="rv-service-details__img">
-               
+        <div
+          class="row g-0 row-cols-md-3 row-cols-2 row-cols-xxs-1 overflow-hidden"
+        >
+          <div class="col">
+            <div class="rv-14-service rv-inner-service">
+              <div class="rv-14-service__icon">
+                <div class="rv-6-service__icon">
+                  <img
+                    src="assets\img\calculator.png"
+                    alt="Service icon"
+                  />
+                </div>
               </div>
-              <!-- <h3 class="rv-service-details__title">Branding Design</h3> -->
-              <p class="rv-service-details__descr">
-                Our brokers link you with trusted lenders, ensuring your
-                financial needs are met securely and efficiently. Our brokerage
-                service connects you with reputable lenders, guaranteeing peace
-                of mind as you achieve your financial goals. With our expertise,
-                we bridge the gap to deliver tailored solutions that fulfill
-                your finance requirements.
+              <h4 class="rv-14-service__title">
+                <a href="StampDutyCalculator.html">Stamp duty calculator </a>
+              </h4>
+              <p class="rv-3-service__descr">
+                A tool used to estimate the stamp duty fees associated with property transactions. Users input property details, and the calculator returns the stamp duty amount based on the location and value of the property.
               </p>
-
-              <div class="row rv-8-services__row g-30">
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a>Home Loans</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Whether you're a first-time homebuyer, a seasoned
-                        investor, or looking for an upgrade, we provide
-                        customized home loan solutions to fit your needs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Refinancing</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Enhance your financial position with our expert
-                        refinancing solutions. Lower your interest rates, extend
-                        repayment terms, or consolidate debts for greater
-                        efficiency.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Business Loans</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Access vital financial support to expand your existing
-                        business ventures and drive growth. Our loans cover a
-                        spectrum of needs including inventory financing,
-                        marketing, renovations, seasonal support, and technology
-                        upgrades.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Personal Loans</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Secure funding for various personal needs, from travel
-                        and education to purchasing a new car or starting a
-                        small business. Our flexible options also cover wedding
-                        expenses, medical bills, and home improvements.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Consolidation Loans</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Consolidate your financial obligations effectively
-                        through either cash-out mortgage refinancing or a
-                        flexible personal loan
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Assets Loans</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Secure financing for a variety of assets such as cars,
-                        ATVs, marine vehicles, and motorcycles with our tailored
-                        asset loan solutions to meet your needs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Commercial Loans</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Secure financing for commercial real estate purchases or
-                        business expansion projects, backed by our expertise and
-                        extensive network of lending partners.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="rv-8-service">
-                    <div class="rv-8-service__txt">
-                      <h4 class="rv-8-service__title">
-                        <a href="#">Cashflow and Invoice Lending</a>
-                      </h4>
-                      <p class="rv-3-service__descr">
-                        Optimize liquidity and manage cash flow effortlessly
-                        with our tailored lending services. Whether it's working
-                        capital or invoice financing, we've got you covered.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- <a
+                href="Funding Solutions.html"
+                class="rv-1-schedule-conf__btn rv-6-service__btn"
+                >Read More <i class="fa-regular fa-arrow-up-right"></i
+              ></a> -->
             </div>
           </div>
+
+          <div class="col">
+            <div class="rv-14-service rv-inner-service">
+              <div class="rv-14-service__icon">
+                <div class="rv-6-service__icon">
+                  <img
+                    src="assets\img\calculator.png"
+                    alt="Service icon"
+                  />
+                </div>
+              </div>
+              <h4 class="rv-14-service__title">
+                <a href="IncomeAnnualisationCalculator.html">Income annualisation calculator </a>
+              </h4>
+              <p class="rv-3-service__descr">
+                An Income Annualisation Calculator estimates annual income by projecting earnings over a shorter period, such as a week or month, to show potential yearly income if consistent.
+              </p>
+              <!-- <a
+                href="Real Estate Solutions.html"
+                class="rv-1-schedule-conf__btn rv-6-service__btn"
+                >Read More <i class="fa-regular fa-arrow-up-right"></i
+              ></a> -->
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="rv-14-service rv-inner-service">
+              <div class="rv-14-service__icon">
+                <div class="rv-6-service__icon">
+                  <img src="assets\img\calculator.png" alt="Service icon" />
+                </div>
+              </div>
+              <h4 class="rv-14-service__title">
+                <a
+                  href="RentVsBuyCalculator.html"
+                  >Rent vs Buy calculator</a
+                >
+              </h4>
+              <p class="rv-3-service__descr">
+                A Rent vs Buy calculator compares the financial impact of renting versus buying by analyzing costs like rent, home price, and mortgage rates.
+              </p>
+              <!-- <a
+                href="Comprehensive Insurance Services for Financial Security.html"
+                class="rv-1-schedule-conf__btn rv-6-service__btn"
+                >Read More <i class="fa-regular fa-arrow-up-right"></i
+              ></a> -->
+            </div>
+          </div>
+          <div class="col">
+            <div class="rv-14-service rv-inner-service">
+              <div class="rv-14-service__icon">
+                <div class="rv-6-service__icon">
+                  <img
+                    src="assets\img\calculator.png"
+                    alt="Service icon"
+                  />
+                </div>
+              </div>
+              <h4 class="rv-14-service__title">
+                <a href="FortnightlyRepaymentCalculator.html"
+                  >Fortnightly repayment calculator</a
+                >
+              </h4>
+              <p class="rv-3-service__descr">
+                A Fortnightly Repayment Calculator estimates the payment amounts required every two weeks to repay a loan, helping to calculate the total interest savings compared to monthly payments.
+              </p>
+              <!-- <a
+                href="Accounting and Legal Services.html"
+                class="rv-1-schedule-conf__btn rv-6-service__btn"
+                >Read More <i class="fa-regular fa-arrow-up-right"></i
+              ></a> -->
+            </div>
+          </div>
+          <!-- <div class="col">
+            <div class="rv-14-service rv-inner-service">
+              <div class="rv-14-service__icon">
+                <div class="rv-6-service__icon">
+                  <img src="assets\img\calculator.png" alt="Service icon" />
+                </div>
+              </div>
+              <h4 class="rv-14-service__title">
+                <a
+                  href="Comprehensive Insurance Services for Financial Security.html"
+                  >Rent vs Buy calculator</a
+                >
+              </h4>
+              <p class="rv-3-service__descr">
+                A Rent vs Buy calculator compares the financial impact of renting versus buying by analyzing costs like rent, home price, and mortgage rates.
+              </p>
+              <!-- <a
+                href="Comprehensive Insurance Services for Financial Security.html"
+                class="rv-1-schedule-conf__btn rv-6-service__btn"
+                >Read More <i class="fa-regular fa-arrow-up-right"></i
+              ></a> -->
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
-    <!-- SERVICE DETAILS SECTION END -->
+    <!-- SERVICE SECTION END -->
 
     <!-- FOOTER SECTION START -->
     <footer class="rv-1-footer rv-6-footer">
@@ -451,8 +408,6 @@
     <script src="assets\vendor\split-type\split-type-0.3.3.min.js"></script>
     <script src="assets\vendor\lenis\lenis.js"></script>
     <script src="assets\vendor\anime\anime.min.js"></script>
-    <script src="assets\js\search-modal.js"></script>
     <script src="assets\js\main.js"></script>
-    <script src="https://loanoptions-widget.s3.ap-southeast-2.amazonaws.com/main/widget-three.js"></script>
   </body>
 </html>
