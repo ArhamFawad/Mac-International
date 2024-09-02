@@ -13421,6 +13421,15 @@ html.lenis {
 .rv-6-service__title:hover {
   color: #f2584c;
 }
+.rv-7-service__title {
+  color: #050505;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.rv-7-service__title:hover {
+  color: #f2584c;
+}
 .rv-6-service__descr {
   color: rgba(5, 5, 5, 0.5);
   font-size: 14px;
