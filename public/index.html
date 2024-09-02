@@ -26,6 +26,20 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets\css\style.css" />
     <link rel="stylesheet" href="assets/css/Calculator.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/css/main.css.map"
+    />
   </head>
 
   <body class="rv-6-body">
@@ -353,12 +367,13 @@
             </div>
           </div>
         </div>
-        <iframe
+        <!-- <iframe
           id="loanoptions-v3-application"
           height="100%"
           width="100%"
           style="height: 100vh; width: 80vw; margin-top: 20px"
-        ></iframe>
+        ></iframe> -->
+        <div id="repaymentWidget"></div>
       </div>
     </section>
     <!-- SERVICES SECTION END -->
@@ -505,7 +520,34 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
-    <script src="https://loanoptions-widget.s3.ap-southeast-2.amazonaws.com/main/widget-three.js"></script>
+    <script>
+      (function () {
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+          get: (searchParams, prop) => searchParams.get(prop),
+        });
+
+        if (params.partnerId) {
+          localStorage.setItem("externalPartnerId", params.partnerId);
+        } else {
+          localStorage.setItem("externalPartnerId", "2508");
+        }
+
+        // localStorage.setItem("sourceUrl", "https://mac-international.web.app");
+        localStorage.setItem("sourceUrl", "https://mackcapital.com.au");
+        localStorage.setItem("source", "Mack Capital");
+        localStorage.setItem("targetSystem", "SKYNET");
+        localStorage.setItem("countryCode", "AU");
+      })();
+    </script>
+    <script
+      src="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/js/main.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/js/main.js.map"
+      crossorigin
+    ></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
