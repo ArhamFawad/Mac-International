@@ -112,7 +112,7 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">Assets Loan</h1>
+        <h1 class="rv-breadcrumb__title">Can't Find Your Loan ?</h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
@@ -121,13 +121,7 @@
             >
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span>
-            <a href="Real Estate Solutions.html"
-              ><span>Real Estate Solutions</span></a
-            >
-          </li>
-          <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>Assets Loan</span>
+            <span class="dvdr"> &#47;</span><span>Can't Find Your Loan</span>
           </li>
         </ul>
       </div>
@@ -146,7 +140,18 @@
           <!-- contact form -->
           <div class="col-xxl-12 col-lg-9">
             <div class="rv-2-contact__txt rv-inner-contact__txt">
-              <h6 class="rv-2-contact-form-title">Lending Information Form</h6>
+              <h6 class="rv-2-contact-form-title">Loan Inquiry Form</h6>
+              <p class="rv-6-banner__descr rv-text-anime">
+                We understand that every financial need is unique, and sometimes
+                the standard loan options just don't fit. If you're looking for
+                a specific type of loan that isn’t listed in our usual
+                categories, we’re here to help. Please fill out the form below
+                with details about your loan requirements, and our team will
+                work with you to explore available options and help you find a
+                suitable solution. While we can't promise to cover every loan
+                type, we’ll do our best to assist you in finding the financing
+                that meets your needs.
+              </p>
               <form
                 id="businessForm"
                 class="rv-2-contact__form rv-inner-contact__form"
@@ -226,23 +231,14 @@
                     <label style="margin-bottom: 10px" for="loan-purpose"
                       >Loan Purpose</label
                     >
-                    <select
-                      required
-                      id="loan-purpose"
+                    <input
+                      type="text"
                       name="loan-purpose"
+                      id="loan-purpose"
+                      placeholder="Please provide details about the type of loan you are seeking"
                       class="form-control"
                       style="width: 100%; padding: 10px; margin-bottom: 10px"
-                    >
-                      <option value="" hidden>Select Loan Purpose</option>
-                      <option value="Car">Car</option>
-                      <option value="Motorcycle">Motorcycle</option>
-                      <option value="Marine">Marine</option>
-                      <option value="RV/Motorhome">RV/Motorhome</option>
-                      <option value="ATV/Quad Bike">ATV/Quad Bike</option>
-                      <option value="Trailer">Trailer</option>
-                      <option value="Caravan/Camper">Caravan/Camper</option>
-                      <option value="Other">Other</option>
-                    </select>
+                    />
                     <p
                       id="loan-purpose-error"
                       style="
@@ -252,39 +248,10 @@
                         display: none;
                       "
                     >
-                      Please select a loan purpose or specify if "Other".
+                      Please specify Loan Purpose.
                     </p>
                   </div>
 
-                  <!-- Other Loan Purpose Input (Hidden by Default) -->
-                  <div
-                    class="col-sm-12"
-                    id="other-loan-purpose-container"
-                    style="display: none"
-                  >
-                    <label style="margin-bottom: 10px" for="other-loan-purpose"
-                      >Specify Other Loan Purpose</label
-                    >
-                    <input
-                      type="text"
-                      name="other-loan-purpose"
-                      id="other-loan-purpose"
-                      placeholder="Enter Other Loan Purpose"
-                      class="form-control"
-                      style="width: 100%; padding: 10px; margin-bottom: 10px"
-                    />
-                    <p
-                      id="other-loan-purpose-error"
-                      style="
-                        color: red;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-                        display: none;
-                      "
-                    >
-                      Please specify the loan purpose.
-                    </p>
-                  </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="loanAmount"
                       >Loan Amount :</label
@@ -306,30 +273,6 @@
                       "
                     >
                       Loan Amount is required.
-                    </p>
-                  </div>
-                  <div class="col-12">
-                    <label style="margin-bottom: 10px" for="preferredLocation"
-                      >Do you have a preferred location or neighborhood for the
-                      new development?</label
-                    >
-                    <input
-                      required
-                      type="text"
-                      name="preferredLocation"
-                      id="preferredLocation"
-                      placeholder="Please provide it."
-                    />
-                    <p
-                      id="location-error"
-                      style="
-                        color: red;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-                        display: none;
-                      "
-                    >
-                      Location is required.
                     </p>
                   </div>
                   <div class="col-sm-12">
@@ -563,30 +506,6 @@
 
     <!-- JS FILES -->
     <script>
-      const loanPurposeSelect = document.getElementById("loan-purpose");
-      const otherLoanPurposeContainer = document.getElementById(
-        "other-loan-purpose-container"
-      );
-      const otherLoanPurposeInput =
-        document.getElementById("other-loan-purpose");
-      const loanPurposeError = document.getElementById("loan-purpose-error");
-      const otherLoanPurposeError = document.getElementById(
-        "other-loan-purpose-error"
-      );
-
-      loanPurposeSelect.addEventListener("change", function () {
-        if (loanPurposeSelect.value === "Other") {
-          otherLoanPurposeContainer.style.display = "block";
-          otherLoanPurposeInput.setAttribute("required", "required");
-        } else {
-          otherLoanPurposeContainer.style.display = "none";
-          otherLoanPurposeInput.removeAttribute("required");
-          otherLoanPurposeInput.value = ""; // Clear the input field
-        }
-        loanPurposeError.style.display = "none"; // Hide error on change
-        otherLoanPurposeError.style.display = "none"; // Hide other error on change
-      });
-
       document
         .getElementById("businessForm")
         .addEventListener("submit", function (event) {
@@ -602,15 +521,8 @@
           const loanPurposeElement = document.getElementById("loan-purpose");
           const loanPurposeError =
             document.getElementById("loan-purpose-error");
-          const otherLoanPurposeElement =
-            document.getElementById("other-loan-purpose");
-          const otherLoanPurposeError = document.getElementById(
-            "other-loan-purpose-error"
-          );
           const loanAmountElement = document.getElementById("loanAmount");
           const loanAmountError = document.getElementById("loan-amount-error");
-          const locationElement = document.getElementById("preferredLocation");
-          const locationError = document.getElementById("location-error");
           const loanTermElement = document.getElementById("loan-term");
           const loanTermError = document.getElementById("loan-term-error");
           const incomeElement = document.getElementById("annual-income");
@@ -626,59 +538,66 @@
           const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
           // Validation checks
+          let isValid = true;
+
           if (nameElement.value.trim() === "") {
             nameError.style.display = "block";
-            nameElement.focus();
-            return;
+            isValid = false;
+          } else {
+            nameError.style.display = "none";
           }
+
           if (phoneElement.value.trim() === "") {
             phoneError.style.display = "block";
-            phoneElement.focus();
-            return;
+            isValid = false;
+          } else {
+            phoneError.style.display = "none";
           }
+
           if (!emailPattern.test(emailElement.value.trim())) {
             emailError.style.display = "block";
-            emailElement.focus();
-            return;
+            isValid = false;
+          } else {
+            emailError.style.display = "none";
           }
+
           if (loanPurposeElement.value.trim() === "") {
             loanPurposeError.style.display = "block";
-            loanPurposeElement.focus();
-            return;
+            isValid = false;
+          } else {
+            loanPurposeError.style.display = "none";
           }
-          if (
-            loanPurposeElement.value === "Other" &&
-            otherLoanPurposeElement.value.trim() === ""
-          ) {
-            otherLoanPurposeError.style.display = "block";
-            otherLoanPurposeElement.focus();
-            return;
-          }
+
           if (loanAmountElement.value.trim() === "") {
             loanAmountError.style.display = "block";
-            loanAmountElement.focus();
-            return;
+            isValid = false;
+          } else {
+            loanAmountError.style.display = "none";
           }
-          if (locationElement.value.trim() === "") {
-            locationError.style.display = "block";
-            locationElement.focus();
-            return;
-          }
+
           if (loanTermElement.value.trim() === "") {
             loanTermError.style.display = "block";
-            loanTermElement.focus();
-            return;
+            isValid = false;
+          } else {
+            loanTermError.style.display = "none";
           }
+
           if (incomeElement.value.trim() === "") {
             incomeError.style.display = "block";
-            incomeElement.focus();
-            return;
+            isValid = false;
+          } else {
+            incomeError.style.display = "none";
           }
+
           if (employmentElement.value.trim() === "") {
             employmentError.style.display = "block";
-            employmentElement.focus();
-            return;
+            isValid = false;
+          } else {
+            employmentError.style.display = "none";
           }
+
+          // If the form is invalid, stop submission
+          if (!isValid) return;
 
           // Form data to send to backend
           const formData = {
@@ -686,9 +605,7 @@
             phoneNumber: phoneElement.value,
             email: emailElement.value,
             loanPurpose: loanPurposeElement.value,
-            otherLoanPurpose: otherLoanPurposeElement.value || null, // Optional
             loanAmount: loanAmountElement.value,
-            preferredLocation: locationElement.value,
             loanTerm: loanTermElement.value,
             annualIncome: incomeElement.value,
             employmentStatus: employmentElement.value,
@@ -726,42 +643,38 @@
             });
         });
 
-      // Adding event listeners to hide error messages on input
+      // Hide error messages on input change
+      function hideErrorOnInput(elementId, errorId) {
+        document
+          .getElementById(elementId)
+          .addEventListener("input", function () {
+            document.getElementById(errorId).style.display = "none";
+          });
+      }
+
+      hideErrorOnInput("service-name", "name-error");
+      hideErrorOnInput("service-phone", "phone-error");
+      hideErrorOnInput("service-email", "email-error");
+      hideErrorOnInput("loanAmount", "loan-amount-error");
+
       document
-        .getElementById("service-name")
-        .addEventListener("input", function () {
-          document.getElementById("name-error").style.display = "none";
+        .getElementById("loan-purpose")
+        .addEventListener("change", function () {
+          document.getElementById("loan-purpose-error").style.display = "none";
         });
-      document
-        .getElementById("service-phone")
-        .addEventListener("input", function () {
-          document.getElementById("phone-error").style.display = "none";
-        });
-      document
-        .getElementById("service-email")
-        .addEventListener("input", function () {
-          document.getElementById("email-error").style.display = "none";
-        });
-      document
-        .getElementById("loanAmount")
-        .addEventListener("input", function () {
-          document.getElementById("loan-amount-error").style.display = "none";
-        });
-      document
-        .getElementById("preferredLocation")
-        .addEventListener("input", function () {
-          document.getElementById("location-error").style.display = "none";
-        });
+
       document
         .getElementById("loan-term")
         .addEventListener("change", function () {
           document.getElementById("loan-term-error").style.display = "none";
         });
+
       document
         .getElementById("annual-income")
         .addEventListener("change", function () {
           document.getElementById("annual-income-error").style.display = "none";
         });
+
       document
         .getElementById("employment-status")
         .addEventListener("change", function () {
