@@ -175,12 +175,7 @@
     <section class="rv-service-details rv-section-spacing">
       <div class="container">
         <div class="row rv-service-details__row g-30 justify-content-center">
-          <iframe
-            id="loanoptions-v3-application"
-            height="100%"
-            width="100%"
-            style="height: 100vh; width: 80vw"
-          ></iframe>
+          <div id="repaymentWidget"></div>
           <div class="col-lg-8">
             <div class="rv-service-details__left">
               <div class="rv-service-details__img"></div>
@@ -461,6 +456,34 @@
     <!-- FOOTER SECTION END -->
 
     <!-- JS FILES -->
+    <script>
+      (function () {
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+          get: (searchParams, prop) => searchParams.get(prop),
+        });
+
+        if (params.partnerId) {
+          localStorage.setItem("externalPartnerId", params.partnerId);
+        } else {
+          localStorage.setItem("externalPartnerId", "2508");
+        }
+
+        // localStorage.setItem("sourceUrl", "https://mac-international.web.app");
+        localStorage.setItem("sourceUrl", "https://mackcapital.com.au");
+        localStorage.setItem("source", "Mack Capital");
+        localStorage.setItem("targetSystem", "SKYNET");
+        localStorage.setItem("countryCode", "AU");
+      })();
+    </script>
+    <script
+      src="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/js/main.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://s3.ap-southeast-2.amazonaws.com/widget.driveiq/prod/widgetToolVersion2/static/js/main.js.map"
+      crossorigin
+    ></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
     <script src="assets\vendor\syotimer\jquery.syotimer.min.js"></script>
