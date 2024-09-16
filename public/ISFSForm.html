@@ -524,18 +524,11 @@
             EmailElement.focus();
             return;
           }
-          
-
-
-
-
-
-
           const formData = {
             nameElement : document.getElementById("service-name").value,
             BirthDateElement : document.getElementById("BirthDate").value,
             OccupationElement: document.getElementById("Occupation").value,
-            businessstructureElement: document.getElementById("business-structure").value,
+            smokerStatusElement: document.getElementById("business-structure").value,
             IncomeElement: document.getElementById("Income").value,
             medicalElement: document.getElementById("medical").value,
             lifeInsuranceElement: document.getElementById("lifeInsurance").value,
@@ -543,20 +536,7 @@
             MonthlyIncomeElement: document.getElementById("MonthlyIncome").value,
             phoneElement : document.getElementById("service-phone").value,   
             EmailElement : document.getElementById("service-email").value,
-            
-
-
-            
-            
-            
-
-            
-            
-
-            
-            
-
-              
+            type: 'Insurance-service-inquiry'
           };
 
           fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
