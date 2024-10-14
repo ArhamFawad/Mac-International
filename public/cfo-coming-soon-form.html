@@ -76,9 +76,9 @@
                     <a href="contact.html">Contact Us</a>
                   </li>
                   <li>
-                    <a href="Resources.html">Resources</a>
+                    <a href="resources.html">Resources</a>
                     <ul class="sub-menu rv-mega-menu">
-                      <li><a href="Calculators.html">Calculators</a></li>
+                      <li><a href="calculators.html">Calculators</a></li>
                       <li>Ebooks (Coming Soon)</li>
                     </ul>
                   </li>
@@ -112,7 +112,7 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">BAS Services</h1>
+        <h1 class="rv-breadcrumb__title">Expression of Interest Form</h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
@@ -123,11 +123,13 @@
           <li class="current-page">
             <span class="dvdr"> &#47;</span>
             <a href="accounting-and-legal-services.html"
-              ><span>Accounting and Legal Services</span></a
+              ><span href="accounting-and-legal-services.html"
+                >Accounting and Legal Services</span
+              ></a
             >
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span><span>BAS Services</span>
+            <span class="dvdr"> &#47;</span><span>CFO Coming Soon</span>
           </li>
         </ul>
       </div>
@@ -215,7 +217,7 @@
           <!-- contact form -->
           <div class="col-xxl-12 col-lg-9">
             <div class="rv-2-contact__txt rv-inner-contact__txt">
-              <h6 class="rv-2-contact-form-title">BAS Services Inquiry</h6>
+              <h6 class="rv-2-contact-form-title">CFO Inquiry</h6>
               <form
                 id="businessForm"
                 class="rv-2-contact__form rv-inner-contact__form"
@@ -223,14 +225,14 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="service-name"
-                      >Name</label
+                      >What is your company's name?</label
                     >
                     <input
                       required
                       type="text"
                       name="name"
                       id="service-name"
-                      placeholder="Enter your Name"
+                      placeholder="Write Name"
                     />
                     <p
                       id="name-error"
@@ -241,19 +243,19 @@
                         display: none;
                       "
                     >
-                      Name is required.
+                      Company name is required.
                     </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="service-phone"
-                      >Phone</label
+                      >What is the best contact for your company?</label
                     >
                     <input
                       required
                       type="number"
                       name="phoneNumber"
                       id="service-phone"
-                      placeholder="Phone number"
+                      placeholder="Write Phone Number"
                     />
                     <p
                       id="phone-error"
@@ -264,19 +266,20 @@
                         display: none;
                       "
                     >
-                      Phone Number is required.
+                      Company Phone Number is required.
                     </p>
                   </div>
                   <div class="col-sm-12">
                     <label style="margin-bottom: 10px" for="service-email"
-                      >Email</label
+                      >What is the primary email address for
+                      communications?</label
                     >
                     <input
                       required
                       type="email"
                       name="email"
                       id="service-email"
-                      placeholder="Enter Email"
+                      placeholder="Write Email"
                     />
                     <p
                       id="email-error"
@@ -292,58 +295,19 @@
                   </div>
 
                   <div class="col-12">
-                    <label style="margin-bottom: 10px" for="business-structure"
-                      >What type of business structure do you have?</label
-                    >
-                    <select
-                      name="businessStructure"
-                      id="business-structure"
-                      required
-                    >
-                      <option value="" hidden="">Select</option>
-                      <option value="Sole Trader">Sole Trader</option>
-                      <option value="Partnership">Partnership</option>
-                      <option value="Trust">Trust</option>
-                      <option value="Company">Company</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="abn"
-                      >ABN (Australian Business Number)</label
-                    >
-                    <input
-                      required
-                      type="number"
-                      name="abn"
-                      id="abn"
-                      placeholder="If yes, please provide it."
-                    />
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="bas-frequency"
-                      >How often do you require assistance with Business
-                      Activity Statements (BAS)?</label
-                    >
-                    <select name="basFrequency" id="bas-frequency" required>
-                      <option value="" hidden="">Select</option>
-                      <option value="Monthly">Monthly</option>
-                      <option value="Quarterly">Quarterly</option>
-                    </select>
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="bas-issues"
-                      >Have you faced any challenges or issues with BAS lodgment
-                      before?</label
+                    <label style="margin-bottom: 10px" for="Point-of-Contact"
+                      >Who is the primary contact and their position within the
+                      company?</label
                     >
                     <input
                       required
                       type="text"
-                      name="basIssues"
-                      id="bas-issues"
-                      placeholder="If yes, please describe."
+                      name="POC"
+                      id="Point-of-Contact"
+                      placeholder="Write here"
                     />
                     <p
-                      id="bas-issues-error"
+                      id="Point-of-Contact-error"
                       style="
                         color: red;
                         margin-top: 3px;
@@ -351,25 +315,98 @@
                         display: none;
                       "
                     >
-                      is required.
+                      Point of Contact is required.
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="revenue-threshold"
+                      >Does your current revenue exceed $1 million, or do you
+                      plan to reach this threshold within the next 12
+                      months?</label
+                    >
+                    <input
+                      type="text"
+                      name="revenuestreams"
+                      id="revenue-threshold"
+                      placeholder="Please Specify."
+                    />
+                    <p
+                      id="revenue-threshold-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="previous-tax-return"
+                      >When was your last tax return prepared, and what were
+                      your gross and net figures?</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      name="previoustaxreturn"
+                      id="previous-tax-return"
+                      placeholder="Please provide it."
+                    />
+                    <p
+                      id="previous-tax-return-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
                     </p>
                   </div>
                   <div class="col-sm-12">
                     <label
                       style="margin-bottom: 10px"
-                      for="regulatory-requirements"
-                      >Are you familiar with the regulatory requirements for BAS
-                      lodgment in your industry?</label
+                      for="Current-Years-Forecast"
+                      >What is your financial forecast for the current year, and
+                      how confident are you in achieving it?
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      name="Current-Years-Forecast"
+                      id="Current-Years-Forecast"
+                      placeholder=""
+                    />
+                    <p
+                      id="Current-Years-Forecast-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="Revenue-Streams"
+                      >Can you describe your current revenue streams and
+                      identify those that are performing well versus those that
+                      need improvement?</label
                     >
                     <input
                       required
                       type="text"
-                      name="regulatoryRequirements"
-                      id="regulatory-requirements"
+                      name="RevenueStreams"
+                      id="Revenue-Streams"
                       placeholder=""
                     />
                     <p
-                      id="regulatory-requirements-error"
+                      id="Revenue-Streams-error"
                       style="
                         color: red;
                         margin-top: 3px;
@@ -381,19 +418,19 @@
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="bas-assistance"
-                      >Do you need assistance with BAS preparation only,
-                      lodgment only, or both?</label
+                    <label style="margin-bottom: 10px" for="Profit-Margins">
+                      Are your current profit margins meeting your expectations?
+                      Where do you see opportunities for improvement?</label
                     >
                     <input
                       required
                       type="text"
-                      name="basAssistance"
-                      id="bas-assistance"
+                      name="ProfitMargins"
+                      id="Profit-Margins"
                       placeholder=""
                     />
                     <p
-                      id="bas-assistance-error"
+                      id="Profit-Margins-error"
                       style="
                         color: red;
                         margin-top: 3px;
@@ -401,46 +438,24 @@
                         display: none;
                       "
                     >
-                      is required.
+                      Is required.
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="gst-registration"
-                      >Are you registered for GST? If yes, do you require
-                      assistance with GST reporting as well?</label
+                    <label style="margin-bottom: 10px" for="Growth-Goals"
+                      >What are your primary growth goals for the next 1-3
+                      years? Do you have a financial plan to support these
+                      objectives?</label
                     >
                     <input
                       required
                       type="text"
-                      name="gstRegistration"
-                      id="gst-registration"
-                      placeholder=""
-                    />
-                    <p
-                      id="gst-registration-error"
-                      style="
-                        color: red;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-                        display: none;
-                      "
-                    >
-                      is required.
-                    </p>
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="accounting-software"
-                      >What accounting software do you currently use?</label
-                    >
-                    <input
-                      required
-                      type="text"
-                      name="accountingSoftware"
-                      id="accounting-software"
+                      name="GrowthGoals"
+                      id="Growth-Goals"
                       placeholder="if any?"
                     />
                     <p
-                      id="accounting-software-error"
+                      id="Growth-Goals-error"
                       style="
                         color: red;
                         margin-top: 3px;
@@ -448,23 +463,26 @@
                         display: none;
                       "
                     >
-                      is required.
+                      Is required.
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="financial-reporting"
-                      >Are you interested in additional financial reporting
-                      services besides BAS lodgment?</label
+                    <label
+                      style="margin-bottom: 10px"
+                      for="Investment-and-Financing"
                     >
+                      Are there any upcoming investments or financing needs that
+                      you anticipate?
+                    </label>
                     <input
                       required
                       type="text"
-                      name="financialReporting"
-                      id="financial-reporting"
-                      placeholder=""
+                      name="InvestmentandFinancing"
+                      id="Investment-and-Financing"
+                      placeholder="if any?"
                     />
                     <p
-                      id="financial-reporting-error"
+                      id="Investment-and-Financing-error"
                       style="
                         color: red;
                         margin-top: 3px;
@@ -472,7 +490,137 @@
                         display: none;
                       "
                     >
-                      is required.
+                      Is required.
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="Cost-Control">
+                      How effective is your current cost management strategy?
+                      Where do you see potential for better efficiency?
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      name="CostControl"
+                      id="Cost-Control"
+                      placeholder="if any?"
+                    />
+                    <p
+                      id="Cost-Control-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
+                    </p>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <label
+                      style="margin-bottom: 10px"
+                      for="Automation-and-Processes"
+                    >
+                      How automated are your financial processes? Are there any
+                      bottlenecks or inefficiencies you want to address?
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      name="Automation and Processes"
+                      id="Automation-and-Processes"
+                      placeholder="if any?"
+                    />
+                    <p
+                      id="Automation-and-Processes-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
+                    </p>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="Risk-Mitigation">
+                      What financial risks concern you the most, and how are you
+                      managing them?
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      name="RiskMitigation"
+                      id="Risk-Mitigation"
+                      placeholder="if any?"
+                    />
+                    <p
+                      id="Risk-Mitigation-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
+                    </p>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="Compliance">
+                      How confident are you in your compliance with tax laws and
+                      industry regulations?
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      name="Compliance"
+                      id="Compliance"
+                      placeholder="if any?"
+                    />
+                    <p
+                      id="Compliance-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
+                    </p>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <label
+                      style="margin-bottom: 10px"
+                      for="Future-Expectations"
+                    >
+                      What specific outcomes or improvements are you seeking
+                      from partnering with a Virtual CFO?
+                    </label>
+                    <input
+                      required
+                      type="text"
+                      name="FutureExpectations"
+                      id="Future-Expectations"
+                      placeholder="if any?"
+                    />
+                    <p
+                      id="Future-Expectations-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      Is required.
                     </p>
                   </div>
                   <div class="col-12">
@@ -635,36 +783,69 @@
           const EmailElement = document.getElementById("service-email");
           const EmailElementError = document.getElementById("email-error");
           const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          const basissuesElement = document.getElementById("bas-issues");
-          const basissuesElementError =
-            document.getElementById("bas-issues-error");
-          const regulatoryrequirementsElement = document.getElementById(
-            "regulatory-requirements"
+          const PointofContactElement =
+            document.getElementById("Point-of-Contact");
+          const PointofContactElementError = document.getElementById(
+            "Point-of-Contact-error"
           );
-          const regulatoryrequirementsElementError = document.getElementById(
-            "regulatory-requirements-error"
+          const revenuethresholdElement =
+            document.getElementById("revenue-threshold");
+          const revenuethresholdElementError = document.getElementById(
+            "revenue-threshold-error"
           );
-          const basassistanceElement =
-            document.getElementById("bas-assistance");
-          const basassistanceElementError = document.getElementById(
-            "bas-assistance-error"
+          const previoustaxreturnElement = document.getElementById(
+            "previous-tax-return"
           );
-          const gstregistrationElement =
-            document.getElementById("gst-registration");
-          const gstregistrationElementError = document.getElementById(
-            "gst-registration-error"
+          const previoustaxreturnElementError = document.getElementById(
+            "previous-tax-return-error"
           );
-          const accountingsoftwareElement = document.getElementById(
-            "accounting-software"
+          const CurrentYearsForecastElement = document.getElementById(
+            "Current-Years-Forecast"
           );
-          const accountingsoftwareElementError = document.getElementById(
-            "accounting-software-error"
+          const CurrentYearsForecastElementError = document.getElementById(
+            "Current-Years-Forecast-error"
           );
-          const financialreportingElement = document.getElementById(
-            "financial-reporting"
+          const RevenueStreamsElement =
+            document.getElementById("Revenue-Streams");
+          const RevenueStreamsElementError = document.getElementById(
+            "Revenue-Streams-error"
           );
-          const financialreportingElementError = document.getElementById(
-            "financial-reporting-error"
+          const ProfitMarginsElement =
+            document.getElementById("Profit-Margins");
+          const ProfitMarginsElementError = document.getElementById(
+            "Profit-Margins-error"
+          );
+          const GrowthGoalsElement = document.getElementById("Growth-Goals");
+          const GrowthGoalsElementError =
+            document.getElementById("Growth-Goals-error");
+          const InvestmentandFinancingElement = document.getElementById(
+            "Investment-and-Financing"
+          );
+          const InvestmentandFinancingElementError = document.getElementById(
+            "Investment-and-Financing-error"
+          );
+          const CostControlElement = document.getElementById("Cost-Control");
+          const CostControlElementError =
+            document.getElementById("Cost-Control-error");
+          const AutomationandProcessesElement = document.getElementById(
+            "Automation-and-Processes"
+          );
+          const AutomationandProcessesElementError = document.getElementById(
+            "Automation-and-Processes-error"
+          );
+          const RiskMitigationElement =
+            document.getElementById("Risk-Mitigation");
+          const RiskMitigationElementError = document.getElementById(
+            "Risk-Mitigation-error"
+          );
+          const ComplianceElement = document.getElementById("Compliance");
+          const ComplianceElementError =
+            document.getElementById("Compliance-error");
+          const FutureExpectationsElement = document.getElementById(
+            "Future-Expectations"
+          );
+          const FutureExpectationsElementError = document.getElementById(
+            "Future-Expectations-error"
           );
 
           // Validation
@@ -683,34 +864,69 @@
             EmailElement.focus();
             return;
           }
-          if (basissuesElement.value.trim() === "") {
-            basissuesElementError.style.display = "block";
-            basissuesElement.focus();
+          if (PointofContactElement.value.trim() === "") {
+            PointofContactElementError.style.display = "block";
+            PointofContactElement.focus();
             return;
           }
-          if (regulatoryrequirementsElement.value.trim() === "") {
-            regulatoryrequirementsElementError.style.display = "block";
-            regulatoryrequirementsElement.focus();
+          if (revenuethresholdElement.value.trim() === "") {
+            revenuethresholdElementError.style.display = "block";
+            revenuethresholdElement.focus();
             return;
           }
-          if (basassistanceElement.value.trim() === "") {
-            basassistanceElementError.style.display = "block";
-            basassistanceElement.focus();
+          if (previoustaxreturnElement.value.trim() === "") {
+            previoustaxreturnElementError.style.display = "block";
+            previoustaxreturnElement.focus();
             return;
           }
-          if (gstregistrationElement.value.trim() === "") {
-            gstregistrationElementError.style.display = "block";
-            gstregistrationElement.focus();
+          if (CurrentYearsForecastElement.value.trim() === "") {
+            CurrentYearsForecastElementError.style.display = "block";
+            CurrentYearsForecastElement.focus();
             return;
           }
-          if (accountingsoftwareElement.value.trim() === "") {
-            accountingsoftwareElementError.style.display = "block";
-            accountingsoftwareElement.focus();
+          if (RevenueStreamsElement.value.trim() === "") {
+            RevenueStreamsElementError.style.display = "block";
+            RevenueStreamsElement.focus();
             return;
           }
-          if (financialreportingElement.value.trim() === "") {
-            financialreportingElementError.style.display = "block";
-            financialreportingElement.focus();
+          if (ProfitMarginsElement.value.trim() === "") {
+            ProfitMarginsElementError.style.display = "block";
+            ProfitMarginsElement.focus();
+            return;
+          }
+          if (GrowthGoalsElement.value.trim() === "") {
+            GrowthGoalsElementError.style.display = "block";
+            GrowthGoalsElement.focus();
+            return;
+          }
+          if (InvestmentandFinancingElement.value.trim() === "") {
+            InvestmentandFinancingElementError.style.display = "block";
+            InvestmentandFinancingElement.focus();
+            return;
+          }
+          if (CostControlElement.value.trim() === "") {
+            CostControlElementError.style.display = "block";
+            CostControlElement.focus();
+            return;
+          }
+          if (AutomationandProcessesElement.value.trim() === "") {
+            AutomationandProcessesElementError.style.display = "block";
+            AutomationandProcessesElement.focus();
+            return;
+          }
+          if (RiskMitigationElement.value.trim() === "") {
+            RiskMitigationElementError.style.display = "block";
+            RiskMitigationElement.focus();
+            return;
+          }
+          if (ComplianceElement.value.trim() === "") {
+            ComplianceElementError.style.display = "block";
+            ComplianceElement.focus();
+            return;
+          }
+          if (FutureExpectationsElement.value.trim() === "") {
+            FutureExpectationsElementError.style.display = "block";
+            FutureExpectationsElement.focus();
             return;
           }
 
@@ -718,21 +934,35 @@
             nameElement: document.getElementById("service-name").value,
             phoneElement: document.getElementById("service-phone").value,
             EmailElement: document.getElementById("service-email").value,
-            businessStructure:
-              document.getElementById("business-structure").value,
-            abn: document.getElementById("abn").value,
-            basFrequency: document.getElementById("bas-frequency").value,
-            basIssues: document.getElementById("bas-issues").value,
-            regulatoryRequirements: document.getElementById(
-              "regulatory-requirements"
+            PointofContactElement:
+              document.getElementById("Point-of-Contact").value,
+            revenuethresholdElement:
+              document.getElementById("revenue-threshold").value,
+            previoustaxreturnElement: document.getElementById(
+              "previous-tax-return"
             ).value,
-            basAssistance: document.getElementById("bas-assistance").value,
-            gstRegistration: document.getElementById("gst-registration").value,
-            accountingSoftware: document.getElementById("accounting-software")
-              .value,
-            financialReporting: document.getElementById("financial-reporting")
-              .value,
-            type: "bas-services",
+            CurrentYearsForecastElement: document.getElementById(
+              "Current-Years-Forecast"
+            ).value,
+            RevenueStreamsElement:
+              document.getElementById("Revenue-Streams").value,
+            ProfitMarginsElement:
+              document.getElementById("Profit-Margins").value,
+            GrowthGoalsElement: document.getElementById("Growth-Goals").value,
+            InvestmentandFinancingElement: document.getElementById(
+              "Investment-and-Financing"
+            ).value,
+            CostControlElement: document.getElementById("Cost-Control").value,
+            AutomationandProcessesElement:
+              document.getElementById("Revenue-Streams").value,
+            RiskMitigationElement:
+              document.getElementById("Risk-Mitigation").value,
+            ComplianceElement: document.getElementById("Compliance").value,
+            FutureExpectationsElement: document.getElementById(
+              "Future-Expectations"
+            ).value,
+
+            type: "personal-legal-obligations",
           };
 
           fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
@@ -782,39 +1012,87 @@
           document.getElementById("email-error").style.display = "none";
         });
       document
-        .getElementById("bas-issues")
+        .getElementById("Point-of-Contact")
         .addEventListener("input", function () {
-          document.getElementById("bas-issues-error").style.display = "none";
+          document.getElementById("Point-of-Contact-error").style.display =
+            "none";
         });
       document
-        .getElementById("regulatory-requirements")
+        .getElementById("revenue-threshold")
+        .addEventListener("input", function () {
+          document.getElementById("revenue-threshold-error").style.display =
+            "none";
+        });
+      document
+        .getElementById("previous-tax-return")
+        .addEventListener("input", function () {
+          document.getElementById("previous-tax-return-error").style.display =
+            "none";
+        });
+      document
+        .getElementById("Current-Years-Forecast")
         .addEventListener("input", function () {
           document.getElementById(
-            "regulatory-requirements-error"
+            "Current-Years-Forecast-error"
           ).style.display = "none";
         });
       document
-        .getElementById("bas-assistance")
+        .getElementById("Revenue-Streams")
         .addEventListener("input", function () {
-          document.getElementById("bas-assistance-error").style.display =
+          document.getElementById("Revenue-Streams-error").style.display =
             "none";
         });
       document
-        .getElementById("gst-registration")
+        .getElementById("Profit-Margins")
         .addEventListener("input", function () {
-          document.getElementById("gst-registration-error").style.display =
+          document.getElementById("Profit-Margins-error").style.display =
             "none";
         });
       document
-        .getElementById("accounting-software")
+        .getElementById("Growth-Goals")
         .addEventListener("input", function () {
-          document.getElementById("accounting-software-error").style.display =
+          document.getElementById("Growth-Goals-error").style.display = "none";
+        });
+      document
+        .getElementById("Revenue-Streams")
+        .addEventListener("input", function () {
+          document.getElementById("Revenue-Streams-error").style.display =
             "none";
         });
       document
-        .getElementById("financial-reporting")
+        .getElementById("Investment-and-Financing")
         .addEventListener("input", function () {
-          document.getElementById("financial-reporting-error").style.display =
+          document.getElementById(
+            "Investment-and-Financing-error"
+          ).style.display = "none";
+        });
+      document
+        .getElementById("Cost-Control")
+        .addEventListener("input", function () {
+          document.getElementById("Cost-Control-error").style.display = "none";
+        });
+      document
+        .getElementById("Automation-and-Processes")
+        .addEventListener("input", function () {
+          document.getElementById(
+            "Automation-and-Processes-error"
+          ).style.display = "none";
+        });
+      document
+        .getElementById("Risk-Mitigation")
+        .addEventListener("input", function () {
+          document.getElementById("Risk-Mitigation-error").style.display =
+            "none";
+        });
+      document
+        .getElementById("Compliance")
+        .addEventListener("input", function () {
+          document.getElementById("Compliance-error").style.display = "none";
+        });
+      document
+        .getElementById("Future-Expectations")
+        .addEventListener("input", function () {
+          document.getElementById("Future-Expectations-error").style.display =
             "none";
         });
     </script>

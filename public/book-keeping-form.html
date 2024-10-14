@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -76,9 +76,9 @@
                     <a href="contact.html">Contact Us</a>
                   </li>
                   <li>
-                    <a href="Resources.html">Resources</a>
+                    <a href="resources.html">Resources</a>
                     <ul class="sub-menu rv-mega-menu">
-                      <li><a href="Calculators.html">Calculators</a></li>
+                      <li><a href="calculators.html">Calculators</a></li>
                       <li>Ebooks (Coming Soon)</li>
                     </ul>
                   </li>
@@ -112,9 +112,7 @@
     <!-- BREADCRUMB STARTS HERE -->
     <div class="rv-breadcrumb pt-120 pb-120">
       <div class="container">
-        <h1 class="rv-breadcrumb__title">
-          Wholesale Property Direct – Direct from the Builder
-        </h1>
+        <h1 class="rv-breadcrumb__title">Bookkeeping</h1>
 
         <ul class="rv-breadcrumb__nav d-flex justify-content-center">
           <li>
@@ -124,13 +122,12 @@
           </li>
           <li class="current-page">
             <span class="dvdr"> &#47;</span>
-            <a href="real-estate-solutions.html"
-              ><span>Real Estate Solutions</span></a
+            <a href="accounting-and-legal-services.html"
+              ><span>Accounting and Legal Services</span></a
             >
           </li>
           <li class="current-page">
-            <span class="dvdr"> &#47;</span
-            ><span>Wholesale Property Direct – Direct from the Builder</span>
+            <span class="dvdr"> &#47;</span><span>Bookkeeping</span>
           </li>
         </ul>
       </div>
@@ -150,7 +147,7 @@
           <div class="col-xxl-12 col-lg-9">
             <div class="rv-2-contact__txt rv-inner-contact__txt">
               <h6 class="rv-2-contact-form-title">
-                Wholesale Property Direct – Direct from the Builder Inquiry
+                Bookkeeping Services Inquiry
               </h6>
               <form
                 id="businessForm"
@@ -227,94 +224,99 @@
                     </p>
                   </div>
 
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="propertyType"
-                      >What type of off-the-plan property are you interested in
-                      purchasing?</label
+                  <div class="col-12">
+                    <label style="margin-bottom: 10px" for="business-structure"
+                      >What type of business structure do you have?</label
                     >
-                    <select name="propertyType" id="propertyType" required>
+                    <select
+                      name="businessStructure"
+                      id="business-structure"
+                      required
+                    >
                       <option value="" hidden="">Select</option>
-                      <option value="apartment">Apartment</option>
-                      <option value="town_house">Town House</option>
-                      <option value="single_family_home">
-                        Single Family Home
+                      <option value="Sole Trader">Sole Trader</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Trust">Trust</option>
+                      <option value="Company">Company</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="abn"
+                      >ABN (Australian Business Number)</label
+                    >
+                    <input
+                      required
+                      type="number"
+                      name="abn"
+                      id="abn"
+                      placeholder="If yes, please provide it."
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="employees"
+                      >Number of Employees</label
+                    >
+                    <input
+                      required
+                      type="number"
+                      name="employees"
+                      id="employees"
+                      placeholder="e.g 10, 50, 100 "
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <label
+                      style="margin-bottom: 10px"
+                      for="bookkeeping-services"
+                      >What specific bookkeeping services do you require?</label
+                    >
+                    <select
+                      required
+                      name="bookkeepingServices"
+                      id="bookkeeping-services"
+                    >
+                      <option value="" hidden="">Select</option>
+                      <option value="Accounts payable/receivable">
+                        Accounts payable/receivable
+                      </option>
+                      <option value="Bank Reconciliation">
+                        Bank Reconciliation
+                      </option>
+                      <option value="Financial Statement Preparation">
+                        Financial Statement Preparation
                       </option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="budgetRange"
-                      >What is your budget range for investing in an
-                      off-the-plan property?</label
+                    <label
+                      style="margin-bottom: 10px"
+                      for="bookkeeping-frequency"
+                      >How frequently do you need bookkeeping services?</label
                     >
-                    <input
+                    <select
                       required
-                      type="number"
-                      name="budgetRange"
-                      id="budgetRange"
-                      placeholder="Please provide it."
-                    />
-                    <p
-                      id="budget-error"
-                      style="
-                        color: red;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-                        display: none;
-                      "
+                      name="bookkeepingFrequency"
+                      id="bookkeeping-frequency"
                     >
-                      Budget is required.
-                    </p>
-                  </div>
-                  <div class="col-12">
-                    <label style="margin-bottom: 10px" for="preferredLocation"
-                      >Do you have a preferred location or neighborhood for the
-                      new development?</label
-                    >
-                    <input
-                      required
-                      type="text"
-                      name="preferredLocation"
-                      id="preferredLocation"
-                      placeholder="Please provide it."
-                    />
-                    <p
-                      id="location-error"
-                      style="
-                        color: red;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-                        display: none;
-                      "
-                    >
-                      Location is required.
-                    </p>
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="features"
-                      >What specific features or amenities are you looking for
-                      in an off-the-plan property?</label
-                    >
-                    <select name="features" id="features" required>
                       <option value="" hidden="">Select</option>
-                      <option value="bedrooms">Number of bedrooms</option>
-                      <option value="parking">Parking</option>
-                      <option value="garden">Garden</option>
+                      <option value="weekly">weekly</option>
+                      <option value="Monthly">Monthly</option>
+                      <option value="Quarterly">Quarterly</option>
                     </select>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="awareness"
-                      >Are you aware of the benefits and potential risks
-                      associated with purchasing off-the-plan properties?</label
+                    <label style="margin-bottom: 10px" for="challenges"
+                      >Are there any particular challenges or issues you face
+                      with your current bookkeeping process?</label
                     >
                     <input
-                      required
                       type="text"
-                      name="awareness"
-                      id="awareness"
+                      name="challenges"
+                      id="challenges"
                       placeholder=""
                     />
                     <p
-                      id="awareness-error"
+                      id="challenges-error"
                       style="
                         color: red;
                         margin-top: 3px;
@@ -322,71 +324,44 @@
                         display: none;
                       "
                     >
-                      Please fill out.
+                      is required.
                     </p>
                   </div>
                   <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="timeline"
-                      >What is your ideal timeline for the completion and
-                      handover of the property?</label
+                    <label style="margin-bottom: 10px" for="virtualbookkeeping"
+                      >Do you prefer virtual bookkeeping services or on-site
+                      support?</label
+                    >
+                    <input
+                      type="text"
+                      name="virtualbookkeeping"
+                      id="virtualbookkeeping"
+                      placeholder=""
+                    />
+                    <p
+                      id="virtualbookkeeping-error"
+                      style="
+                        color: red;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        display: none;
+                      "
+                    >
+                      is required.
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <label style="margin-bottom: 10px" for="budget"
+                      >What is your approximate monthly budget for bookkeeping
+                      services?</label
                     >
                     <input
                       required
                       type="number"
-                      name="timeline"
-                      id="timeline"
-                      placeholder="Mention your timeline here (only in Digits)"
-                    />
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="factors"
-                      >Are rental yield and capital growth important factors in
-                      your decision to purchase this property?</label
-                    >
-                    <input
-                      required
-                      type="text"
-                      name="factors"
-                      id="factors"
-                      placeholder="Please specify."
-                    />
-                    <p
-                      id="factors-error"
-                      style="
-                        color: red;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-                        display: none;
-                      "
-                    >
-                      Please fill out.
-                    </p>
-                  </div>
-                  <div class="col-sm-12">
-                    <label style="margin-bottom: 10px" for="receiveInfo"
-                      >Would you like to receive information about upcoming
-                      developments, pre-construction opportunities, and any
-                      available incentives or grants for off-the-plan
-                      purchases?</label
-                    >
-                    <input
-                      required
-                      type="text"
-                      name="receiveInfo"
-                      id="receiveInfo"
+                      name="budget"
+                      id="budget"
                       placeholder=""
                     />
-                    <p
-                      id="info-error"
-                      style="
-                        color: red;
-                        margin-top: 3px;
-                        margin-bottom: 3px;
-                        display: none;
-                      "
-                    >
-                      Please fill out.
-                    </p>
                   </div>
                   <div class="col-12">
                     <button type="submit" class="rv-snd-msg-btn">Submit</button>
@@ -395,11 +370,6 @@
               </form>
             </div>
           </div>
-
-          <!-- map -->
-          <!-- <div class="col-xxl-4 col-lg-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865828.261474472!2d115.30206491641833!3d-32.038357208997795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2s!4v1710948059129!5m2!1sen!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> -->
         </div>
       </div>
     </section>
@@ -547,20 +517,15 @@
           const phoneElementError = document.getElementById("phone-error");
           const EmailElement = document.getElementById("service-email");
           const EmailElementError = document.getElementById("email-error");
-          const BudgetElement = document.getElementById("budgetRange");
-          const budgetElementError = document.getElementById("budget-error");
-          const locationElement = document.getElementById("preferredLocation");
-          const locationElementError =
-            document.getElementById("location-error");
-          const awarenessElement = document.getElementById("awareness");
-          const awarenessElementError =
-            document.getElementById("awareness-error");
-          const factorsElement = document.getElementById("factors");
-          const factorsElementError = document.getElementById("factors-error");
-          const receiveInfoElement = document.getElementById("receiveInfo");
-          const receiveInfoElementError =
-            document.getElementById("receive-error");
           const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const challengesElement = document.getElementById("challenges");
+          const challengesElementError =
+            document.getElementById("challenges-error");
+          const virtualbookkeepingElement =
+            document.getElementById("virtualbookkeeping");
+          const virtualbookkeepingElementError = document.getElementById(
+            "virtualbookkeeping-error"
+          );
 
           // Validation
           if (nameElement.value.trim() === "") {
@@ -578,50 +543,36 @@
             EmailElement.focus();
             return;
           }
-          if (BudgetElement.value.trim() === "") {
-            budgetElementError.style.display = "block";
-            BudgetElement.focus();
+          if (challengesElement.value.trim() === "") {
+            challengesElementError.style.display = "block";
+            challengesElement.focus();
             return;
           }
-          if (locationElement.value.trim() === "") {
-            locationElementError.style.display = "block";
-            locationElement.focus();
-            return;
-          }
-          if (awarenessElement.value.trim() === "") {
-            awarenessElementError.style.display = "block";
-            awarenessElement.focus();
-            return;
-          }
-          if (factorsElement.value.trim() === "") {
-            factorsElementError.style.display = "block";
-            factorsElement.focus();
-            return;
-          }
-          if (receiveInfoElement.value.trim() === "") {
-            receiveInfoElementError.style.display = "block";
-            receiveInfoElement.focus();
+          if (virtualbookkeepingElement.value.trim() === "") {
+            virtualbookkeepingElementError.style.display = "block";
+            virtualbookkeepingElement.focus();
             return;
           }
 
           const formData = {
-            propertyType: document.getElementById("propertyType").value,
-            budgetRange: BudgetElement.value,
-            preferredLocation: locationElement.value,
             nameElement: document.getElementById("service-name").value,
             phoneElement: document.getElementById("service-phone").value,
             EmailElement: document.getElementById("service-email").value,
-            BudgetElement: document.getElementById("budgetRange").value,
-            locationElement: document.getElementById("preferredLocation").value,
-            awarenessElement: document.getElementById("awareness").value,
-            factorsElement: document.getElementById("factors").value,
-            receiveInfoElement: document.getElementById("receiveInfo").value,
-            features: document.getElementById("features").value,
-            awareness: awarenessElement.value,
-            timeline: document.getElementById("timeline").value,
-            factors: factorsElement.value,
-            receiveInfo: receiveInfoElement.value,
-            type: "streamlined-property-acquisition",
+            businessstructureElement:
+              document.getElementById("business-structure").value,
+            abnElement: document.getElementById("abn").value,
+            employeesElement: document.getElementById("employees").value,
+            bookkeepingservicesElement: document.getElementById(
+              "bookkeeping-services"
+            ).value,
+            bookkeepingfrequencyElement: document.getElementById(
+              "bookkeeping-frequency"
+            ).value,
+            challengesElement: document.getElementById("challenges").value,
+            virtualbookkeepingElement:
+              document.getElementById("virtualbookkeeping").value,
+            budgetElement: document.getElementById("budget").value,
+            type: "book-keeping",
           };
 
           fetch("https://hook.eu2.make.com/1flrnt31djfhuf3tw8rho70b9se07gv1", {
@@ -671,30 +622,17 @@
           document.getElementById("email-error").style.display = "none";
         });
       document
-        .getElementById("budgetRange")
+        .getElementById("challenges")
         .addEventListener("input", function () {
-          document.getElementById("budget-error").style.display = "none";
+          document.getElementById("challenges-error").style.display = "none";
         });
       document
-        .getElementById("preferredLocation")
+        .getElementById("virtualbookkeeping")
         .addEventListener("input", function () {
-          document.getElementById("location-error").style.display = "none";
-        });
-      document
-        .getElementById("awareness")
-        .addEventListener("input", function () {
-          document.getElementById("awareness-error").style.display = "none";
-        });
-      document.getElementById("factors").addEventListener("input", function () {
-        document.getElementById("factors-error").style.display = "none";
-      });
-      document
-        .getElementById("receiveInfo")
-        .addEventListener("input", function () {
-          document.getElementById("receive-error").style.display = "none";
+          document.getElementById("virtualbookkeeping-error").style.display =
+            "none";
         });
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets\vendor\jquery\jquery-3.6.3.min.js"></script>
     <script src="assets\vendor\bootstrap\bootstrap.min.js"></script>
