@@ -9,9 +9,8 @@
     <iframe
       id="loanoptions-v3-application"
       src="application.html"
-      height="100%"
       width="100%"
-      style="height: 100vh; width: 100vw"
+      style="border: none; height: 100dvh; width: 100dvw"
     ></iframe>
     <script src="https://loanoptions-widget.s3.ap-southeast-2.amazonaws.com/main/widget-three.js"></script>
   </body>
