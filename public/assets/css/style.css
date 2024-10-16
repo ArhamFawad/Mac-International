@@ -2754,7 +2754,7 @@ html.lenis {
 }
 .rv-inner-footer-nwsltr__form .nwsltr-top button {
   border-radius: 0 6px 6px 0;
-  background-color: ##f2584c;
+  background-color: #f2584c;
 }
 @media screen and (max-width: 1199px) {
   .rv-inner-footer-widget .rv-1-footer-widget__title {
@@ -2765,12 +2765,12 @@ html.lenis {
   border-radius: 6px;
 }
 .rv-1-socials.rv-inner-socials a:hover {
-  background-color: ##f2584c;
-  border-color: ##f2584c;
+  background-color: #f2584c;
+  border-color: #f2584c;
 }
 .rv-1-footer-widget.rv-inner-footer-widget li:hover,
 .rv-1-footer-widget.rv-inner-footer-widget li a:hover {
-  color: ##f2584c;
+  color: #f2584c;
 }
 .sub-menu.rv-mega-menu {
   display: grid;
@@ -4019,7 +4019,7 @@ html.lenis {
   color: #f2584c;
 }
 .rv-inner-header__nav > ul a:hover::before {
-  background-color: ##f2584c;
+  background-color: #f2584c;
 }
 @media screen and (max-width: 991px) {
   .rv-inner-header-right-btns {
@@ -4047,7 +4047,7 @@ html.lenis {
   }
 }
 .rv-inner-header-right-btns a:hover {
-  color: ##f2584c;
+  color: #f2584c;
 }
 .rv-inner-header-right-btns a i {
   padding-right: 5px;
@@ -4073,11 +4073,11 @@ html.lenis {
 .rv-inner-header-right-btns a:last-child:hover {
   background-color: rgba(0, 0, 0, 0);
   color: var(--black);
-  border-color: ##f2584c;
+  border-color: #f2584c;
 }
 .rv-inner-mobile-menu-btn {
-  background-color: ##f2584c;
-  border-color: ##f2584c;
+  background-color: #f2584c;
+  border-color: #f2584c;
 }
 .rv-1-banner {
   background-color: var(--green);
@@ -10767,13 +10767,44 @@ html.lenis {
     content: none;
   }
 }
+.rv-1-footer-widget__infos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .rv-1-footer-widget__infos li {
-  display: flex;
+  /* display: flex;
   gap: 15px;
+  align-items: center; */
+  display: flex;
   align-items: center;
+  gap: 10px; /* Space between the icon and the text */
+  margin-bottom: 13px;
 }
 .rv-1-footer-widget__infos li img {
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
+  width: 20px; /* Adjust the size of the icon if needed */
+  height: auto;
+}
+.rv-1-footer-widget__infos li a,
+.rv-1-footer-widget__infos li span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  font-weight: 300;
+  font-family: var(--mulish);
+  text-align: left;
+}
+
+.rv-1-footer-widget__infos li a:hover,
+.rv-1-footer-widget__infos li span:hover {
+  color: var(--orange); /* Highlight color on hover */
+}
+
+@media screen and (max-width: 479px) {
+  .rv-1-footer-widget__infos li {
+    flex-direction: column; /* Stack icon and text vertically on smaller screens */
+    align-items: flex-start;
+  }
 }
 .rv-1-footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
