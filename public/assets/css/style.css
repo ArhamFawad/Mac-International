@@ -2690,6 +2690,12 @@ html.lenis {
   padding-bottom: 10px;
   margin-bottom: 16px;
 }
+.header-hero-bg {
+  background-image: url('assets/img/hero-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .rv-breadcrumb__sub_para {
   padding: 0 70px;
   padding-bottom: 10px;
@@ -2700,6 +2706,9 @@ html.lenis {
   padding-bottom: 10px;
   list-style-type: square;
   font-weight: 700;
+}
+.landing_page_testimonials {
+  background-color: #f5f6fa;
 }
 @media screen and (max-width: 1399px) {
   .rv-breadcrumb__title {
