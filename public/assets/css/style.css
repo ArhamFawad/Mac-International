@@ -1318,6 +1318,17 @@ html.lenis {
   font-family: var(--mulish);
   transition: none;
 }
+.landing_page_header_btn {
+  height: 50px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: var(--white-f);
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-flex;
+  font-family: var(--mulish);
+  transition: none;
+}
 @media screen and (max-width: 990px) {
   .rv-1-def-btn {
     display: none;
@@ -1336,6 +1347,16 @@ html.lenis {
 }
 
 .rv-1-def-btn .txt {
+  background-color: var(--orange);
+  border-radius: 14px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.4s ease;
+  border: 1px solid var(--orange);
+}
+
+.landing_page_header_btn .txt {
   background-color: var(--orange);
   border-radius: 14px;
   padding: 5px;
@@ -1373,6 +1394,9 @@ html.lenis {
   }
 }
 .rv-1-def-btn:hover .txt {
+  background-color: var(--white-f);
+}
+.landing_page_header_btn:hover .txt {
   background-color: var(--white-f);
 }
 .rv-1-def-btn:hover .icon {
@@ -2691,7 +2715,7 @@ html.lenis {
   margin-bottom: 16px;
 }
 .header-hero-bg {
-  background-image: url('assets/img/hero-background.svg');
+  background-image: url("assets/img/hero-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
