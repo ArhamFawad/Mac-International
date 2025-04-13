@@ -2715,7 +2715,7 @@ html.lenis {
   margin-bottom: 16px;
 }
 .header-hero-bg {
-  background-image: url("assets/img/hero-background.svg");
+  background-image: url("../../assets/img/hero-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3065,6 +3065,9 @@ html.lenis {
   font-size: 20px;
   z-index: 2;
   background-color: #292929;
+}
+.step_by_step_demonstration {
+  background: #f5f6fa;
 }
 @media screen and (max-width: 479px) {
   .rv-2-menu-btn {

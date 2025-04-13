@@ -47,7 +47,7 @@
   <body>
     <div class="header-hero-bg">
       <!-- HEADER SECTION START -->
-      <header class="rv-6-header rv-1-header to-be-fixed">
+      <header class="rv-6-header rv-1-header to-be-fixed header-hero-bg">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-xl-2 col-lg-3 col-6">
@@ -77,7 +77,7 @@
                   <ul class="justify-content-end">
                     <li>
                       <img
-                        src="assets/img/loan_options_ai.png"
+                        src="assets/img/loan_options_ai.svg"
                         alt="loan_ai"
                         width="200"
                       />
@@ -138,14 +138,14 @@
       </div>
 
       <!-- HERO STARTS HERE  -->
-      <section class="py-5 bg-light">
+      <section class="py-5 header-hero-bg">
         <div class="container">
           <div class="row align-items-center">
             <!-- Left Content -->
             <div class="col-lg-6 mb-4 mb-lg-0">
               <h1 class="fw-bold display-5 mb-3">
                 Compare Australia’s <br />
-                Best Home Loan Options
+                Best Business Loan Options
               </h1>
               <p class="text-muted fs-5">
                 Instantly match with business loan offers from 40+ trusted
@@ -168,6 +168,113 @@
       </section>
       <!-- HERO ENDS HERE -->
     </div>
+
+    <!-- step by step demonstration of widget start -->
+    <section class="p-5 step_by_step_demonstration text-center">
+      <div class="container">
+        <!-- Title and Subtitle -->
+        <h2 class="fw-bold mb-3 fs-1">Compare Loans</h2>
+        <p class="pt-3 text-muted fs-5">
+          Easily compare personalized loan offers side by side to find the best
+          rates, terms, and options that suit your financial needs.
+        </p>
+
+        <!-- Step-by-step section -->
+        <div class="row justify-content-center p-5">
+          <div class="col-md-10 col-lg-8">
+            <div class="position-relative ps-5">
+              <!-- Line SVG: Vertical connector -->
+              <img
+                src="assets/img/line_landing_page.svg"
+                alt="connector line"
+                class="position-absolute"
+                style="top: 0; left: 75px; height: 100%; z-index: 0"
+              />
+
+              <!-- Steps container -->
+              <div
+                class="d-flex flex-column align-items-start gap-5 position-relative z-1"
+              >
+                <!-- Step 1 -->
+                <div class="d-flex align-items-start">
+                  <div class="me-3 flex-shrink-0">
+                    <img
+                      src="assets/img/step1_business_loan.svg"
+                      alt="Step 1"
+                    />
+                  </div>
+                  <div class="text-start">
+                    <h6 class="fw-bold mb-1 fs-5">
+                      Fill out the application form
+                    </h6>
+                    <p class="mb-0 text-muted fs-6">
+                      Kindly complete the application form below with accurate
+                      information to help us process your request smoothly
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="d-flex align-items-start">
+                  <div class="me-3 flex-shrink-0">
+                    <img
+                      src="assets/img/step2_business_loan.svg"
+                      alt="Step 2"
+                    />
+                  </div>
+                  <div class="text-start">
+                    <h6 class="fw-bold mb-1 fs-5">Synapses AI</h6>
+                    <p class="mb-0 text-muted fs-6">
+                      Smart AI that matches you with the best loan options based
+                      on your unique profile and needs.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="d-flex align-items-start">
+                  <div class="me-3 flex-shrink-0">
+                    <img
+                      src="assets/img/step3_business_loan.svg"
+                      alt="Step 3"
+                    />
+                  </div>
+                  <div class="text-start">
+                    <h6 class="fw-bold mb-1 fs-5">
+                      Review & Privacy Notice Sent
+                    </h6>
+                    <p class="mb-0 text-muted fs-6">
+                      Review the information provided and check your inbox for
+                      our privacy notice to stay informed and protected.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="d-flex align-items-start">
+                  <div class="me-3 flex-shrink-0">
+                    <img
+                      src="assets/img/step4_business_loan.svg"
+                      alt="Step 4"
+                    />
+                  </div>
+                  <div class="text-start">
+                    <h6 class="fw-bold mb-1 fs-5">Contacted by a broker</h6>
+                    <p class="mb-0 text-muted fs-6">
+                      One of our trusted brokers has reached out to you to
+                      discuss your loan options and guide you through the next
+                      steps.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- step by step demonstration of widget end -->
 
     <!-- Widget Code goes here -->
     <section class="rv-16-services" data-aos="fade-up">
@@ -310,6 +417,115 @@
       </div>
     </section>
 
+    <!-- Privacy Policy Modal -->
+    <div
+      class="modal fade"
+      id="privacyPolicyModal"
+      tabindex="-1"
+      aria-labelledby="privacyPolicyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyPolicyModalLabel">
+              Privacy Statement
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              When you provide your details through this page, Mack Capital
+              collects your information for the purpose of providing consulting
+              services and connecting you with licensed professionals to support
+              your goals.
+            </p>
+            <p>
+              Your information is securely processed via a proprietary,
+              privacy-compliant, AI-powered onboarding platform that connects
+              you directly with a licensed financial broker to assess your
+              eligibility, pre-qualification, and facilitate loan submissions.
+            </p>
+            <p>
+              Your data is never sold and is handled in accordance with relevant
+              privacy laws.
+            </p>
+            <p>
+              For more information, contact
+              <a href="mailto:compare@mackcapital.com.au"
+                >compare@mackcapital.com.au</a
+              >
+              or visit
+              <a href="https://www.mackcapital.com.au" target="_blank"
+                >www.mackcapital.com.au</a
+              >.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div
+      class="modal fade"
+      id="termsConditionsModal"
+      tabindex="-1"
+      aria-labelledby="termsConditionsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsConditionsModalLabel">
+              Terms & Conditions
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              By submitting your details, you consent to Mack Capital processing
+              your information for the purpose of consulting and, where
+              appropriate, referring you to licensed professionals.
+            </p>
+            <p>
+              We do not provide financial advice or loan approvals. All services
+              are subject to eligibility and the policies of licensed
+              third-party providers.
+            </p>
+            <p>Use of this form confirms your acceptance of these terms.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- FOOTER SECTION START -->
     <footer class="rv-1-footer rv-6-footer">
       <div class="container">
@@ -430,8 +646,18 @@
             </div>
             <div class="col-md-5">
               <div class="rv-2-footer__nav">
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="term-of-service.html">Term of Service</a>
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#privacyPolicyModal"
+                  >Privacy Policy</a
+                >
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#termsConditionsModal"
+                  >Term of Service</a
+                >
               </div>
             </div>
           </div>
