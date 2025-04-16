@@ -10850,9 +10850,6 @@ html.lenis {
   margin: 0;
 }
 .rv-1-footer-widget__infos li {
-  /* display: flex;
-  gap: 15px;
-  align-items: center; */
   display: flex;
   align-items: center;
   gap: 10px; /* Space between the icon and the text */
@@ -10883,6 +10880,46 @@ html.lenis {
     align-items: flex-start;
   }
 }
+
+/* Landing page infos footer links */
+
+.landing-footer-widget__infos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.landing-footer-widget__infos li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icon and the text */
+  margin-bottom: 13px;
+}
+.landing-footer-widget__infos li img {
+  /* flex-shrink: 0; */
+  width: 20px; /* Adjust the size of the icon if needed */
+  height: auto;
+}
+.landing-footer-widget__infos li p,
+.landing-footer-widget__infos li span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  font-weight: 300;
+  font-family: var(--mulish);
+  text-align: left;
+}
+
+.landing-footer-widget__infos li p:hover,
+.landing-footer-widget__infos li span:hover {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+@media screen and (max-width: 479px) {
+  .landing-footer-widget__infos li {
+    flex-direction: column; /* Stack icon and text vertically on smaller screens */
+    align-items: flex-start;
+  }
+}
+
 .rv-1-footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 45px 0;
