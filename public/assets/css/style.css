@@ -1339,6 +1339,9 @@ html.lenis {
     height: 45px;
     line-height: 43px;
   }
+  .landing_page_header_btn {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .rv-1-def-btn {
@@ -10878,6 +10881,13 @@ html.lenis {
   .rv-1-footer-widget__infos li {
     flex-direction: column; /* Stack icon and text vertically on smaller screens */
     align-items: flex-start;
+  }
+}
+
+/* landing page icons background line */
+@media (max-width: 767.98px) {
+  .vertical-line {
+    display: none;
   }
 }
 
