@@ -1334,7 +1334,7 @@ html.lenis {
     display: none;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
   .rv-1-def-btn {
     height: 45px;
     line-height: 43px;
@@ -1343,9 +1343,12 @@ html.lenis {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   .landing_page_header_btn {
-    font-size: 10px;
+    font-size: 9px;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media screen and (max-width: 320px) {
