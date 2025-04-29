@@ -1344,6 +1344,14 @@ html.lenis {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 375px) {
+  .landing_page_header_btn {
+    font-size: 10px;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 @media screen and (max-width: 360px) {
   .landing_page_header_btn {
     font-size: 9px;
@@ -1352,6 +1360,7 @@ html.lenis {
     padding-right: 0px;
   }
 }
+
 @media screen and (max-width: 320px) {
   .landing_page_header_btn {
     font-size: 5px;
