@@ -1344,38 +1344,32 @@ html.lenis {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .landing_page_header_btn {
     font-size: 10px;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .landing_page_header_btn {
-    font-size: 9px;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0; /* shorthand clears all paddings */
   }
 }
 
-@media screen and (max-width: 320px) {
+/* 360px and below */
+@media screen and (max-width: 360px) {
+  .landing_page_header_btn {
+    font-size: 9px;
+  }
+}
+
+/* 350px and below */
+@media screen and (max-width: 350px) {
   .landing_page_header_btn {
     font-size: 5px;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
+
   .landing_page_header_btn .txt {
     background-color: var(--orange);
-    border-radius: 14px;
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    transition: 0.4s ease;
     border: 1px solid var(--orange);
+    border-radius: 14px;
+    padding: 0;
+    transition: 0.4s ease;
   }
 }
 @media screen and (max-width: 1200px) {
