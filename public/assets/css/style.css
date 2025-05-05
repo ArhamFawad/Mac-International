@@ -2766,6 +2766,31 @@ html.lenis {
 .landing_page_testimonials {
   background-color: #f5f6fa;
 }
+@media (max-width: 767.98px) {
+  .landing_page_testimonials .testimonials-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem; /* Space between cards */
+    padding-bottom: 1rem; /* Extra space for scroll bar */
+  }
+
+  .landing_page_testimonials .testimonials-scroll .col-md-6 {
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* Hide scrollbar */
+  .landing_page_testimonials .testimonials-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .landing_page_testimonials .testimonials-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
 @media screen and (max-width: 1399px) {
   .rv-breadcrumb__title {
     font-size: 50px;
