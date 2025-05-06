@@ -2766,7 +2766,7 @@ html.lenis {
 .landing_page_testimonials {
   background-color: #f5f6fa;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 800px) {
   .landing_page_testimonials .testimonials-scroll {
     display: flex;
     flex-wrap: nowrap;
